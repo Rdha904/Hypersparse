@@ -1,4 +1,0 @@
-2024-10-28 11:40:55,587 : INFO : Namespace(batch_size=64, dataset='cifar10', epochs=3, eta=1.05, lambda_init=5e-06, lr=0.1, lr_decay=0.1, lr_step=[80, 120], manual_seed=None, model_arch='resnet', model_depth=32, momentum=0.9, outdir='./Output_4', override_dir=False, path_data='./data', path_load_model=None, prune_rate=0.0, regularization_func='HS', size_model_buffer=1, warmup_epochs=1, weight_decay=0.0001, workers=4)
-2024-10-28 11:40:55,587 : INFO : output Dir: ./Output_4
-2024-10-28 11:40:55,737 : INFO : ==> Preparing dataset cifar10
-2024-10-28 11:40:56,969 : INFO :     Total Conv and Linear Params: 1.86M
