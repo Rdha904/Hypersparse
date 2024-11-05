@@ -1,0 +1,189 @@
+INFO:logger:Namespace(batch_size=64, dataset='cifar10', epochs=20, eta=1.05, lambda_init=5e-06, lr=0.1, lr_decay=0.1, lr_step=[80, 120], manual_seed=None, model_arch='resnet', model_depth=32, momentum=0.9, outdir='./Output_16', override_dir=False, path_data='./data', path_load_model=None, prune_rate=0.0, regularization_func='HS', size_model_buffer=1, warmup_epochs=1, weight_decay=0.0001, workers=4)
+INFO:logger:output Dir: ./Output_16
+INFO:logger:==> Preparing dataset cifar10
+INFO:logger:    Total Conv and Linear Params: 1.86M
+INFO:logger:
+
+INFO:logger:Start total Epoch 1 (STEP: Warmup  in epoch [1 / 1] )
+INFO:logger:lr=0.100
+Files already downloaded and verified
+INFO:logger:Results Dense: train_loss_dens=1.8171,  train_acc_dens=32.00
+INFO:logger:Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+INFO:logger:
+
+INFO:logger:Start total Epoch 2 (STEP: ART  in epoch [1 / inf] )
+INFO:logger:lr=0.100
+INFO:logger:HS parameter:	alpha=0.0000050
+INFO:logger:prune_rate=0.000 [1 / 1855584]
+INFO:logger:ART best values: (epoch_art=1, train_acc_pr=54.89, mean_train_acc_pr=54.89)
+INFO:logger:******************************** ART terminated ********************************
+INFO:logger:ART best values: (epoch_art=1, train_acc_pr=54.89, mean_train_acc_pr=54.89)
+INFO:logger:LAYER 1(conv1) : KEEP_RATIO = 100.000000    NUM_PARA = 864    REMAINED_PARA = 864
+INFO:logger:LAYER 2(layer1.0.conv1) : KEEP_RATIO = 100.000000    NUM_PARA = 9216    REMAINED_PARA = 9216
+INFO:logger:LAYER 3(layer1.0.conv2) : KEEP_RATIO = 100.000000    NUM_PARA = 9216    REMAINED_PARA = 9216
+INFO:logger:LAYER 4(layer1.1.conv1) : KEEP_RATIO = 100.000000    NUM_PARA = 9216    REMAINED_PARA = 9216
+INFO:logger:LAYER 5(layer1.1.conv2) : KEEP_RATIO = 100.000000    NUM_PARA = 9216    REMAINED_PARA = 9216
+INFO:logger:LAYER 6(layer1.2.conv1) : KEEP_RATIO = 100.000000    NUM_PARA = 9216    REMAINED_PARA = 9216
+INFO:logger:LAYER 7(layer1.2.conv2) : KEEP_RATIO = 100.000000    NUM_PARA = 9216    REMAINED_PARA = 9216
+INFO:logger:LAYER 8(layer1.3.conv1) : KEEP_RATIO = 100.000000    NUM_PARA = 9216    REMAINED_PARA = 9216
+INFO:logger:LAYER 9(layer1.3.conv2) : KEEP_RATIO = 100.000000    NUM_PARA = 9216    REMAINED_PARA = 9216
+INFO:logger:LAYER 10(layer1.4.conv1) : KEEP_RATIO = 100.000000    NUM_PARA = 9216    REMAINED_PARA = 9216
+INFO:logger:LAYER 11(layer1.4.conv2) : KEEP_RATIO = 100.000000    NUM_PARA = 9216    REMAINED_PARA = 9216
+INFO:logger:LAYER 12(layer2.0.conv1) : KEEP_RATIO = 100.000000    NUM_PARA = 18432    REMAINED_PARA = 18432
+INFO:logger:LAYER 13(layer2.0.conv2) : KEEP_RATIO = 100.000000    NUM_PARA = 36864    REMAINED_PARA = 36864
+INFO:logger:LAYER 14(layer2.0.downsample.0) : KEEP_RATIO = 100.000000    NUM_PARA = 2048    REMAINED_PARA = 2048
+INFO:logger:LAYER 15(layer2.1.conv1) : KEEP_RATIO = 100.000000    NUM_PARA = 36864    REMAINED_PARA = 36864
+INFO:logger:LAYER 16(layer2.1.conv2) : KEEP_RATIO = 100.000000    NUM_PARA = 36864    REMAINED_PARA = 36864
+INFO:logger:LAYER 17(layer2.2.conv1) : KEEP_RATIO = 100.000000    NUM_PARA = 36864    REMAINED_PARA = 36864
+INFO:logger:LAYER 18(layer2.2.conv2) : KEEP_RATIO = 100.000000    NUM_PARA = 36864    REMAINED_PARA = 36864
+INFO:logger:LAYER 19(layer2.3.conv1) : KEEP_RATIO = 100.000000    NUM_PARA = 36864    REMAINED_PARA = 36864
+INFO:logger:LAYER 20(layer2.3.conv2) : KEEP_RATIO = 100.000000    NUM_PARA = 36864    REMAINED_PARA = 36864
+INFO:logger:LAYER 21(layer2.4.conv1) : KEEP_RATIO = 100.000000    NUM_PARA = 36864    REMAINED_PARA = 36864
+INFO:logger:LAYER 22(layer2.4.conv2) : KEEP_RATIO = 100.000000    NUM_PARA = 36864    REMAINED_PARA = 36864
+INFO:logger:LAYER 23(layer3.0.conv1) : KEEP_RATIO = 100.000000    NUM_PARA = 73728    REMAINED_PARA = 73728
+INFO:logger:LAYER 24(layer3.0.conv2) : KEEP_RATIO = 100.000000    NUM_PARA = 147456    REMAINED_PARA = 147456
+INFO:logger:LAYER 25(layer3.0.downsample.0) : KEEP_RATIO = 100.000000    NUM_PARA = 8192    REMAINED_PARA = 8192
+INFO:logger:LAYER 26(layer3.1.conv1) : KEEP_RATIO = 100.000000    NUM_PARA = 147456    REMAINED_PARA = 147456
+INFO:logger:LAYER 27(layer3.1.conv2) : KEEP_RATIO = 100.000000    NUM_PARA = 147456    REMAINED_PARA = 147456
+INFO:logger:LAYER 28(layer3.2.conv1) : KEEP_RATIO = 100.000000    NUM_PARA = 147456    REMAINED_PARA = 147456
+INFO:logger:LAYER 29(layer3.2.conv2) : KEEP_RATIO = 100.000000    NUM_PARA = 147456    REMAINED_PARA = 147456
+INFO:logger:LAYER 30(layer3.3.conv1) : KEEP_RATIO = 100.000000    NUM_PARA = 147456    REMAINED_PARA = 147456
+INFO:logger:LAYER 31(layer3.3.conv2) : KEEP_RATIO = 99.999322    NUM_PARA = 147456    REMAINED_PARA = 147455
+INFO:logger:LAYER 32(layer3.4.conv1) : KEEP_RATIO = 100.000000    NUM_PARA = 147456    REMAINED_PARA = 147456
+INFO:logger:LAYER 33(layer3.4.conv2) : KEEP_RATIO = 100.000000    NUM_PARA = 147456    REMAINED_PARA = 147456
+INFO:logger:LAYER 34(fc) : KEEP_RATIO = 100.000000    NUM_PARA = 1280    REMAINED_PARA = 1280
+INFO:logger:TOTAL MODEL : KEEP_RATIO = 99.999946    NUM_PARA = 1855584    REMAINED_PARA = 1855583
+INFO:logger:******************************** model pruned ********************************
+INFO:logger:Results Dense: train_loss_dens=1.2905,  train_acc_dens=52.97
+INFO:logger:Results Pruned: train_loss_pr=1.2652, train_acc_pr=54.89
+INFO:logger:
+
+INFO:logger:Start total Epoch 3 (STEP: FineTune  in epoch [1 / 20] )
+INFO:logger:lr=0.100
+INFO:logger:Results Pruned: train_loss_pr=0.9213, train_acc_pr=67.24
+INFO:logger:best_test_acc_pr=69.07
+INFO:logger:Results Testing: test_loss=0.9258, test_acc=69.07, best_test_acc:69.07
+INFO:logger:
+
+INFO:logger:Start total Epoch 4 (STEP: FineTune  in epoch [2 / 20] )
+INFO:logger:lr=0.100
+INFO:logger:Results Pruned: train_loss_pr=0.7230, train_acc_pr=74.84
+INFO:logger:best_test_acc_pr=77.42
+INFO:logger:Results Testing: test_loss=0.6708, test_acc=77.42, best_test_acc:77.42
+INFO:logger:
+
+INFO:logger:Start total Epoch 5 (STEP: FineTune  in epoch [3 / 20] )
+INFO:logger:lr=0.100
+INFO:logger:Results Pruned: train_loss_pr=0.6141, train_acc_pr=78.82
+INFO:logger:best_test_acc_pr=79.18
+INFO:logger:Results Testing: test_loss=0.6055, test_acc=79.18, best_test_acc:79.18
+INFO:logger:
+
+INFO:logger:Start total Epoch 6 (STEP: FineTune  in epoch [4 / 20] )
+INFO:logger:lr=0.100
+INFO:logger:Results Pruned: train_loss_pr=0.5477, train_acc_pr=81.08
+INFO:logger:best_test_acc_pr=80.46
+INFO:logger:Results Testing: test_loss=0.5664, test_acc=80.46, best_test_acc:80.46
+INFO:logger:
+
+INFO:logger:Start total Epoch 7 (STEP: FineTune  in epoch [5 / 20] )
+INFO:logger:lr=0.100
+INFO:logger:Results Pruned: train_loss_pr=0.4989, train_acc_pr=82.74
+INFO:logger:best_test_acc_pr=80.64
+INFO:logger:Results Testing: test_loss=0.5625, test_acc=80.64, best_test_acc:80.64
+INFO:logger:
+
+INFO:logger:Start total Epoch 8 (STEP: FineTune  in epoch [6 / 20] )
+INFO:logger:lr=0.100
+INFO:logger:Results Pruned: train_loss_pr=0.4612, train_acc_pr=84.09
+INFO:logger:best_test_acc_pr=83.52
+INFO:logger:Results Testing: test_loss=0.4833, test_acc=83.52, best_test_acc:83.52
+INFO:logger:
+
+INFO:logger:Start total Epoch 9 (STEP: FineTune  in epoch [7 / 20] )
+INFO:logger:lr=0.100
+INFO:logger:Results Pruned: train_loss_pr=0.4331, train_acc_pr=85.14
+INFO:logger:Results Testing: test_loss=0.5326, test_acc=82.58, best_test_acc:83.52
+INFO:logger:
+
+INFO:logger:Start total Epoch 10 (STEP: FineTune  in epoch [8 / 20] )
+INFO:logger:lr=0.100
+INFO:logger:Results Pruned: train_loss_pr=0.4089, train_acc_pr=85.91
+INFO:logger:Results Testing: test_loss=0.4989, test_acc=83.10, best_test_acc:83.52
+INFO:logger:
+
+INFO:logger:Start total Epoch 11 (STEP: FineTune  in epoch [9 / 20] )
+INFO:logger:lr=0.100
+INFO:logger:Results Pruned: train_loss_pr=0.3903, train_acc_pr=86.37
+INFO:logger:best_test_acc_pr=84.65
+INFO:logger:Results Testing: test_loss=0.4560, test_acc=84.65, best_test_acc:84.65
+INFO:logger:
+
+INFO:logger:Start total Epoch 12 (STEP: FineTune  in epoch [10 / 20] )
+INFO:logger:lr=0.100
+INFO:logger:Results Pruned: train_loss_pr=0.3755, train_acc_pr=87.00
+INFO:logger:Results Testing: test_loss=0.4645, test_acc=84.60, best_test_acc:84.65
+INFO:logger:
+
+INFO:logger:Start total Epoch 13 (STEP: FineTune  in epoch [11 / 20] )
+INFO:logger:lr=0.100
+INFO:logger:Results Pruned: train_loss_pr=0.3587, train_acc_pr=87.83
+INFO:logger:best_test_acc_pr=86.50
+INFO:logger:Results Testing: test_loss=0.4194, test_acc=86.50, best_test_acc:86.50
+INFO:logger:
+
+INFO:logger:Start total Epoch 14 (STEP: FineTune  in epoch [12 / 20] )
+INFO:logger:lr=0.100
+INFO:logger:Results Pruned: train_loss_pr=0.3442, train_acc_pr=88.19
+INFO:logger:Results Testing: test_loss=0.4893, test_acc=83.15, best_test_acc:86.50
+INFO:logger:
+
+INFO:logger:Start total Epoch 15 (STEP: FineTune  in epoch [13 / 20] )
+INFO:logger:lr=0.100
+INFO:logger:Results Pruned: train_loss_pr=0.3375, train_acc_pr=88.40
+INFO:logger:Results Testing: test_loss=0.4005, test_acc=86.24, best_test_acc:86.50
+INFO:logger:
+
+INFO:logger:Start total Epoch 16 (STEP: FineTune  in epoch [14 / 20] )
+INFO:logger:lr=0.100
+INFO:logger:Results Pruned: train_loss_pr=0.3255, train_acc_pr=88.71
+INFO:logger:Results Testing: test_loss=0.6338, test_acc=80.82, best_test_acc:86.50
+INFO:logger:
+
+INFO:logger:Start total Epoch 17 (STEP: FineTune  in epoch [15 / 20] )
+INFO:logger:lr=0.100
+INFO:logger:Results Pruned: train_loss_pr=0.3202, train_acc_pr=88.92
+INFO:logger:best_test_acc_pr=87.23
+INFO:logger:Results Testing: test_loss=0.3838, test_acc=87.23, best_test_acc:87.23
+INFO:logger:
+
+INFO:logger:Start total Epoch 18 (STEP: FineTune  in epoch [16 / 20] )
+INFO:logger:lr=0.100
+INFO:logger:Results Pruned: train_loss_pr=0.3091, train_acc_pr=89.39
+INFO:logger:Results Testing: test_loss=0.4278, test_acc=86.26, best_test_acc:87.23
+INFO:logger:
+
+INFO:logger:Start total Epoch 19 (STEP: FineTune  in epoch [17 / 20] )
+INFO:logger:lr=0.100
+INFO:logger:Results Pruned: train_loss_pr=0.3004, train_acc_pr=89.53
+INFO:logger:Results Testing: test_loss=0.4519, test_acc=84.73, best_test_acc:87.23
+INFO:logger:
+
+INFO:logger:Start total Epoch 20 (STEP: FineTune  in epoch [18 / 20] )
+INFO:logger:lr=0.100
+INFO:logger:Results Pruned: train_loss_pr=0.2967, train_acc_pr=89.77
+INFO:logger:Results Testing: test_loss=0.4415, test_acc=85.67, best_test_acc:87.23
+INFO:logger:
+
+INFO:logger:Start total Epoch 21 (STEP: FineTune  in epoch [19 / 20] )
+INFO:logger:lr=0.100
+INFO:logger:Results Pruned: train_loss_pr=0.2902, train_acc_pr=89.98
+INFO:logger:Results Testing: test_loss=0.5137, test_acc=83.75, best_test_acc:87.23
+INFO:logger:
+
+INFO:logger:Start total Epoch 22 (STEP: FineTune  in epoch [20 / 20] )
+INFO:logger:lr=0.100
+INFO:logger:Results Pruned: train_loss_pr=0.2834, train_acc_pr=90.18
+INFO:logger:Results Testing: test_loss=0.4630, test_acc=84.79, best_test_acc:87.23
+INFO:logger:Best test acc pruned:
+INFO:logger:87.23

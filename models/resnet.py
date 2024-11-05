@@ -6,7 +6,9 @@ import torch
 import torch.nn as nn
 import torch.nn.init as init
 import torch.nn.functional as F
-
+from torch.quantization import QuantStub, DeQuantStub
+from typing import Any, List, Optional, Type, Union
+from torch.ao.quantization import fuse_modules
 
 __all__ = ['resnet']
 
@@ -28,6 +30,8 @@ class BasicBlock(nn.Module):
         self.bn2 = nn.BatchNorm2d(planes)
         self.downsample = downsample
         self.stride = stride
+        self.add_relu = torch.nn.quantized.FloatFunctional()
+
 
     def forward(self, x):
         residual = x
@@ -44,8 +48,16 @@ class BasicBlock(nn.Module):
 
         out += residual
         out = self.relu(out)
+        out = self.add_relu.add_relu(out, residual)
+
 
         return out
+    
+    def _fuse_model(self, is_qat: Optional[bool] = None) -> None:
+        fuse_modules(self, [["conv1", "bn1", "relu"], ["conv2", "bn2"]],inplace=True)
+        if self.downsample:
+            fuse_modules(self.downsample, ["0", "1"], inplace=True)
+
 
 
 class Bottleneck(nn.Module):
@@ -61,6 +73,7 @@ class Bottleneck(nn.Module):
         self.conv3 = nn.Conv2d(planes, planes * 4, kernel_size=1, bias=False)
         self.bn3 = nn.BatchNorm2d(planes * 4)
         self.relu = nn.ReLU(inplace=True)
+        self.skip_add_relu = nn.quantized.FloatFunctional()
         self.downsample = downsample
         self.stride = stride
 
@@ -83,13 +96,22 @@ class Bottleneck(nn.Module):
 
         out += residual
         out = self.relu(out)
+        out = self.skip_add_relu(out, residual)
+
 
         return out
+    
+    def _fuse_model(self, is_qat: Optional[bool] = None) -> None:
+        fuse_modules(
+            self, [["conv1", "bn1", "relu1"], ["conv2", "bn2", "relu2"], ["conv3", "bn3"]], inplace=True
+        )
+        if self.downsample:
+            fuse_modules(self.downsample, ["0", "1"], inplace=True)
 
 
 class ResNet(nn.Module):
 
-    def __init__(self, depth, num_classes=1000, planes=None):
+    def __init__(self, depth, num_classes=1000, planes=None,q = False):
         super(ResNet, self).__init__()
         if planes is None:
             planes = [32, 64, 128]
@@ -109,6 +131,9 @@ class ResNet(nn.Module):
         self.avgpool = nn.AvgPool2d(8)
 
         self.fc = nn.Linear(planes[2] * block.expansion, num_classes)
+        self.quant = torch.ao.quantization.QuantStub()
+        self.dequant = torch.ao.quantization.DeQuantStub()
+      
         
         for m in self.modules():
             if isinstance(m, nn.Conv2d):
@@ -140,6 +165,7 @@ class ResNet(nn.Module):
         return nn.Sequential(*layers)
 
     def forward(self, x):
+        x = self.quant(x)
         x = self.conv1(x)
         x = self.bn1(x)
         x = self.relu(x)    
@@ -147,12 +173,30 @@ class ResNet(nn.Module):
         x = self.layer1(x)  
         x = self.layer2(x)  
         x = self.layer3(x) 
-
-        x = F.avg_pool2d(x,x.size()[3])
+        try:
+            kernel_size = int(x.size()[3])
+        except:
+            kernel_size = 8
+        x = F.avg_pool2d(x,kernel_size)
         x = x.view(x.size(0), -1)
         x = self.fc(x)
+        x = self.dequant(x)
 
         return x
+    
+    def _fuse_model(self, is_qat: Optional[bool] = None) -> None:
+        r"""Fuse conv/bn/relu modules in resnet models
+
+        Fuse conv+bn+relu/ Conv+relu/conv+Bn modules to prepare for quantization.
+        Model is modified in place.  Note that this operation does not change numerics
+        and the model after modification is in floating point
+        """
+        fuse_modules(self, ["conv1", "bn1", "relu"], inplace=True)
+        for m in self.modules():
+            if type(m) is Bottleneck or type(m) is BasicBlock:
+                m._fuse_model(is_qat)
+
+
 
 
 def resnet(**kwargs):

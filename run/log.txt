@@ -1,0 +1,1956 @@
+2024-09-12 01:26:57,933 : INFO : Namespace(batch_size=64, dataset='cifar10', epochs=160, eta=1.05, lambda_init=5e-06, lr=0.1, lr_decay=0.1, lr_step=[80, 120], manual_seed=None, model_arch='resnet', model_depth=32, momentum=0.9, outdir='./run', override_dir=False, path_data='./data', path_load_model=None, prune_rate=0.99, regularization_func='HS', size_model_buffer=1, warmup_epochs=60, weight_decay=0.0001, workers=4)
+2024-09-12 01:26:57,934 : INFO : output Dir: ./run
+2024-09-12 01:26:58,299 : INFO : ==> Preparing dataset cifar10
+2024-09-12 01:27:04,357 : INFO :     Total Conv and Linear Params: 1.86M
+2024-09-12 01:27:11,141 : INFO : 
+
+2024-09-12 01:27:11,141 : INFO : Start total Epoch 1 (STEP: Warmup  in epoch [1 / 60] )
+2024-09-12 01:27:11,141 : INFO : lr=0.100
+2024-09-12 01:27:50,436 : INFO : Results Dense: train_loss_dens=1.9673,  train_acc_dens=24.47
+2024-09-12 01:27:50,438 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:27:50,438 : INFO : 
+
+2024-09-12 01:27:50,438 : INFO : Start total Epoch 2 (STEP: Warmup  in epoch [2 / 60] )
+2024-09-12 01:27:50,438 : INFO : lr=0.100
+2024-09-12 01:28:11,033 : INFO : Results Dense: train_loss_dens=1.4035,  train_acc_dens=48.30
+2024-09-12 01:28:11,033 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:28:11,033 : INFO : 
+
+2024-09-12 01:28:11,033 : INFO : Start total Epoch 3 (STEP: Warmup  in epoch [3 / 60] )
+2024-09-12 01:28:11,033 : INFO : lr=0.100
+2024-09-12 01:28:31,955 : INFO : Results Dense: train_loss_dens=1.0572,  train_acc_dens=62.39
+2024-09-12 01:28:31,955 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:28:31,956 : INFO : 
+
+2024-09-12 01:28:31,956 : INFO : Start total Epoch 4 (STEP: Warmup  in epoch [4 / 60] )
+2024-09-12 01:28:31,956 : INFO : lr=0.100
+2024-09-12 01:28:52,695 : INFO : Results Dense: train_loss_dens=0.8414,  train_acc_dens=70.65
+2024-09-12 01:28:52,696 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:28:52,696 : INFO : 
+
+2024-09-12 01:28:52,696 : INFO : Start total Epoch 5 (STEP: Warmup  in epoch [5 / 60] )
+2024-09-12 01:28:52,696 : INFO : lr=0.100
+2024-09-12 01:29:12,948 : INFO : Results Dense: train_loss_dens=0.7008,  train_acc_dens=75.81
+2024-09-12 01:29:12,948 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:29:12,948 : INFO : 
+
+2024-09-12 01:29:12,948 : INFO : Start total Epoch 6 (STEP: Warmup  in epoch [6 / 60] )
+2024-09-12 01:29:12,948 : INFO : lr=0.100
+2024-09-12 01:29:34,259 : INFO : Results Dense: train_loss_dens=0.6047,  train_acc_dens=79.21
+2024-09-12 01:29:34,259 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:29:34,260 : INFO : 
+
+2024-09-12 01:29:34,260 : INFO : Start total Epoch 7 (STEP: Warmup  in epoch [7 / 60] )
+2024-09-12 01:29:34,260 : INFO : lr=0.100
+2024-09-12 01:29:55,852 : INFO : Results Dense: train_loss_dens=0.5487,  train_acc_dens=80.99
+2024-09-12 01:29:55,852 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:29:55,852 : INFO : 
+
+2024-09-12 01:29:55,852 : INFO : Start total Epoch 8 (STEP: Warmup  in epoch [8 / 60] )
+2024-09-12 01:29:55,852 : INFO : lr=0.100
+2024-09-12 01:30:17,904 : INFO : Results Dense: train_loss_dens=0.5074,  train_acc_dens=82.48
+2024-09-12 01:30:17,904 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:30:17,905 : INFO : 
+
+2024-09-12 01:30:17,905 : INFO : Start total Epoch 9 (STEP: Warmup  in epoch [9 / 60] )
+2024-09-12 01:30:17,905 : INFO : lr=0.100
+2024-09-12 01:30:38,383 : INFO : Results Dense: train_loss_dens=0.4753,  train_acc_dens=83.51
+2024-09-12 01:30:38,384 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:30:38,384 : INFO : 
+
+2024-09-12 01:30:38,384 : INFO : Start total Epoch 10 (STEP: Warmup  in epoch [10 / 60] )
+2024-09-12 01:30:38,384 : INFO : lr=0.100
+2024-09-12 01:30:58,760 : INFO : Results Dense: train_loss_dens=0.4519,  train_acc_dens=84.47
+2024-09-12 01:30:58,761 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:30:58,761 : INFO : 
+
+2024-09-12 01:30:58,761 : INFO : Start total Epoch 11 (STEP: Warmup  in epoch [11 / 60] )
+2024-09-12 01:30:58,761 : INFO : lr=0.100
+2024-09-12 01:31:19,689 : INFO : Results Dense: train_loss_dens=0.4207,  train_acc_dens=85.48
+2024-09-12 01:31:19,689 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:31:19,689 : INFO : 
+
+2024-09-12 01:31:19,689 : INFO : Start total Epoch 12 (STEP: Warmup  in epoch [12 / 60] )
+2024-09-12 01:31:19,689 : INFO : lr=0.100
+2024-09-12 01:31:39,829 : INFO : Results Dense: train_loss_dens=0.4122,  train_acc_dens=85.91
+2024-09-12 01:31:39,829 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:31:39,829 : INFO : 
+
+2024-09-12 01:31:39,830 : INFO : Start total Epoch 13 (STEP: Warmup  in epoch [13 / 60] )
+2024-09-12 01:31:39,830 : INFO : lr=0.100
+2024-09-12 01:31:59,867 : INFO : Results Dense: train_loss_dens=0.3913,  train_acc_dens=86.53
+2024-09-12 01:31:59,867 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:31:59,867 : INFO : 
+
+2024-09-12 01:31:59,867 : INFO : Start total Epoch 14 (STEP: Warmup  in epoch [14 / 60] )
+2024-09-12 01:31:59,867 : INFO : lr=0.100
+2024-09-12 01:32:21,123 : INFO : Results Dense: train_loss_dens=0.3763,  train_acc_dens=86.95
+2024-09-12 01:32:21,123 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:32:21,123 : INFO : 
+
+2024-09-12 01:32:21,124 : INFO : Start total Epoch 15 (STEP: Warmup  in epoch [15 / 60] )
+2024-09-12 01:32:21,124 : INFO : lr=0.100
+2024-09-12 01:32:41,253 : INFO : Results Dense: train_loss_dens=0.3631,  train_acc_dens=87.45
+2024-09-12 01:32:41,254 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:32:41,254 : INFO : 
+
+2024-09-12 01:32:41,254 : INFO : Start total Epoch 16 (STEP: Warmup  in epoch [16 / 60] )
+2024-09-12 01:32:41,254 : INFO : lr=0.100
+2024-09-12 01:33:02,026 : INFO : Results Dense: train_loss_dens=0.3531,  train_acc_dens=87.86
+2024-09-12 01:33:02,026 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:33:02,026 : INFO : 
+
+2024-09-12 01:33:02,027 : INFO : Start total Epoch 17 (STEP: Warmup  in epoch [17 / 60] )
+2024-09-12 01:33:02,027 : INFO : lr=0.100
+2024-09-12 01:33:22,757 : INFO : Results Dense: train_loss_dens=0.3464,  train_acc_dens=88.05
+2024-09-12 01:33:22,757 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:33:22,757 : INFO : 
+
+2024-09-12 01:33:22,757 : INFO : Start total Epoch 18 (STEP: Warmup  in epoch [18 / 60] )
+2024-09-12 01:33:22,758 : INFO : lr=0.100
+2024-09-12 01:33:41,635 : INFO : Results Dense: train_loss_dens=0.3317,  train_acc_dens=88.52
+2024-09-12 01:33:41,635 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:33:41,635 : INFO : 
+
+2024-09-12 01:33:41,636 : INFO : Start total Epoch 19 (STEP: Warmup  in epoch [19 / 60] )
+2024-09-12 01:33:41,636 : INFO : lr=0.100
+2024-09-12 01:34:02,897 : INFO : Results Dense: train_loss_dens=0.3237,  train_acc_dens=88.87
+2024-09-12 01:34:02,898 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:34:02,898 : INFO : 
+
+2024-09-12 01:34:02,898 : INFO : Start total Epoch 20 (STEP: Warmup  in epoch [20 / 60] )
+2024-09-12 01:34:02,898 : INFO : lr=0.100
+2024-09-12 01:34:23,032 : INFO : Results Dense: train_loss_dens=0.3141,  train_acc_dens=89.06
+2024-09-12 01:34:23,033 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:34:23,033 : INFO : 
+
+2024-09-12 01:34:23,033 : INFO : Start total Epoch 21 (STEP: Warmup  in epoch [21 / 60] )
+2024-09-12 01:34:23,033 : INFO : lr=0.100
+2024-09-12 01:34:43,595 : INFO : Results Dense: train_loss_dens=0.3118,  train_acc_dens=89.15
+2024-09-12 01:34:43,595 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:34:43,596 : INFO : 
+
+2024-09-12 01:34:43,596 : INFO : Start total Epoch 22 (STEP: Warmup  in epoch [22 / 60] )
+2024-09-12 01:34:43,596 : INFO : lr=0.100
+2024-09-12 01:35:04,040 : INFO : Results Dense: train_loss_dens=0.3018,  train_acc_dens=89.53
+2024-09-12 01:35:04,040 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:35:04,040 : INFO : 
+
+2024-09-12 01:35:04,041 : INFO : Start total Epoch 23 (STEP: Warmup  in epoch [23 / 60] )
+2024-09-12 01:35:04,041 : INFO : lr=0.100
+2024-09-12 01:35:24,764 : INFO : Results Dense: train_loss_dens=0.2961,  train_acc_dens=89.89
+2024-09-12 01:35:24,765 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:35:24,765 : INFO : 
+
+2024-09-12 01:35:24,765 : INFO : Start total Epoch 24 (STEP: Warmup  in epoch [24 / 60] )
+2024-09-12 01:35:24,765 : INFO : lr=0.100
+2024-09-12 01:35:46,531 : INFO : Results Dense: train_loss_dens=0.2896,  train_acc_dens=89.98
+2024-09-12 01:35:46,531 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:35:46,531 : INFO : 
+
+2024-09-12 01:35:46,531 : INFO : Start total Epoch 25 (STEP: Warmup  in epoch [25 / 60] )
+2024-09-12 01:35:46,531 : INFO : lr=0.100
+2024-09-12 01:36:08,295 : INFO : Results Dense: train_loss_dens=0.2860,  train_acc_dens=90.18
+2024-09-12 01:36:08,295 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:36:08,295 : INFO : 
+
+2024-09-12 01:36:08,295 : INFO : Start total Epoch 26 (STEP: Warmup  in epoch [26 / 60] )
+2024-09-12 01:36:08,295 : INFO : lr=0.100
+2024-09-12 01:36:29,322 : INFO : Results Dense: train_loss_dens=0.2832,  train_acc_dens=90.12
+2024-09-12 01:36:29,322 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:36:29,323 : INFO : 
+
+2024-09-12 01:36:29,323 : INFO : Start total Epoch 27 (STEP: Warmup  in epoch [27 / 60] )
+2024-09-12 01:36:29,323 : INFO : lr=0.100
+2024-09-12 01:36:50,387 : INFO : Results Dense: train_loss_dens=0.2785,  train_acc_dens=90.44
+2024-09-12 01:36:50,388 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:36:50,388 : INFO : 
+
+2024-09-12 01:36:50,388 : INFO : Start total Epoch 28 (STEP: Warmup  in epoch [28 / 60] )
+2024-09-12 01:36:50,388 : INFO : lr=0.100
+2024-09-12 01:37:10,681 : INFO : Results Dense: train_loss_dens=0.2738,  train_acc_dens=90.57
+2024-09-12 01:37:10,682 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:37:10,682 : INFO : 
+
+2024-09-12 01:37:10,682 : INFO : Start total Epoch 29 (STEP: Warmup  in epoch [29 / 60] )
+2024-09-12 01:37:10,682 : INFO : lr=0.100
+2024-09-12 01:37:31,428 : INFO : Results Dense: train_loss_dens=0.2684,  train_acc_dens=90.76
+2024-09-12 01:37:31,428 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:37:31,429 : INFO : 
+
+2024-09-12 01:37:31,429 : INFO : Start total Epoch 30 (STEP: Warmup  in epoch [30 / 60] )
+2024-09-12 01:37:31,429 : INFO : lr=0.100
+2024-09-12 01:37:53,095 : INFO : Results Dense: train_loss_dens=0.2676,  train_acc_dens=90.66
+2024-09-12 01:37:53,096 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:37:53,096 : INFO : 
+
+2024-09-12 01:37:53,096 : INFO : Start total Epoch 31 (STEP: Warmup  in epoch [31 / 60] )
+2024-09-12 01:37:53,096 : INFO : lr=0.100
+2024-09-12 01:38:13,666 : INFO : Results Dense: train_loss_dens=0.2663,  train_acc_dens=90.79
+2024-09-12 01:38:13,667 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:38:13,667 : INFO : 
+
+2024-09-12 01:38:13,667 : INFO : Start total Epoch 32 (STEP: Warmup  in epoch [32 / 60] )
+2024-09-12 01:38:13,667 : INFO : lr=0.100
+2024-09-12 01:38:34,028 : INFO : Results Dense: train_loss_dens=0.2574,  train_acc_dens=91.25
+2024-09-12 01:38:34,029 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:38:34,029 : INFO : 
+
+2024-09-12 01:38:34,029 : INFO : Start total Epoch 33 (STEP: Warmup  in epoch [33 / 60] )
+2024-09-12 01:38:34,029 : INFO : lr=0.100
+2024-09-12 01:38:54,911 : INFO : Results Dense: train_loss_dens=0.2533,  train_acc_dens=91.39
+2024-09-12 01:38:54,912 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:38:54,912 : INFO : 
+
+2024-09-12 01:38:54,912 : INFO : Start total Epoch 34 (STEP: Warmup  in epoch [34 / 60] )
+2024-09-12 01:38:54,912 : INFO : lr=0.100
+2024-09-12 01:39:16,105 : INFO : Results Dense: train_loss_dens=0.2559,  train_acc_dens=91.18
+2024-09-12 01:39:16,105 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:39:16,105 : INFO : 
+
+2024-09-12 01:39:16,105 : INFO : Start total Epoch 35 (STEP: Warmup  in epoch [35 / 60] )
+2024-09-12 01:39:16,105 : INFO : lr=0.100
+2024-09-12 01:39:37,831 : INFO : Results Dense: train_loss_dens=0.2512,  train_acc_dens=91.36
+2024-09-12 01:39:37,832 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:39:37,832 : INFO : 
+
+2024-09-12 01:39:37,832 : INFO : Start total Epoch 36 (STEP: Warmup  in epoch [36 / 60] )
+2024-09-12 01:39:37,832 : INFO : lr=0.100
+2024-09-12 01:39:58,906 : INFO : Results Dense: train_loss_dens=0.2499,  train_acc_dens=91.41
+2024-09-12 01:39:58,907 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:39:58,907 : INFO : 
+
+2024-09-12 01:39:58,907 : INFO : Start total Epoch 37 (STEP: Warmup  in epoch [37 / 60] )
+2024-09-12 01:39:58,907 : INFO : lr=0.100
+2024-09-12 01:40:19,536 : INFO : Results Dense: train_loss_dens=0.2477,  train_acc_dens=91.40
+2024-09-12 01:40:19,536 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:40:19,536 : INFO : 
+
+2024-09-12 01:40:19,537 : INFO : Start total Epoch 38 (STEP: Warmup  in epoch [38 / 60] )
+2024-09-12 01:40:19,537 : INFO : lr=0.100
+2024-09-12 01:40:40,743 : INFO : Results Dense: train_loss_dens=0.2487,  train_acc_dens=91.36
+2024-09-12 01:40:40,743 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:40:40,743 : INFO : 
+
+2024-09-12 01:40:40,743 : INFO : Start total Epoch 39 (STEP: Warmup  in epoch [39 / 60] )
+2024-09-12 01:40:40,743 : INFO : lr=0.100
+2024-09-12 01:41:01,315 : INFO : Results Dense: train_loss_dens=0.2408,  train_acc_dens=91.62
+2024-09-12 01:41:01,316 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:41:01,316 : INFO : 
+
+2024-09-12 01:41:01,316 : INFO : Start total Epoch 40 (STEP: Warmup  in epoch [40 / 60] )
+2024-09-12 01:41:01,316 : INFO : lr=0.100
+2024-09-12 01:41:22,213 : INFO : Results Dense: train_loss_dens=0.2399,  train_acc_dens=91.70
+2024-09-12 01:41:22,214 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:41:22,214 : INFO : 
+
+2024-09-12 01:41:22,214 : INFO : Start total Epoch 41 (STEP: Warmup  in epoch [41 / 60] )
+2024-09-12 01:41:22,214 : INFO : lr=0.100
+2024-09-12 01:41:43,036 : INFO : Results Dense: train_loss_dens=0.2394,  train_acc_dens=91.77
+2024-09-12 01:41:43,037 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:41:43,037 : INFO : 
+
+2024-09-12 01:41:43,037 : INFO : Start total Epoch 42 (STEP: Warmup  in epoch [42 / 60] )
+2024-09-12 01:41:43,037 : INFO : lr=0.100
+2024-09-12 01:42:04,687 : INFO : Results Dense: train_loss_dens=0.2335,  train_acc_dens=92.04
+2024-09-12 01:42:04,688 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:42:04,688 : INFO : 
+
+2024-09-12 01:42:04,688 : INFO : Start total Epoch 43 (STEP: Warmup  in epoch [43 / 60] )
+2024-09-12 01:42:04,688 : INFO : lr=0.100
+2024-09-12 01:42:26,371 : INFO : Results Dense: train_loss_dens=0.2338,  train_acc_dens=91.87
+2024-09-12 01:42:26,372 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:42:26,372 : INFO : 
+
+2024-09-12 01:42:26,372 : INFO : Start total Epoch 44 (STEP: Warmup  in epoch [44 / 60] )
+2024-09-12 01:42:26,372 : INFO : lr=0.100
+2024-09-12 01:42:46,699 : INFO : Results Dense: train_loss_dens=0.2368,  train_acc_dens=91.79
+2024-09-12 01:42:46,699 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:42:46,699 : INFO : 
+
+2024-09-12 01:42:46,699 : INFO : Start total Epoch 45 (STEP: Warmup  in epoch [45 / 60] )
+2024-09-12 01:42:46,699 : INFO : lr=0.100
+2024-09-12 01:43:07,815 : INFO : Results Dense: train_loss_dens=0.2284,  train_acc_dens=92.10
+2024-09-12 01:43:07,815 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:43:07,815 : INFO : 
+
+2024-09-12 01:43:07,815 : INFO : Start total Epoch 46 (STEP: Warmup  in epoch [46 / 60] )
+2024-09-12 01:43:07,815 : INFO : lr=0.100
+2024-09-12 01:43:26,687 : INFO : Results Dense: train_loss_dens=0.2302,  train_acc_dens=92.09
+2024-09-12 01:43:26,688 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:43:26,688 : INFO : 
+
+2024-09-12 01:43:26,688 : INFO : Start total Epoch 47 (STEP: Warmup  in epoch [47 / 60] )
+2024-09-12 01:43:26,688 : INFO : lr=0.100
+2024-09-12 01:43:47,894 : INFO : Results Dense: train_loss_dens=0.2321,  train_acc_dens=91.97
+2024-09-12 01:43:47,894 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:43:47,894 : INFO : 
+
+2024-09-12 01:43:47,894 : INFO : Start total Epoch 48 (STEP: Warmup  in epoch [48 / 60] )
+2024-09-12 01:43:47,894 : INFO : lr=0.100
+2024-09-12 01:44:08,857 : INFO : Results Dense: train_loss_dens=0.2234,  train_acc_dens=92.25
+2024-09-12 01:44:08,858 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:44:08,858 : INFO : 
+
+2024-09-12 01:44:08,858 : INFO : Start total Epoch 49 (STEP: Warmup  in epoch [49 / 60] )
+2024-09-12 01:44:08,858 : INFO : lr=0.100
+2024-09-12 01:44:29,415 : INFO : Results Dense: train_loss_dens=0.2261,  train_acc_dens=92.25
+2024-09-12 01:44:29,415 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:44:29,415 : INFO : 
+
+2024-09-12 01:44:29,415 : INFO : Start total Epoch 50 (STEP: Warmup  in epoch [50 / 60] )
+2024-09-12 01:44:29,415 : INFO : lr=0.100
+2024-09-12 01:44:51,099 : INFO : Results Dense: train_loss_dens=0.2242,  train_acc_dens=92.24
+2024-09-12 01:44:51,100 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:44:51,100 : INFO : 
+
+2024-09-12 01:44:51,100 : INFO : Start total Epoch 51 (STEP: Warmup  in epoch [51 / 60] )
+2024-09-12 01:44:51,100 : INFO : lr=0.100
+2024-09-12 01:45:12,231 : INFO : Results Dense: train_loss_dens=0.2258,  train_acc_dens=92.14
+2024-09-12 01:45:12,231 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:45:12,232 : INFO : 
+
+2024-09-12 01:45:12,232 : INFO : Start total Epoch 52 (STEP: Warmup  in epoch [52 / 60] )
+2024-09-12 01:45:12,232 : INFO : lr=0.100
+2024-09-12 01:45:32,678 : INFO : Results Dense: train_loss_dens=0.2274,  train_acc_dens=92.19
+2024-09-12 01:45:32,679 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:45:32,679 : INFO : 
+
+2024-09-12 01:45:32,679 : INFO : Start total Epoch 53 (STEP: Warmup  in epoch [53 / 60] )
+2024-09-12 01:45:32,679 : INFO : lr=0.100
+2024-09-12 01:45:53,472 : INFO : Results Dense: train_loss_dens=0.2240,  train_acc_dens=92.21
+2024-09-12 01:45:53,473 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:45:53,473 : INFO : 
+
+2024-09-12 01:45:53,473 : INFO : Start total Epoch 54 (STEP: Warmup  in epoch [54 / 60] )
+2024-09-12 01:45:53,473 : INFO : lr=0.100
+2024-09-12 01:46:13,878 : INFO : Results Dense: train_loss_dens=0.2180,  train_acc_dens=92.40
+2024-09-12 01:46:13,879 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:46:13,879 : INFO : 
+
+2024-09-12 01:46:13,879 : INFO : Start total Epoch 55 (STEP: Warmup  in epoch [55 / 60] )
+2024-09-12 01:46:13,879 : INFO : lr=0.100
+2024-09-12 01:46:35,286 : INFO : Results Dense: train_loss_dens=0.2241,  train_acc_dens=92.31
+2024-09-12 01:46:35,287 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:46:35,287 : INFO : 
+
+2024-09-12 01:46:35,287 : INFO : Start total Epoch 56 (STEP: Warmup  in epoch [56 / 60] )
+2024-09-12 01:46:35,287 : INFO : lr=0.100
+2024-09-12 01:46:55,644 : INFO : Results Dense: train_loss_dens=0.2158,  train_acc_dens=92.57
+2024-09-12 01:46:55,645 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:46:55,645 : INFO : 
+
+2024-09-12 01:46:55,645 : INFO : Start total Epoch 57 (STEP: Warmup  in epoch [57 / 60] )
+2024-09-12 01:46:55,645 : INFO : lr=0.100
+2024-09-12 01:47:16,730 : INFO : Results Dense: train_loss_dens=0.2233,  train_acc_dens=92.21
+2024-09-12 01:47:16,730 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:47:16,730 : INFO : 
+
+2024-09-12 01:47:16,730 : INFO : Start total Epoch 58 (STEP: Warmup  in epoch [58 / 60] )
+2024-09-12 01:47:16,730 : INFO : lr=0.100
+2024-09-12 01:47:37,973 : INFO : Results Dense: train_loss_dens=0.2177,  train_acc_dens=92.49
+2024-09-12 01:47:37,974 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:47:37,974 : INFO : 
+
+2024-09-12 01:47:37,974 : INFO : Start total Epoch 59 (STEP: Warmup  in epoch [59 / 60] )
+2024-09-12 01:47:37,974 : INFO : lr=0.100
+2024-09-12 01:47:58,754 : INFO : Results Dense: train_loss_dens=0.2141,  train_acc_dens=92.62
+2024-09-12 01:47:58,754 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:47:58,754 : INFO : 
+
+2024-09-12 01:47:58,755 : INFO : Start total Epoch 60 (STEP: Warmup  in epoch [60 / 60] )
+2024-09-12 01:47:58,755 : INFO : lr=0.100
+2024-09-12 01:48:19,536 : INFO : Results Dense: train_loss_dens=0.2140,  train_acc_dens=92.56
+2024-09-12 01:48:19,536 : INFO : Results Pruned: train_loss_pr=0.0000, train_acc_pr=0.00
+2024-09-12 01:48:19,536 : INFO : 
+
+2024-09-12 01:48:19,537 : INFO : Start total Epoch 61 (STEP: ART  in epoch [1 / inf] )
+2024-09-12 01:48:19,537 : INFO : lr=0.100
+2024-09-12 01:48:42,000 : INFO : HS parameter:	alpha=0.0000050
+2024-09-12 01:48:42,099 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 01:48:48,737 : INFO : ART best values: (epoch_art=1, train_acc_pr=10.00, mean_train_acc_pr=10.00)
+2024-09-12 01:48:48,737 : INFO : Results Dense: train_loss_dens=0.2268,  train_acc_dens=92.17
+2024-09-12 01:48:48,737 : INFO : Results Pruned: train_loss_pr=3.9572, train_acc_pr=10.00
+2024-09-12 01:48:48,737 : INFO : 
+
+2024-09-12 01:48:48,737 : INFO : Start total Epoch 62 (STEP: ART  in epoch [2 / inf] )
+2024-09-12 01:48:48,737 : INFO : lr=0.100
+2024-09-12 01:49:11,402 : INFO : HS parameter:	alpha=0.0000053
+2024-09-12 01:49:11,428 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 01:49:18,041 : INFO : ART best values: (epoch_art=2, train_acc_pr=10.23, mean_train_acc_pr=10.12)
+2024-09-12 01:49:18,042 : INFO : Results Dense: train_loss_dens=0.2288,  train_acc_dens=92.08
+2024-09-12 01:49:18,042 : INFO : Results Pruned: train_loss_pr=6.2113, train_acc_pr=10.23
+2024-09-12 01:49:18,042 : INFO : 
+
+2024-09-12 01:49:18,042 : INFO : Start total Epoch 63 (STEP: ART  in epoch [3 / inf] )
+2024-09-12 01:49:18,042 : INFO : lr=0.100
+2024-09-12 01:49:39,395 : INFO : HS parameter:	alpha=0.0000055
+2024-09-12 01:49:39,421 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 01:49:45,756 : INFO : ART best values: (epoch_art=2, train_acc_pr=10.23, mean_train_acc_pr=10.12)
+2024-09-12 01:49:45,756 : INFO : Results Dense: train_loss_dens=0.2422,  train_acc_dens=91.68
+2024-09-12 01:49:45,756 : INFO : Results Pruned: train_loss_pr=4.3359, train_acc_pr=10.00
+2024-09-12 01:49:45,757 : INFO : 
+
+2024-09-12 01:49:45,757 : INFO : Start total Epoch 64 (STEP: ART  in epoch [4 / inf] )
+2024-09-12 01:49:45,757 : INFO : lr=0.100
+2024-09-12 01:50:08,006 : INFO : HS parameter:	alpha=0.0000058
+2024-09-12 01:50:08,029 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 01:50:14,993 : INFO : ART best values: (epoch_art=2, train_acc_pr=10.23, mean_train_acc_pr=10.12)
+2024-09-12 01:50:14,993 : INFO : Results Dense: train_loss_dens=0.2490,  train_acc_dens=91.48
+2024-09-12 01:50:14,993 : INFO : Results Pruned: train_loss_pr=4.6733, train_acc_pr=10.32
+2024-09-12 01:50:14,994 : INFO : 
+
+2024-09-12 01:50:14,994 : INFO : Start total Epoch 65 (STEP: ART  in epoch [5 / inf] )
+2024-09-12 01:50:14,994 : INFO : lr=0.100
+2024-09-12 01:50:37,281 : INFO : HS parameter:	alpha=0.0000061
+2024-09-12 01:50:37,302 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 01:50:44,016 : INFO : ART best values: (epoch_art=2, train_acc_pr=10.23, mean_train_acc_pr=10.12)
+2024-09-12 01:50:44,017 : INFO : Results Dense: train_loss_dens=0.2564,  train_acc_dens=91.22
+2024-09-12 01:50:44,017 : INFO : Results Pruned: train_loss_pr=5.5369, train_acc_pr=10.00
+2024-09-12 01:50:44,017 : INFO : 
+
+2024-09-12 01:50:44,017 : INFO : Start total Epoch 66 (STEP: ART  in epoch [6 / inf] )
+2024-09-12 01:50:44,017 : INFO : lr=0.100
+2024-09-12 01:51:06,118 : INFO : HS parameter:	alpha=0.0000064
+2024-09-12 01:51:06,144 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 01:51:12,856 : INFO : ART best values: (epoch_art=2, train_acc_pr=10.23, mean_train_acc_pr=10.12)
+2024-09-12 01:51:12,857 : INFO : Results Dense: train_loss_dens=0.2647,  train_acc_dens=90.82
+2024-09-12 01:51:12,857 : INFO : Results Pruned: train_loss_pr=6.0314, train_acc_pr=10.00
+2024-09-12 01:51:12,857 : INFO : 
+
+2024-09-12 01:51:12,857 : INFO : Start total Epoch 67 (STEP: ART  in epoch [7 / inf] )
+2024-09-12 01:51:12,857 : INFO : lr=0.100
+2024-09-12 01:51:34,982 : INFO : HS parameter:	alpha=0.0000067
+2024-09-12 01:51:35,005 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 01:51:41,394 : INFO : ART best values: (epoch_art=6, train_acc_pr=10.00, mean_train_acc_pr=11.32)
+2024-09-12 01:51:41,395 : INFO : Results Dense: train_loss_dens=0.2626,  train_acc_dens=91.08
+2024-09-12 01:51:41,395 : INFO : Results Pruned: train_loss_pr=4.3914, train_acc_pr=13.97
+2024-09-12 01:51:41,395 : INFO : 
+
+2024-09-12 01:51:41,395 : INFO : Start total Epoch 68 (STEP: ART  in epoch [8 / inf] )
+2024-09-12 01:51:41,395 : INFO : lr=0.100
+2024-09-12 01:52:03,551 : INFO : HS parameter:	alpha=0.0000070
+2024-09-12 01:52:03,577 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 01:52:10,331 : INFO : ART best values: (epoch_art=7, train_acc_pr=13.97, mean_train_acc_pr=11.80)
+2024-09-12 01:52:10,331 : INFO : Results Dense: train_loss_dens=0.2690,  train_acc_dens=90.57
+2024-09-12 01:52:10,332 : INFO : Results Pruned: train_loss_pr=5.6199, train_acc_pr=11.43
+2024-09-12 01:52:10,332 : INFO : 
+
+2024-09-12 01:52:10,332 : INFO : Start total Epoch 69 (STEP: ART  in epoch [9 / inf] )
+2024-09-12 01:52:10,332 : INFO : lr=0.100
+2024-09-12 01:52:32,693 : INFO : HS parameter:	alpha=0.0000074
+2024-09-12 01:52:32,718 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 01:52:39,691 : INFO : ART best values: (epoch_art=7, train_acc_pr=13.97, mean_train_acc_pr=11.80)
+2024-09-12 01:52:39,691 : INFO : Results Dense: train_loss_dens=0.2714,  train_acc_dens=90.62
+2024-09-12 01:52:39,691 : INFO : Results Pruned: train_loss_pr=4.3259, train_acc_pr=14.88
+2024-09-12 01:52:39,691 : INFO : 
+
+2024-09-12 01:52:39,691 : INFO : Start total Epoch 70 (STEP: ART  in epoch [10 / inf] )
+2024-09-12 01:52:39,691 : INFO : lr=0.100
+2024-09-12 01:53:02,997 : INFO : HS parameter:	alpha=0.0000078
+2024-09-12 01:53:03,019 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 01:53:09,823 : INFO : ART best values: (epoch_art=7, train_acc_pr=13.97, mean_train_acc_pr=11.80)
+2024-09-12 01:53:09,823 : INFO : Results Dense: train_loss_dens=0.2732,  train_acc_dens=90.51
+2024-09-12 01:53:09,823 : INFO : Results Pruned: train_loss_pr=4.2930, train_acc_pr=10.04
+2024-09-12 01:53:09,823 : INFO : 
+
+2024-09-12 01:53:09,823 : INFO : Start total Epoch 71 (STEP: ART  in epoch [11 / inf] )
+2024-09-12 01:53:09,824 : INFO : lr=0.100
+2024-09-12 01:53:31,756 : INFO : HS parameter:	alpha=0.0000081
+2024-09-12 01:53:31,782 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 01:53:37,870 : INFO : ART best values: (epoch_art=7, train_acc_pr=13.97, mean_train_acc_pr=11.80)
+2024-09-12 01:53:37,871 : INFO : Results Dense: train_loss_dens=0.2775,  train_acc_dens=90.51
+2024-09-12 01:53:37,871 : INFO : Results Pruned: train_loss_pr=5.7601, train_acc_pr=10.04
+2024-09-12 01:53:37,871 : INFO : 
+
+2024-09-12 01:53:37,871 : INFO : Start total Epoch 72 (STEP: ART  in epoch [12 / inf] )
+2024-09-12 01:53:37,871 : INFO : lr=0.100
+2024-09-12 01:53:59,949 : INFO : HS parameter:	alpha=0.0000086
+2024-09-12 01:54:00,007 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 01:54:06,656 : INFO : ART best values: (epoch_art=7, train_acc_pr=13.97, mean_train_acc_pr=11.80)
+2024-09-12 01:54:06,656 : INFO : Results Dense: train_loss_dens=0.2808,  train_acc_dens=90.36
+2024-09-12 01:54:06,656 : INFO : Results Pruned: train_loss_pr=14.3652, train_acc_pr=10.00
+2024-09-12 01:54:06,656 : INFO : 
+
+2024-09-12 01:54:06,656 : INFO : Start total Epoch 73 (STEP: ART  in epoch [13 / inf] )
+2024-09-12 01:54:06,656 : INFO : lr=0.100
+2024-09-12 01:54:28,242 : INFO : HS parameter:	alpha=0.0000090
+2024-09-12 01:54:28,264 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 01:54:35,077 : INFO : ART best values: (epoch_art=7, train_acc_pr=13.97, mean_train_acc_pr=11.80)
+2024-09-12 01:54:35,078 : INFO : Results Dense: train_loss_dens=0.2868,  train_acc_dens=90.12
+2024-09-12 01:54:35,078 : INFO : Results Pruned: train_loss_pr=7.7504, train_acc_pr=10.00
+2024-09-12 01:54:35,078 : INFO : 
+
+2024-09-12 01:54:35,078 : INFO : Start total Epoch 74 (STEP: ART  in epoch [14 / inf] )
+2024-09-12 01:54:35,078 : INFO : lr=0.100
+2024-09-12 01:54:57,413 : INFO : HS parameter:	alpha=0.0000094
+2024-09-12 01:54:57,438 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 01:55:04,061 : INFO : ART best values: (epoch_art=7, train_acc_pr=13.97, mean_train_acc_pr=11.80)
+2024-09-12 01:55:04,061 : INFO : Results Dense: train_loss_dens=0.2873,  train_acc_dens=90.08
+2024-09-12 01:55:04,061 : INFO : Results Pruned: train_loss_pr=8.7382, train_acc_pr=10.00
+2024-09-12 01:55:04,061 : INFO : 
+
+2024-09-12 01:55:04,061 : INFO : Start total Epoch 75 (STEP: ART  in epoch [15 / inf] )
+2024-09-12 01:55:04,061 : INFO : lr=0.100
+2024-09-12 01:55:26,124 : INFO : HS parameter:	alpha=0.0000099
+2024-09-12 01:55:26,146 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 01:55:32,961 : INFO : ART best values: (epoch_art=7, train_acc_pr=13.97, mean_train_acc_pr=11.80)
+2024-09-12 01:55:32,961 : INFO : Results Dense: train_loss_dens=0.2873,  train_acc_dens=90.15
+2024-09-12 01:55:32,961 : INFO : Results Pruned: train_loss_pr=4.6057, train_acc_pr=10.05
+2024-09-12 01:55:32,962 : INFO : 
+
+2024-09-12 01:55:32,962 : INFO : Start total Epoch 76 (STEP: ART  in epoch [16 / inf] )
+2024-09-12 01:55:32,962 : INFO : lr=0.100
+2024-09-12 01:55:55,368 : INFO : HS parameter:	alpha=0.0000104
+2024-09-12 01:55:55,390 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 01:56:01,745 : INFO : ART best values: (epoch_art=7, train_acc_pr=13.97, mean_train_acc_pr=11.80)
+2024-09-12 01:56:01,745 : INFO : Results Dense: train_loss_dens=0.2923,  train_acc_dens=89.99
+2024-09-12 01:56:01,745 : INFO : Results Pruned: train_loss_pr=4.3760, train_acc_pr=17.62
+2024-09-12 01:56:01,745 : INFO : 
+
+2024-09-12 01:56:01,745 : INFO : Start total Epoch 77 (STEP: ART  in epoch [17 / inf] )
+2024-09-12 01:56:01,746 : INFO : lr=0.100
+2024-09-12 01:56:24,474 : INFO : HS parameter:	alpha=0.0000109
+2024-09-12 01:56:24,500 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 01:56:31,264 : INFO : ART best values: (epoch_art=7, train_acc_pr=13.97, mean_train_acc_pr=11.80)
+2024-09-12 01:56:31,264 : INFO : Results Dense: train_loss_dens=0.3007,  train_acc_dens=89.66
+2024-09-12 01:56:31,265 : INFO : Results Pruned: train_loss_pr=5.4044, train_acc_pr=13.71
+2024-09-12 01:56:31,265 : INFO : 
+
+2024-09-12 01:56:31,265 : INFO : Start total Epoch 78 (STEP: ART  in epoch [18 / inf] )
+2024-09-12 01:56:31,265 : INFO : lr=0.100
+2024-09-12 01:56:54,813 : INFO : HS parameter:	alpha=0.0000115
+2024-09-12 01:56:54,840 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 01:57:01,543 : INFO : ART best values: (epoch_art=17, train_acc_pr=13.71, mean_train_acc_pr=14.19)
+2024-09-12 01:57:01,544 : INFO : Results Dense: train_loss_dens=0.2964,  train_acc_dens=89.78
+2024-09-12 01:57:01,544 : INFO : Results Pruned: train_loss_pr=5.9146, train_acc_pr=11.25
+2024-09-12 01:57:01,544 : INFO : 
+
+2024-09-12 01:57:01,544 : INFO : Start total Epoch 79 (STEP: ART  in epoch [19 / inf] )
+2024-09-12 01:57:01,545 : INFO : lr=0.100
+2024-09-12 01:57:21,858 : INFO : HS parameter:	alpha=0.0000120
+2024-09-12 01:57:21,879 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 01:57:28,603 : INFO : ART best values: (epoch_art=17, train_acc_pr=13.71, mean_train_acc_pr=14.19)
+2024-09-12 01:57:28,604 : INFO : Results Dense: train_loss_dens=0.3037,  train_acc_dens=89.61
+2024-09-12 01:57:28,604 : INFO : Results Pruned: train_loss_pr=6.7756, train_acc_pr=10.00
+2024-09-12 01:57:28,605 : INFO : 
+
+2024-09-12 01:57:28,605 : INFO : Start total Epoch 80 (STEP: ART  in epoch [20 / inf] )
+2024-09-12 01:57:28,605 : INFO : lr=0.100
+2024-09-12 01:57:48,272 : INFO : HS parameter:	alpha=0.0000126
+2024-09-12 01:57:48,294 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 01:57:55,081 : INFO : ART best values: (epoch_art=17, train_acc_pr=13.71, mean_train_acc_pr=14.19)
+2024-09-12 01:57:55,082 : INFO : Results Dense: train_loss_dens=0.3108,  train_acc_dens=89.32
+2024-09-12 01:57:55,082 : INFO : Results Pruned: train_loss_pr=10.0014, train_acc_pr=14.39
+2024-09-12 01:57:55,082 : INFO : 
+
+2024-09-12 01:57:55,082 : INFO : Start total Epoch 81 (STEP: ART  in epoch [21 / inf] )
+2024-09-12 01:57:55,082 : INFO : lr=0.100
+2024-09-12 01:58:17,964 : INFO : HS parameter:	alpha=0.0000133
+2024-09-12 01:58:17,986 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 01:58:24,261 : INFO : ART best values: (epoch_art=17, train_acc_pr=13.71, mean_train_acc_pr=14.19)
+2024-09-12 01:58:24,262 : INFO : Results Dense: train_loss_dens=0.3107,  train_acc_dens=89.23
+2024-09-12 01:58:24,262 : INFO : Results Pruned: train_loss_pr=10.2366, train_acc_pr=11.38
+2024-09-12 01:58:24,262 : INFO : 
+
+2024-09-12 01:58:24,262 : INFO : Start total Epoch 82 (STEP: ART  in epoch [22 / inf] )
+2024-09-12 01:58:24,262 : INFO : lr=0.100
+2024-09-12 01:58:45,571 : INFO : HS parameter:	alpha=0.0000139
+2024-09-12 01:58:45,597 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 01:58:52,219 : INFO : ART best values: (epoch_art=17, train_acc_pr=13.71, mean_train_acc_pr=14.19)
+2024-09-12 01:58:52,219 : INFO : Results Dense: train_loss_dens=0.3166,  train_acc_dens=89.19
+2024-09-12 01:58:52,219 : INFO : Results Pruned: train_loss_pr=12.2703, train_acc_pr=9.99
+2024-09-12 01:58:52,219 : INFO : 
+
+2024-09-12 01:58:52,219 : INFO : Start total Epoch 83 (STEP: ART  in epoch [23 / inf] )
+2024-09-12 01:58:52,219 : INFO : lr=0.100
+2024-09-12 01:59:15,234 : INFO : HS parameter:	alpha=0.0000146
+2024-09-12 01:59:15,260 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 01:59:21,934 : INFO : ART best values: (epoch_art=17, train_acc_pr=13.71, mean_train_acc_pr=14.19)
+2024-09-12 01:59:21,935 : INFO : Results Dense: train_loss_dens=0.3158,  train_acc_dens=89.17
+2024-09-12 01:59:21,935 : INFO : Results Pruned: train_loss_pr=15.9435, train_acc_pr=10.00
+2024-09-12 01:59:21,935 : INFO : 
+
+2024-09-12 01:59:21,935 : INFO : Start total Epoch 84 (STEP: ART  in epoch [24 / inf] )
+2024-09-12 01:59:21,935 : INFO : lr=0.100
+2024-09-12 01:59:44,633 : INFO : HS parameter:	alpha=0.0000154
+2024-09-12 01:59:44,655 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 01:59:51,215 : INFO : ART best values: (epoch_art=17, train_acc_pr=13.71, mean_train_acc_pr=14.19)
+2024-09-12 01:59:51,215 : INFO : Results Dense: train_loss_dens=0.3223,  train_acc_dens=88.96
+2024-09-12 01:59:51,215 : INFO : Results Pruned: train_loss_pr=11.2884, train_acc_pr=10.11
+2024-09-12 01:59:51,215 : INFO : 
+
+2024-09-12 01:59:51,215 : INFO : Start total Epoch 85 (STEP: ART  in epoch [25 / inf] )
+2024-09-12 01:59:51,216 : INFO : lr=0.100
+2024-09-12 02:00:14,141 : INFO : HS parameter:	alpha=0.0000161
+2024-09-12 02:00:14,169 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 02:00:20,561 : INFO : ART best values: (epoch_art=17, train_acc_pr=13.71, mean_train_acc_pr=14.19)
+2024-09-12 02:00:20,562 : INFO : Results Dense: train_loss_dens=0.3223,  train_acc_dens=88.98
+2024-09-12 02:00:20,562 : INFO : Results Pruned: train_loss_pr=9.3101, train_acc_pr=10.00
+2024-09-12 02:00:20,562 : INFO : 
+
+2024-09-12 02:00:20,562 : INFO : Start total Epoch 86 (STEP: ART  in epoch [26 / inf] )
+2024-09-12 02:00:20,562 : INFO : lr=0.100
+2024-09-12 02:00:42,452 : INFO : HS parameter:	alpha=0.0000169
+2024-09-12 02:00:42,477 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 02:00:49,157 : INFO : ART best values: (epoch_art=17, train_acc_pr=13.71, mean_train_acc_pr=14.19)
+2024-09-12 02:00:49,158 : INFO : Results Dense: train_loss_dens=0.3334,  train_acc_dens=88.68
+2024-09-12 02:00:49,158 : INFO : Results Pruned: train_loss_pr=7.9769, train_acc_pr=14.45
+2024-09-12 02:00:49,158 : INFO : 
+
+2024-09-12 02:00:49,158 : INFO : Start total Epoch 87 (STEP: ART  in epoch [27 / inf] )
+2024-09-12 02:00:49,158 : INFO : lr=0.100
+2024-09-12 02:01:11,536 : INFO : HS parameter:	alpha=0.0000178
+2024-09-12 02:01:11,562 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 02:01:18,371 : INFO : ART best values: (epoch_art=17, train_acc_pr=13.71, mean_train_acc_pr=14.19)
+2024-09-12 02:01:18,371 : INFO : Results Dense: train_loss_dens=0.3342,  train_acc_dens=88.38
+2024-09-12 02:01:18,371 : INFO : Results Pruned: train_loss_pr=10.4476, train_acc_pr=11.06
+2024-09-12 02:01:18,371 : INFO : 
+
+2024-09-12 02:01:18,371 : INFO : Start total Epoch 88 (STEP: ART  in epoch [28 / inf] )
+2024-09-12 02:01:18,372 : INFO : lr=0.100
+2024-09-12 02:01:41,551 : INFO : HS parameter:	alpha=0.0000187
+2024-09-12 02:01:41,575 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 02:01:48,394 : INFO : ART best values: (epoch_art=17, train_acc_pr=13.71, mean_train_acc_pr=14.19)
+2024-09-12 02:01:48,395 : INFO : Results Dense: train_loss_dens=0.3432,  train_acc_dens=88.29
+2024-09-12 02:01:48,395 : INFO : Results Pruned: train_loss_pr=6.7948, train_acc_pr=13.92
+2024-09-12 02:01:48,395 : INFO : 
+
+2024-09-12 02:01:48,395 : INFO : Start total Epoch 89 (STEP: ART  in epoch [29 / inf] )
+2024-09-12 02:01:48,395 : INFO : lr=0.100
+2024-09-12 02:02:10,937 : INFO : HS parameter:	alpha=0.0000196
+2024-09-12 02:02:10,964 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 02:02:17,449 : INFO : ART best values: (epoch_art=17, train_acc_pr=13.71, mean_train_acc_pr=14.19)
+2024-09-12 02:02:17,449 : INFO : Results Dense: train_loss_dens=0.3391,  train_acc_dens=88.44
+2024-09-12 02:02:17,449 : INFO : Results Pruned: train_loss_pr=21.1497, train_acc_pr=10.13
+2024-09-12 02:02:17,449 : INFO : 
+
+2024-09-12 02:02:17,449 : INFO : Start total Epoch 90 (STEP: ART  in epoch [30 / inf] )
+2024-09-12 02:02:17,449 : INFO : lr=0.100
+2024-09-12 02:02:39,667 : INFO : HS parameter:	alpha=0.0000206
+2024-09-12 02:02:39,693 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 02:02:45,968 : INFO : ART best values: (epoch_art=17, train_acc_pr=13.71, mean_train_acc_pr=14.19)
+2024-09-12 02:02:45,969 : INFO : Results Dense: train_loss_dens=0.3465,  train_acc_dens=88.00
+2024-09-12 02:02:45,969 : INFO : Results Pruned: train_loss_pr=24.5599, train_acc_pr=11.39
+2024-09-12 02:02:45,969 : INFO : 
+
+2024-09-12 02:02:45,969 : INFO : Start total Epoch 91 (STEP: ART  in epoch [31 / inf] )
+2024-09-12 02:02:45,969 : INFO : lr=0.100
+2024-09-12 02:03:07,419 : INFO : HS parameter:	alpha=0.0000216
+2024-09-12 02:03:07,445 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 02:03:13,848 : INFO : ART best values: (epoch_art=17, train_acc_pr=13.71, mean_train_acc_pr=14.19)
+2024-09-12 02:03:13,848 : INFO : Results Dense: train_loss_dens=0.3503,  train_acc_dens=87.99
+2024-09-12 02:03:13,848 : INFO : Results Pruned: train_loss_pr=12.3240, train_acc_pr=13.78
+2024-09-12 02:03:13,848 : INFO : 
+
+2024-09-12 02:03:13,848 : INFO : Start total Epoch 92 (STEP: ART  in epoch [32 / inf] )
+2024-09-12 02:03:13,848 : INFO : lr=0.100
+2024-09-12 02:03:36,889 : INFO : HS parameter:	alpha=0.0000227
+2024-09-12 02:03:36,914 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 02:03:43,356 : INFO : ART best values: (epoch_art=17, train_acc_pr=13.71, mean_train_acc_pr=14.19)
+2024-09-12 02:03:43,357 : INFO : Results Dense: train_loss_dens=0.3586,  train_acc_dens=87.71
+2024-09-12 02:03:43,357 : INFO : Results Pruned: train_loss_pr=29.0618, train_acc_pr=10.00
+2024-09-12 02:03:43,357 : INFO : 
+
+2024-09-12 02:03:43,357 : INFO : Start total Epoch 93 (STEP: ART  in epoch [33 / inf] )
+2024-09-12 02:03:43,357 : INFO : lr=0.100
+2024-09-12 02:04:06,462 : INFO : HS parameter:	alpha=0.0000238
+2024-09-12 02:04:06,489 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 02:04:13,080 : INFO : ART best values: (epoch_art=17, train_acc_pr=13.71, mean_train_acc_pr=14.19)
+2024-09-12 02:04:13,080 : INFO : Results Dense: train_loss_dens=0.3576,  train_acc_dens=87.62
+2024-09-12 02:04:13,080 : INFO : Results Pruned: train_loss_pr=20.2786, train_acc_pr=11.37
+2024-09-12 02:04:13,080 : INFO : 
+
+2024-09-12 02:04:13,080 : INFO : Start total Epoch 94 (STEP: ART  in epoch [34 / inf] )
+2024-09-12 02:04:13,081 : INFO : lr=0.100
+2024-09-12 02:04:36,087 : INFO : HS parameter:	alpha=0.0000250
+2024-09-12 02:04:36,111 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 02:04:42,585 : INFO : ART best values: (epoch_art=17, train_acc_pr=13.71, mean_train_acc_pr=14.19)
+2024-09-12 02:04:42,586 : INFO : Results Dense: train_loss_dens=0.3669,  train_acc_dens=87.61
+2024-09-12 02:04:42,586 : INFO : Results Pruned: train_loss_pr=20.0658, train_acc_pr=12.11
+2024-09-12 02:04:42,586 : INFO : 
+
+2024-09-12 02:04:42,586 : INFO : Start total Epoch 95 (STEP: ART  in epoch [35 / inf] )
+2024-09-12 02:04:42,586 : INFO : lr=0.100
+2024-09-12 02:05:04,893 : INFO : HS parameter:	alpha=0.0000263
+2024-09-12 02:05:04,920 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 02:05:11,305 : INFO : ART best values: (epoch_art=34, train_acc_pr=12.11, mean_train_acc_pr=14.14)
+2024-09-12 02:05:11,305 : INFO : Results Dense: train_loss_dens=0.3730,  train_acc_dens=87.33
+2024-09-12 02:05:11,305 : INFO : Results Pruned: train_loss_pr=8.0773, train_acc_pr=18.95
+2024-09-12 02:05:11,305 : INFO : 
+
+2024-09-12 02:05:11,305 : INFO : Start total Epoch 96 (STEP: ART  in epoch [36 / inf] )
+2024-09-12 02:05:11,306 : INFO : lr=0.100
+2024-09-12 02:05:34,438 : INFO : HS parameter:	alpha=0.0000276
+2024-09-12 02:05:34,462 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 02:05:41,217 : INFO : ART best values: (epoch_art=35, train_acc_pr=18.95, mean_train_acc_pr=15.12)
+2024-09-12 02:05:41,217 : INFO : Results Dense: train_loss_dens=0.3728,  train_acc_dens=87.21
+2024-09-12 02:05:41,217 : INFO : Results Pruned: train_loss_pr=13.2747, train_acc_pr=14.30
+2024-09-12 02:05:41,217 : INFO : 
+
+2024-09-12 02:05:41,217 : INFO : Start total Epoch 97 (STEP: ART  in epoch [37 / inf] )
+2024-09-12 02:05:41,217 : INFO : lr=0.100
+2024-09-12 02:06:02,397 : INFO : HS parameter:	alpha=0.0000290
+2024-09-12 02:06:02,418 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 02:06:09,064 : INFO : ART best values: (epoch_art=35, train_acc_pr=18.95, mean_train_acc_pr=15.12)
+2024-09-12 02:06:09,065 : INFO : Results Dense: train_loss_dens=0.3734,  train_acc_dens=87.13
+2024-09-12 02:06:09,065 : INFO : Results Pruned: train_loss_pr=18.6771, train_acc_pr=12.63
+2024-09-12 02:06:09,065 : INFO : 
+
+2024-09-12 02:06:09,065 : INFO : Start total Epoch 98 (STEP: ART  in epoch [38 / inf] )
+2024-09-12 02:06:09,065 : INFO : lr=0.100
+2024-09-12 02:06:31,751 : INFO : HS parameter:	alpha=0.0000304
+2024-09-12 02:06:31,777 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 02:06:38,057 : INFO : ART best values: (epoch_art=35, train_acc_pr=18.95, mean_train_acc_pr=15.12)
+2024-09-12 02:06:38,058 : INFO : Results Dense: train_loss_dens=0.3792,  train_acc_dens=86.98
+2024-09-12 02:06:38,058 : INFO : Results Pruned: train_loss_pr=18.0124, train_acc_pr=12.60
+2024-09-12 02:06:38,058 : INFO : 
+
+2024-09-12 02:06:38,058 : INFO : Start total Epoch 99 (STEP: ART  in epoch [39 / inf] )
+2024-09-12 02:06:38,058 : INFO : lr=0.100
+2024-09-12 02:07:00,241 : INFO : HS parameter:	alpha=0.0000319
+2024-09-12 02:07:00,262 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 02:07:06,412 : INFO : ART best values: (epoch_art=35, train_acc_pr=18.95, mean_train_acc_pr=15.12)
+2024-09-12 02:07:06,412 : INFO : Results Dense: train_loss_dens=0.3894,  train_acc_dens=86.68
+2024-09-12 02:07:06,413 : INFO : Results Pruned: train_loss_pr=7.3233, train_acc_pr=12.45
+2024-09-12 02:07:06,413 : INFO : 
+
+2024-09-12 02:07:06,413 : INFO : Start total Epoch 100 (STEP: ART  in epoch [40 / inf] )
+2024-09-12 02:07:06,413 : INFO : lr=0.100
+2024-09-12 02:07:29,840 : INFO : HS parameter:	alpha=0.0000335
+2024-09-12 02:07:29,866 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 02:07:36,800 : INFO : ART best values: (epoch_art=35, train_acc_pr=18.95, mean_train_acc_pr=15.12)
+2024-09-12 02:07:36,801 : INFO : Results Dense: train_loss_dens=0.3885,  train_acc_dens=86.73
+2024-09-12 02:07:36,801 : INFO : Results Pruned: train_loss_pr=14.9369, train_acc_pr=13.35
+2024-09-12 02:07:36,801 : INFO : 
+
+2024-09-12 02:07:36,801 : INFO : Start total Epoch 101 (STEP: ART  in epoch [41 / inf] )
+2024-09-12 02:07:36,801 : INFO : lr=0.100
+2024-09-12 02:07:59,445 : INFO : HS parameter:	alpha=0.0000352
+2024-09-12 02:07:59,473 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 02:08:06,168 : INFO : ART best values: (epoch_art=35, train_acc_pr=18.95, mean_train_acc_pr=15.12)
+2024-09-12 02:08:06,168 : INFO : Results Dense: train_loss_dens=0.3960,  train_acc_dens=86.42
+2024-09-12 02:08:06,169 : INFO : Results Pruned: train_loss_pr=6.1245, train_acc_pr=19.18
+2024-09-12 02:08:06,169 : INFO : 
+
+2024-09-12 02:08:06,169 : INFO : Start total Epoch 102 (STEP: ART  in epoch [42 / inf] )
+2024-09-12 02:08:06,169 : INFO : lr=0.100
+2024-09-12 02:08:29,101 : INFO : HS parameter:	alpha=0.0000370
+2024-09-12 02:08:29,128 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 02:08:35,607 : INFO : ART best values: (epoch_art=35, train_acc_pr=18.95, mean_train_acc_pr=15.12)
+2024-09-12 02:08:35,607 : INFO : Results Dense: train_loss_dens=0.4013,  train_acc_dens=86.12
+2024-09-12 02:08:35,607 : INFO : Results Pruned: train_loss_pr=10.2554, train_acc_pr=13.86
+2024-09-12 02:08:35,607 : INFO : 
+
+2024-09-12 02:08:35,608 : INFO : Start total Epoch 103 (STEP: ART  in epoch [43 / inf] )
+2024-09-12 02:08:35,608 : INFO : lr=0.100
+2024-09-12 02:08:58,192 : INFO : HS parameter:	alpha=0.0000388
+2024-09-12 02:08:58,217 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 02:09:04,886 : INFO : ART best values: (epoch_art=35, train_acc_pr=18.95, mean_train_acc_pr=15.12)
+2024-09-12 02:09:04,887 : INFO : Results Dense: train_loss_dens=0.4036,  train_acc_dens=86.13
+2024-09-12 02:09:04,887 : INFO : Results Pruned: train_loss_pr=6.8386, train_acc_pr=13.96
+2024-09-12 02:09:04,887 : INFO : 
+
+2024-09-12 02:09:04,887 : INFO : Start total Epoch 104 (STEP: ART  in epoch [44 / inf] )
+2024-09-12 02:09:04,887 : INFO : lr=0.100
+2024-09-12 02:09:27,634 : INFO : HS parameter:	alpha=0.0000407
+2024-09-12 02:09:27,660 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 02:09:34,173 : INFO : ART best values: (epoch_art=35, train_acc_pr=18.95, mean_train_acc_pr=15.12)
+2024-09-12 02:09:34,173 : INFO : Results Dense: train_loss_dens=0.4140,  train_acc_dens=85.85
+2024-09-12 02:09:34,173 : INFO : Results Pruned: train_loss_pr=9.1763, train_acc_pr=20.12
+2024-09-12 02:09:34,174 : INFO : 
+
+2024-09-12 02:09:34,174 : INFO : Start total Epoch 105 (STEP: ART  in epoch [45 / inf] )
+2024-09-12 02:09:34,174 : INFO : lr=0.100
+2024-09-12 02:09:57,292 : INFO : HS parameter:	alpha=0.0000428
+2024-09-12 02:09:57,318 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 02:10:03,714 : INFO : ART best values: (epoch_art=44, train_acc_pr=20.12, mean_train_acc_pr=19.79)
+2024-09-12 02:10:03,714 : INFO : Results Dense: train_loss_dens=0.4112,  train_acc_dens=85.92
+2024-09-12 02:10:03,714 : INFO : Results Pruned: train_loss_pr=5.5610, train_acc_pr=25.29
+2024-09-12 02:10:03,714 : INFO : 
+
+2024-09-12 02:10:03,715 : INFO : Start total Epoch 106 (STEP: ART  in epoch [46 / inf] )
+2024-09-12 02:10:03,715 : INFO : lr=0.100
+2024-09-12 02:10:25,715 : INFO : HS parameter:	alpha=0.0000449
+2024-09-12 02:10:25,741 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 02:10:32,183 : INFO : ART best values: (epoch_art=45, train_acc_pr=25.29, mean_train_acc_pr=27.89)
+2024-09-12 02:10:32,183 : INFO : Results Dense: train_loss_dens=0.4223,  train_acc_dens=85.62
+2024-09-12 02:10:32,183 : INFO : Results Pruned: train_loss_pr=3.2289, train_acc_pr=38.27
+2024-09-12 02:10:32,183 : INFO : 
+
+2024-09-12 02:10:32,183 : INFO : Start total Epoch 107 (STEP: ART  in epoch [47 / inf] )
+2024-09-12 02:10:32,183 : INFO : lr=0.100
+2024-09-12 02:10:55,034 : INFO : HS parameter:	alpha=0.0000472
+2024-09-12 02:10:55,060 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 02:11:01,995 : INFO : ART best values: (epoch_art=46, train_acc_pr=38.27, mean_train_acc_pr=39.65)
+2024-09-12 02:11:01,996 : INFO : Results Dense: train_loss_dens=0.4159,  train_acc_dens=85.90
+2024-09-12 02:11:01,996 : INFO : Results Pruned: train_loss_pr=1.5785, train_acc_pr=55.39
+2024-09-12 02:11:01,996 : INFO : 
+
+2024-09-12 02:11:01,996 : INFO : Start total Epoch 108 (STEP: ART  in epoch [48 / inf] )
+2024-09-12 02:11:01,996 : INFO : lr=0.100
+2024-09-12 02:11:24,468 : INFO : HS parameter:	alpha=0.0000495
+2024-09-12 02:11:24,493 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 02:11:31,238 : INFO : ART best values: (epoch_art=47, train_acc_pr=55.39, mean_train_acc_pr=44.65)
+2024-09-12 02:11:31,239 : INFO : Results Dense: train_loss_dens=0.4240,  train_acc_dens=85.49
+2024-09-12 02:11:31,239 : INFO : Results Pruned: train_loss_pr=3.7773, train_acc_pr=40.30
+2024-09-12 02:11:31,239 : INFO : 
+
+2024-09-12 02:11:31,239 : INFO : Start total Epoch 109 (STEP: ART  in epoch [49 / inf] )
+2024-09-12 02:11:31,239 : INFO : lr=0.100
+2024-09-12 02:11:53,820 : INFO : HS parameter:	alpha=0.0000520
+2024-09-12 02:11:53,845 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 02:12:00,748 : INFO : ART best values: (epoch_art=47, train_acc_pr=55.39, mean_train_acc_pr=44.65)
+2024-09-12 02:12:00,748 : INFO : Results Dense: train_loss_dens=0.4341,  train_acc_dens=85.25
+2024-09-12 02:12:00,748 : INFO : Results Pruned: train_loss_pr=2.0954, train_acc_pr=46.28
+2024-09-12 02:12:00,749 : INFO : 
+
+2024-09-12 02:12:00,749 : INFO : Start total Epoch 110 (STEP: ART  in epoch [50 / inf] )
+2024-09-12 02:12:00,749 : INFO : lr=0.100
+2024-09-12 02:12:24,127 : INFO : HS parameter:	alpha=0.0000546
+2024-09-12 02:12:24,149 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 02:12:30,914 : INFO : ART best values: (epoch_art=47, train_acc_pr=55.39, mean_train_acc_pr=44.65)
+2024-09-12 02:12:30,914 : INFO : Results Dense: train_loss_dens=0.4376,  train_acc_dens=85.07
+2024-09-12 02:12:30,914 : INFO : Results Pruned: train_loss_pr=5.6425, train_acc_pr=26.11
+2024-09-12 02:12:30,914 : INFO : 
+
+2024-09-12 02:12:30,914 : INFO : Start total Epoch 111 (STEP: ART  in epoch [51 / inf] )
+2024-09-12 02:12:30,915 : INFO : lr=0.100
+2024-09-12 02:12:53,381 : INFO : HS parameter:	alpha=0.0000573
+2024-09-12 02:12:53,409 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 02:13:00,364 : INFO : ART best values: (epoch_art=47, train_acc_pr=55.39, mean_train_acc_pr=44.65)
+2024-09-12 02:13:00,365 : INFO : Results Dense: train_loss_dens=0.4465,  train_acc_dens=84.64
+2024-09-12 02:13:00,365 : INFO : Results Pruned: train_loss_pr=1.9030, train_acc_pr=50.04
+2024-09-12 02:13:00,365 : INFO : 
+
+2024-09-12 02:13:00,365 : INFO : Start total Epoch 112 (STEP: ART  in epoch [52 / inf] )
+2024-09-12 02:13:00,365 : INFO : lr=0.100
+2024-09-12 02:13:23,880 : INFO : HS parameter:	alpha=0.0000602
+2024-09-12 02:13:23,905 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 02:13:30,231 : INFO : ART best values: (epoch_art=47, train_acc_pr=55.39, mean_train_acc_pr=44.65)
+2024-09-12 02:13:30,232 : INFO : Results Dense: train_loss_dens=0.4479,  train_acc_dens=84.69
+2024-09-12 02:13:30,232 : INFO : Results Pruned: train_loss_pr=1.1191, train_acc_pr=66.27
+2024-09-12 02:13:30,232 : INFO : 
+
+2024-09-12 02:13:30,232 : INFO : Start total Epoch 113 (STEP: ART  in epoch [53 / inf] )
+2024-09-12 02:13:30,232 : INFO : lr=0.100
+2024-09-12 02:13:53,166 : INFO : HS parameter:	alpha=0.0000632
+2024-09-12 02:13:53,188 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 02:13:59,685 : INFO : ART best values: (epoch_art=52, train_acc_pr=66.27, mean_train_acc_pr=62.31)
+2024-09-12 02:13:59,686 : INFO : Results Dense: train_loss_dens=0.4478,  train_acc_dens=84.92
+2024-09-12 02:13:59,686 : INFO : Results Pruned: train_loss_pr=0.9561, train_acc_pr=70.62
+2024-09-12 02:13:59,686 : INFO : 
+
+2024-09-12 02:13:59,686 : INFO : Start total Epoch 114 (STEP: ART  in epoch [54 / inf] )
+2024-09-12 02:13:59,686 : INFO : lr=0.100
+2024-09-12 02:14:21,566 : INFO : HS parameter:	alpha=0.0000664
+2024-09-12 02:14:21,588 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 02:14:28,224 : INFO : ART best values: (epoch_art=52, train_acc_pr=66.27, mean_train_acc_pr=62.31)
+2024-09-12 02:14:28,224 : INFO : Results Dense: train_loss_dens=0.4543,  train_acc_dens=84.44
+2024-09-12 02:14:28,224 : INFO : Results Pruned: train_loss_pr=1.5606, train_acc_pr=60.87
+2024-09-12 02:14:28,224 : INFO : 
+
+2024-09-12 02:14:28,224 : INFO : Start total Epoch 115 (STEP: ART  in epoch [55 / inf] )
+2024-09-12 02:14:28,224 : INFO : lr=0.100
+2024-09-12 02:14:49,654 : INFO : HS parameter:	alpha=0.0000697
+2024-09-12 02:14:49,680 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 02:14:56,198 : INFO : ART best values: (epoch_art=52, train_acc_pr=66.27, mean_train_acc_pr=62.31)
+2024-09-12 02:14:56,199 : INFO : Results Dense: train_loss_dens=0.4524,  train_acc_dens=84.48
+2024-09-12 02:14:56,199 : INFO : Results Pruned: train_loss_pr=1.7159, train_acc_pr=55.16
+2024-09-12 02:14:56,199 : INFO : 
+
+2024-09-12 02:14:56,199 : INFO : Start total Epoch 116 (STEP: ART  in epoch [56 / inf] )
+2024-09-12 02:14:56,199 : INFO : lr=0.100
+2024-09-12 02:15:18,136 : INFO : HS parameter:	alpha=0.0000732
+2024-09-12 02:15:18,163 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 02:15:25,029 : INFO : ART best values: (epoch_art=52, train_acc_pr=66.27, mean_train_acc_pr=62.31)
+2024-09-12 02:15:25,029 : INFO : Results Dense: train_loss_dens=0.4527,  train_acc_dens=84.57
+2024-09-12 02:15:25,029 : INFO : Results Pruned: train_loss_pr=0.8728, train_acc_pr=73.36
+2024-09-12 02:15:25,029 : INFO : 
+
+2024-09-12 02:15:25,029 : INFO : Start total Epoch 117 (STEP: ART  in epoch [57 / inf] )
+2024-09-12 02:15:25,029 : INFO : lr=0.100
+2024-09-12 02:15:47,677 : INFO : HS parameter:	alpha=0.0000768
+2024-09-12 02:15:47,698 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 02:15:54,104 : INFO : ART best values: (epoch_art=56, train_acc_pr=73.36, mean_train_acc_pr=69.66)
+2024-09-12 02:15:54,105 : INFO : Results Dense: train_loss_dens=0.4615,  train_acc_dens=84.19
+2024-09-12 02:15:54,105 : INFO : Results Pruned: train_loss_pr=0.5657, train_acc_pr=80.47
+2024-09-12 02:15:54,105 : INFO : 
+
+2024-09-12 02:15:54,105 : INFO : Start total Epoch 118 (STEP: ART  in epoch [58 / inf] )
+2024-09-12 02:15:54,105 : INFO : lr=0.100
+2024-09-12 02:16:17,248 : INFO : HS parameter:	alpha=0.0000807
+2024-09-12 02:16:17,273 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 02:16:23,888 : INFO : ART best values: (epoch_art=57, train_acc_pr=80.47, mean_train_acc_pr=76.76)
+2024-09-12 02:16:23,889 : INFO : Results Dense: train_loss_dens=0.4586,  train_acc_dens=84.11
+2024-09-12 02:16:23,889 : INFO : Results Pruned: train_loss_pr=0.6993, train_acc_pr=76.46
+2024-09-12 02:16:23,889 : INFO : 
+
+2024-09-12 02:16:23,889 : INFO : Start total Epoch 119 (STEP: ART  in epoch [59 / inf] )
+2024-09-12 02:16:23,889 : INFO : lr=0.100
+2024-09-12 02:16:47,233 : INFO : HS parameter:	alpha=0.0000847
+2024-09-12 02:16:47,255 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 02:16:53,770 : INFO : ART best values: (epoch_art=57, train_acc_pr=80.47, mean_train_acc_pr=76.76)
+2024-09-12 02:16:53,771 : INFO : Results Dense: train_loss_dens=0.4526,  train_acc_dens=84.41
+2024-09-12 02:16:53,771 : INFO : Results Pruned: train_loss_pr=0.4775, train_acc_pr=83.85
+2024-09-12 02:16:53,771 : INFO : 
+
+2024-09-12 02:16:53,771 : INFO : Start total Epoch 120 (STEP: ART  in epoch [60 / inf] )
+2024-09-12 02:16:53,771 : INFO : lr=0.100
+2024-09-12 02:17:16,189 : INFO : HS parameter:	alpha=0.0000889
+2024-09-12 02:17:16,215 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 02:17:23,119 : INFO : ART best values: (epoch_art=57, train_acc_pr=80.47, mean_train_acc_pr=76.76)
+2024-09-12 02:17:23,120 : INFO : Results Dense: train_loss_dens=0.4578,  train_acc_dens=84.33
+2024-09-12 02:17:23,120 : INFO : Results Pruned: train_loss_pr=0.8838, train_acc_pr=73.59
+2024-09-12 02:17:23,120 : INFO : 
+
+2024-09-12 02:17:23,120 : INFO : Start total Epoch 121 (STEP: ART  in epoch [61 / inf] )
+2024-09-12 02:17:23,120 : INFO : lr=0.100
+2024-09-12 02:17:45,598 : INFO : HS parameter:	alpha=0.0000934
+2024-09-12 02:17:45,624 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 02:17:52,267 : INFO : ART best values: (epoch_art=57, train_acc_pr=80.47, mean_train_acc_pr=76.76)
+2024-09-12 02:17:52,267 : INFO : Results Dense: train_loss_dens=0.4581,  train_acc_dens=84.02
+2024-09-12 02:17:52,267 : INFO : Results Pruned: train_loss_pr=0.5392, train_acc_pr=81.11
+2024-09-12 02:17:52,267 : INFO : 
+
+2024-09-12 02:17:52,267 : INFO : Start total Epoch 122 (STEP: ART  in epoch [62 / inf] )
+2024-09-12 02:17:52,268 : INFO : lr=0.100
+2024-09-12 02:18:14,990 : INFO : HS parameter:	alpha=0.0000981
+2024-09-12 02:18:15,017 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 02:18:21,781 : INFO : ART best values: (epoch_art=57, train_acc_pr=80.47, mean_train_acc_pr=76.76)
+2024-09-12 02:18:21,781 : INFO : Results Dense: train_loss_dens=0.4577,  train_acc_dens=84.31
+2024-09-12 02:18:21,781 : INFO : Results Pruned: train_loss_pr=0.3907, train_acc_pr=86.38
+2024-09-12 02:18:21,782 : INFO : 
+
+2024-09-12 02:18:21,782 : INFO : Start total Epoch 123 (STEP: ART  in epoch [63 / inf] )
+2024-09-12 02:18:21,782 : INFO : lr=0.100
+2024-09-12 02:18:44,928 : INFO : HS parameter:	alpha=0.0001030
+2024-09-12 02:18:44,951 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 02:18:51,510 : INFO : ART best values: (epoch_art=62, train_acc_pr=86.38, mean_train_acc_pr=84.65)
+2024-09-12 02:18:51,510 : INFO : Results Dense: train_loss_dens=0.4435,  train_acc_dens=84.90
+2024-09-12 02:18:51,510 : INFO : Results Pruned: train_loss_pr=0.4006, train_acc_pr=86.45
+2024-09-12 02:18:51,510 : INFO : 
+
+2024-09-12 02:18:51,510 : INFO : Start total Epoch 124 (STEP: ART  in epoch [64 / inf] )
+2024-09-12 02:18:51,510 : INFO : lr=0.100
+2024-09-12 02:19:13,861 : INFO : HS parameter:	alpha=0.0001081
+2024-09-12 02:19:13,882 : INFO : prune_rate=0.990 [1837029 / 1855584]
+2024-09-12 02:19:20,538 : INFO : ART best values: (epoch_art=63, train_acc_pr=86.45, mean_train_acc_pr=87.06)
+2024-09-12 02:19:20,538 : INFO : ******************************** ART terminated ********************************
+2024-09-12 02:19:20,544 : INFO : ART best values: (epoch_art=63, train_acc_pr=86.45, mean_train_acc_pr=87.06)
+2024-09-12 02:19:20,547 : INFO : LAYER 1(conv1) : KEEP_RATIO = 29.629630    NUM_PARA = 864    REMAINED_PARA = 256
+2024-09-12 02:19:20,547 : INFO : LAYER 2(layer1.0.conv1) : KEEP_RATIO = 4.904514    NUM_PARA = 9216    REMAINED_PARA = 452
+2024-09-12 02:19:20,547 : INFO : LAYER 3(layer1.0.conv2) : KEEP_RATIO = 5.425347    NUM_PARA = 9216    REMAINED_PARA = 500
+2024-09-12 02:19:20,548 : INFO : LAYER 4(layer1.1.conv1) : KEEP_RATIO = 3.927951    NUM_PARA = 9216    REMAINED_PARA = 362
+2024-09-12 02:19:20,548 : INFO : LAYER 5(layer1.1.conv2) : KEEP_RATIO = 3.135851    NUM_PARA = 9216    REMAINED_PARA = 289
+2024-09-12 02:19:20,548 : INFO : LAYER 6(layer1.2.conv1) : KEEP_RATIO = 2.419705    NUM_PARA = 9216    REMAINED_PARA = 223
+2024-09-12 02:19:20,548 : INFO : LAYER 7(layer1.2.conv2) : KEEP_RATIO = 2.788628    NUM_PARA = 9216    REMAINED_PARA = 257
+2024-09-12 02:19:20,548 : INFO : LAYER 8(layer1.3.conv1) : KEEP_RATIO = 3.081597    NUM_PARA = 9216    REMAINED_PARA = 284
+2024-09-12 02:19:20,548 : INFO : LAYER 9(layer1.3.conv2) : KEEP_RATIO = 3.005642    NUM_PARA = 9216    REMAINED_PARA = 277
+2024-09-12 02:19:20,548 : INFO : LAYER 10(layer1.4.conv1) : KEEP_RATIO = 1.909722    NUM_PARA = 9216    REMAINED_PARA = 176
+2024-09-12 02:19:20,548 : INFO : LAYER 11(layer1.4.conv2) : KEEP_RATIO = 1.671007    NUM_PARA = 9216    REMAINED_PARA = 154
+2024-09-12 02:19:20,548 : INFO : LAYER 12(layer2.0.conv1) : KEEP_RATIO = 4.861111    NUM_PARA = 18432    REMAINED_PARA = 896
+2024-09-12 02:19:20,548 : INFO : LAYER 13(layer2.0.conv2) : KEEP_RATIO = 3.618707    NUM_PARA = 36864    REMAINED_PARA = 1334
+2024-09-12 02:19:20,548 : INFO : LAYER 14(layer2.0.downsample.0) : KEEP_RATIO = 25.488281    NUM_PARA = 2048    REMAINED_PARA = 522
+2024-09-12 02:19:20,548 : INFO : LAYER 15(layer2.1.conv1) : KEEP_RATIO = 1.009115    NUM_PARA = 36864    REMAINED_PARA = 372
+2024-09-12 02:19:20,548 : INFO : LAYER 16(layer2.1.conv2) : KEEP_RATIO = 0.962999    NUM_PARA = 36864    REMAINED_PARA = 355
+2024-09-12 02:19:20,548 : INFO : LAYER 17(layer2.2.conv1) : KEEP_RATIO = 1.166450    NUM_PARA = 36864    REMAINED_PARA = 430
+2024-09-12 02:19:20,549 : INFO : LAYER 18(layer2.2.conv2) : KEEP_RATIO = 0.859918    NUM_PARA = 36864    REMAINED_PARA = 317
+2024-09-12 02:19:20,549 : INFO : LAYER 19(layer2.3.conv1) : KEEP_RATIO = 1.486545    NUM_PARA = 36864    REMAINED_PARA = 548
+2024-09-12 02:19:20,549 : INFO : LAYER 20(layer2.3.conv2) : KEEP_RATIO = 0.751411    NUM_PARA = 36864    REMAINED_PARA = 277
+2024-09-12 02:19:20,549 : INFO : LAYER 21(layer2.4.conv1) : KEEP_RATIO = 0.504557    NUM_PARA = 36864    REMAINED_PARA = 186
+2024-09-12 02:19:20,549 : INFO : LAYER 22(layer2.4.conv2) : KEEP_RATIO = 0.447591    NUM_PARA = 36864    REMAINED_PARA = 165
+2024-09-12 02:19:20,549 : INFO : LAYER 23(layer3.0.conv1) : KEEP_RATIO = 2.213542    NUM_PARA = 73728    REMAINED_PARA = 1632
+2024-09-12 02:19:20,549 : INFO : LAYER 24(layer3.0.conv2) : KEEP_RATIO = 1.472982    NUM_PARA = 147456    REMAINED_PARA = 2172
+2024-09-12 02:19:20,549 : INFO : LAYER 25(layer3.0.downsample.0) : KEEP_RATIO = 10.888672    NUM_PARA = 8192    REMAINED_PARA = 892
+2024-09-12 02:19:20,549 : INFO : LAYER 26(layer3.1.conv1) : KEEP_RATIO = 1.632351    NUM_PARA = 147456    REMAINED_PARA = 2407
+2024-09-12 02:19:20,549 : INFO : LAYER 27(layer3.1.conv2) : KEEP_RATIO = 0.731744    NUM_PARA = 147456    REMAINED_PARA = 1079
+2024-09-12 02:19:20,549 : INFO : LAYER 28(layer3.2.conv1) : KEEP_RATIO = 0.115967    NUM_PARA = 147456    REMAINED_PARA = 171
+2024-09-12 02:19:20,549 : INFO : LAYER 29(layer3.2.conv2) : KEEP_RATIO = 0.079346    NUM_PARA = 147456    REMAINED_PARA = 117
+2024-09-12 02:19:20,549 : INFO : LAYER 30(layer3.3.conv1) : KEEP_RATIO = 0.062391    NUM_PARA = 147456    REMAINED_PARA = 92
+2024-09-12 02:19:20,550 : INFO : LAYER 31(layer3.3.conv2) : KEEP_RATIO = 0.075955    NUM_PARA = 147456    REMAINED_PARA = 112
+2024-09-12 02:19:20,550 : INFO : LAYER 32(layer3.4.conv1) : KEEP_RATIO = 0.349257    NUM_PARA = 147456    REMAINED_PARA = 515
+2024-09-12 02:19:20,550 : INFO : LAYER 33(layer3.4.conv2) : KEEP_RATIO = 0.153266    NUM_PARA = 147456    REMAINED_PARA = 226
+2024-09-12 02:19:20,550 : INFO : LAYER 34(fc) : KEEP_RATIO = 39.687500    NUM_PARA = 1280    REMAINED_PARA = 508
+2024-09-12 02:19:20,550 : INFO : TOTAL MODEL : KEEP_RATIO = 0.999955    NUM_PARA = 1855584    REMAINED_PARA = 18555
+2024-09-12 02:19:20,550 : INFO : ******************************** model pruned ********************************
+2024-09-12 02:19:20,550 : INFO : Results Dense: train_loss_dens=0.4398,  train_acc_dens=84.93
+2024-09-12 02:19:20,550 : INFO : Results Pruned: train_loss_pr=0.3451, train_acc_pr=88.35
+2024-09-12 02:19:20,550 : INFO : 
+
+2024-09-12 02:19:20,550 : INFO : Start total Epoch 125 (STEP: FineTune  in epoch [1 / 160] )
+2024-09-12 02:19:20,550 : INFO : lr=0.100
+2024-09-12 02:19:43,027 : INFO : Results Pruned: train_loss_pr=0.3288, train_acc_pr=88.82
+2024-09-12 02:19:45,013 : INFO : best_test_acc_pr=85.82
+2024-09-12 02:19:45,013 : INFO : Results Testing: test_loss=0.4303, test_acc=85.82, best_test_acc:85.82
+2024-09-12 02:19:45,013 : INFO : 
+
+2024-09-12 02:19:45,013 : INFO : Start total Epoch 126 (STEP: FineTune  in epoch [2 / 160] )
+2024-09-12 02:19:45,013 : INFO : lr=0.100
+2024-09-12 02:20:07,311 : INFO : Results Pruned: train_loss_pr=0.3265, train_acc_pr=88.81
+2024-09-12 02:20:09,398 : INFO : best_test_acc_pr=87.41
+2024-09-12 02:20:09,399 : INFO : Results Testing: test_loss=0.3864, test_acc=87.41, best_test_acc:87.41
+2024-09-12 02:20:09,399 : INFO : 
+
+2024-09-12 02:20:09,399 : INFO : Start total Epoch 127 (STEP: FineTune  in epoch [3 / 160] )
+2024-09-12 02:20:09,399 : INFO : lr=0.100
+2024-09-12 02:20:32,125 : INFO : Results Pruned: train_loss_pr=0.3279, train_acc_pr=88.68
+2024-09-12 02:20:33,834 : INFO : Results Testing: test_loss=0.4080, test_acc=86.13, best_test_acc:87.41
+2024-09-12 02:20:33,834 : INFO : 
+
+2024-09-12 02:20:33,834 : INFO : Start total Epoch 128 (STEP: FineTune  in epoch [4 / 160] )
+2024-09-12 02:20:33,834 : INFO : lr=0.100
+2024-09-12 02:20:56,146 : INFO : Results Pruned: train_loss_pr=0.3263, train_acc_pr=88.73
+2024-09-12 02:20:57,937 : INFO : Results Testing: test_loss=0.3848, test_acc=87.09, best_test_acc:87.41
+2024-09-12 02:20:57,937 : INFO : 
+
+2024-09-12 02:20:57,937 : INFO : Start total Epoch 129 (STEP: FineTune  in epoch [5 / 160] )
+2024-09-12 02:20:57,937 : INFO : lr=0.100
+2024-09-12 02:21:20,340 : INFO : Results Pruned: train_loss_pr=0.3292, train_acc_pr=88.52
+2024-09-12 02:21:22,308 : INFO : best_test_acc_pr=87.42
+2024-09-12 02:21:22,308 : INFO : Results Testing: test_loss=0.3814, test_acc=87.42, best_test_acc:87.42
+2024-09-12 02:21:22,308 : INFO : 
+
+2024-09-12 02:21:22,308 : INFO : Start total Epoch 130 (STEP: FineTune  in epoch [6 / 160] )
+2024-09-12 02:21:22,308 : INFO : lr=0.100
+2024-09-12 02:21:44,214 : INFO : Results Pruned: train_loss_pr=0.3314, train_acc_pr=88.66
+2024-09-12 02:21:45,997 : INFO : Results Testing: test_loss=0.5229, test_acc=83.32, best_test_acc:87.42
+2024-09-12 02:21:45,997 : INFO : 
+
+2024-09-12 02:21:45,997 : INFO : Start total Epoch 131 (STEP: FineTune  in epoch [7 / 160] )
+2024-09-12 02:21:45,997 : INFO : lr=0.100
+2024-09-12 02:22:07,449 : INFO : Results Pruned: train_loss_pr=0.3329, train_acc_pr=88.49
+2024-09-12 02:22:09,385 : INFO : best_test_acc_pr=88.01
+2024-09-12 02:22:09,385 : INFO : Results Testing: test_loss=0.3563, test_acc=88.01, best_test_acc:88.01
+2024-09-12 02:22:09,385 : INFO : 
+
+2024-09-12 02:22:09,386 : INFO : Start total Epoch 132 (STEP: FineTune  in epoch [8 / 160] )
+2024-09-12 02:22:09,386 : INFO : lr=0.100
+2024-09-12 02:22:31,745 : INFO : Results Pruned: train_loss_pr=0.3346, train_acc_pr=88.40
+2024-09-12 02:22:33,546 : INFO : Results Testing: test_loss=0.4437, test_acc=85.21, best_test_acc:88.01
+2024-09-12 02:22:33,547 : INFO : 
+
+2024-09-12 02:22:33,547 : INFO : Start total Epoch 133 (STEP: FineTune  in epoch [9 / 160] )
+2024-09-12 02:22:33,547 : INFO : lr=0.100
+2024-09-12 02:22:55,466 : INFO : Results Pruned: train_loss_pr=0.3394, train_acc_pr=88.31
+2024-09-12 02:22:57,216 : INFO : Results Testing: test_loss=0.4978, test_acc=83.98, best_test_acc:88.01
+2024-09-12 02:22:57,216 : INFO : 
+
+2024-09-12 02:22:57,216 : INFO : Start total Epoch 134 (STEP: FineTune  in epoch [10 / 160] )
+2024-09-12 02:22:57,216 : INFO : lr=0.100
+2024-09-12 02:23:18,553 : INFO : Results Pruned: train_loss_pr=0.3380, train_acc_pr=88.42
+2024-09-12 02:23:20,185 : INFO : Results Testing: test_loss=0.3729, test_acc=87.44, best_test_acc:88.01
+2024-09-12 02:23:20,185 : INFO : 
+
+2024-09-12 02:23:20,185 : INFO : Start total Epoch 135 (STEP: FineTune  in epoch [11 / 160] )
+2024-09-12 02:23:20,185 : INFO : lr=0.100
+2024-09-12 02:23:42,263 : INFO : Results Pruned: train_loss_pr=0.3340, train_acc_pr=88.49
+2024-09-12 02:23:44,103 : INFO : Results Testing: test_loss=0.4006, test_acc=86.96, best_test_acc:88.01
+2024-09-12 02:23:44,103 : INFO : 
+
+2024-09-12 02:23:44,103 : INFO : Start total Epoch 136 (STEP: FineTune  in epoch [12 / 160] )
+2024-09-12 02:23:44,103 : INFO : lr=0.100
+2024-09-12 02:24:06,543 : INFO : Results Pruned: train_loss_pr=0.3326, train_acc_pr=88.54
+2024-09-12 02:24:08,346 : INFO : Results Testing: test_loss=0.4777, test_acc=84.47, best_test_acc:88.01
+2024-09-12 02:24:08,346 : INFO : 
+
+2024-09-12 02:24:08,346 : INFO : Start total Epoch 137 (STEP: FineTune  in epoch [13 / 160] )
+2024-09-12 02:24:08,346 : INFO : lr=0.100
+2024-09-12 02:24:30,466 : INFO : Results Pruned: train_loss_pr=0.3382, train_acc_pr=88.25
+2024-09-12 02:24:32,328 : INFO : Results Testing: test_loss=0.3796, test_acc=87.21, best_test_acc:88.01
+2024-09-12 02:24:32,328 : INFO : 
+
+2024-09-12 02:24:32,329 : INFO : Start total Epoch 138 (STEP: FineTune  in epoch [14 / 160] )
+2024-09-12 02:24:32,329 : INFO : lr=0.100
+2024-09-12 02:24:53,986 : INFO : Results Pruned: train_loss_pr=0.3387, train_acc_pr=88.30
+2024-09-12 02:24:55,559 : INFO : Results Testing: test_loss=0.4259, test_acc=85.18, best_test_acc:88.01
+2024-09-12 02:24:55,560 : INFO : 
+
+2024-09-12 02:24:55,560 : INFO : Start total Epoch 139 (STEP: FineTune  in epoch [15 / 160] )
+2024-09-12 02:24:55,560 : INFO : lr=0.100
+2024-09-12 02:25:18,179 : INFO : Results Pruned: train_loss_pr=0.3383, train_acc_pr=88.25
+2024-09-12 02:25:20,029 : INFO : Results Testing: test_loss=0.4112, test_acc=86.40, best_test_acc:88.01
+2024-09-12 02:25:20,030 : INFO : 
+
+2024-09-12 02:25:20,030 : INFO : Start total Epoch 140 (STEP: FineTune  in epoch [16 / 160] )
+2024-09-12 02:25:20,030 : INFO : lr=0.100
+2024-09-12 02:25:42,410 : INFO : Results Pruned: train_loss_pr=0.3358, train_acc_pr=88.50
+2024-09-12 02:25:44,331 : INFO : Results Testing: test_loss=0.3613, test_acc=87.68, best_test_acc:88.01
+2024-09-12 02:25:44,331 : INFO : 
+
+2024-09-12 02:25:44,332 : INFO : Start total Epoch 141 (STEP: FineTune  in epoch [17 / 160] )
+2024-09-12 02:25:44,332 : INFO : lr=0.100
+2024-09-12 02:26:06,099 : INFO : Results Pruned: train_loss_pr=0.3373, train_acc_pr=88.30
+2024-09-12 02:26:07,811 : INFO : Results Testing: test_loss=0.4292, test_acc=86.15, best_test_acc:88.01
+2024-09-12 02:26:07,812 : INFO : 
+
+2024-09-12 02:26:07,812 : INFO : Start total Epoch 142 (STEP: FineTune  in epoch [18 / 160] )
+2024-09-12 02:26:07,812 : INFO : lr=0.100
+2024-09-12 02:26:30,365 : INFO : Results Pruned: train_loss_pr=0.3355, train_acc_pr=88.57
+2024-09-12 02:26:32,171 : INFO : Results Testing: test_loss=0.3734, test_acc=87.68, best_test_acc:88.01
+2024-09-12 02:26:32,172 : INFO : 
+
+2024-09-12 02:26:32,172 : INFO : Start total Epoch 143 (STEP: FineTune  in epoch [19 / 160] )
+2024-09-12 02:26:32,172 : INFO : lr=0.100
+2024-09-12 02:26:54,506 : INFO : Results Pruned: train_loss_pr=0.3378, train_acc_pr=88.23
+2024-09-12 02:26:56,097 : INFO : Results Testing: test_loss=0.3912, test_acc=87.09, best_test_acc:88.01
+2024-09-12 02:26:56,097 : INFO : 
+
+2024-09-12 02:26:56,097 : INFO : Start total Epoch 144 (STEP: FineTune  in epoch [20 / 160] )
+2024-09-12 02:26:56,097 : INFO : lr=0.100
+2024-09-12 02:27:16,514 : INFO : Results Pruned: train_loss_pr=0.3355, train_acc_pr=88.39
+2024-09-12 02:27:18,425 : INFO : Results Testing: test_loss=0.4326, test_acc=85.88, best_test_acc:88.01
+2024-09-12 02:27:18,425 : INFO : 
+
+2024-09-12 02:27:18,425 : INFO : Start total Epoch 145 (STEP: FineTune  in epoch [21 / 160] )
+2024-09-12 02:27:18,425 : INFO : lr=0.100
+2024-09-12 02:27:39,512 : INFO : Results Pruned: train_loss_pr=0.3366, train_acc_pr=88.39
+2024-09-12 02:27:41,127 : INFO : Results Testing: test_loss=0.4220, test_acc=86.56, best_test_acc:88.01
+2024-09-12 02:27:41,128 : INFO : 
+
+2024-09-12 02:27:41,128 : INFO : Start total Epoch 146 (STEP: FineTune  in epoch [22 / 160] )
+2024-09-12 02:27:41,128 : INFO : lr=0.100
+2024-09-12 02:28:03,320 : INFO : Results Pruned: train_loss_pr=0.3364, train_acc_pr=88.40
+2024-09-12 02:28:05,192 : INFO : Results Testing: test_loss=0.3869, test_acc=87.08, best_test_acc:88.01
+2024-09-12 02:28:05,192 : INFO : 
+
+2024-09-12 02:28:05,192 : INFO : Start total Epoch 147 (STEP: FineTune  in epoch [23 / 160] )
+2024-09-12 02:28:05,192 : INFO : lr=0.100
+2024-09-12 02:28:26,874 : INFO : Results Pruned: train_loss_pr=0.3377, train_acc_pr=88.37
+2024-09-12 02:28:28,575 : INFO : Results Testing: test_loss=0.4327, test_acc=86.00, best_test_acc:88.01
+2024-09-12 02:28:28,576 : INFO : 
+
+2024-09-12 02:28:28,576 : INFO : Start total Epoch 148 (STEP: FineTune  in epoch [24 / 160] )
+2024-09-12 02:28:28,576 : INFO : lr=0.100
+2024-09-12 02:28:50,544 : INFO : Results Pruned: train_loss_pr=0.3329, train_acc_pr=88.63
+2024-09-12 02:28:52,043 : INFO : Results Testing: test_loss=0.3942, test_acc=86.92, best_test_acc:88.01
+2024-09-12 02:28:52,043 : INFO : 
+
+2024-09-12 02:28:52,043 : INFO : Start total Epoch 149 (STEP: FineTune  in epoch [25 / 160] )
+2024-09-12 02:28:52,044 : INFO : lr=0.100
+2024-09-12 02:29:13,641 : INFO : Results Pruned: train_loss_pr=0.3387, train_acc_pr=88.43
+2024-09-12 02:29:15,479 : INFO : Results Testing: test_loss=0.4302, test_acc=85.62, best_test_acc:88.01
+2024-09-12 02:29:15,479 : INFO : 
+
+2024-09-12 02:29:15,479 : INFO : Start total Epoch 150 (STEP: FineTune  in epoch [26 / 160] )
+2024-09-12 02:29:15,479 : INFO : lr=0.100
+2024-09-12 02:29:37,199 : INFO : Results Pruned: train_loss_pr=0.3365, train_acc_pr=88.46
+2024-09-12 02:29:38,839 : INFO : Results Testing: test_loss=0.4151, test_acc=86.73, best_test_acc:88.01
+2024-09-12 02:29:38,840 : INFO : 
+
+2024-09-12 02:29:38,840 : INFO : Start total Epoch 151 (STEP: FineTune  in epoch [27 / 160] )
+2024-09-12 02:29:38,840 : INFO : lr=0.100
+2024-09-12 02:30:01,497 : INFO : Results Pruned: train_loss_pr=0.3373, train_acc_pr=88.37
+2024-09-12 02:30:03,214 : INFO : Results Testing: test_loss=0.3831, test_acc=87.51, best_test_acc:88.01
+2024-09-12 02:30:03,214 : INFO : 
+
+2024-09-12 02:30:03,215 : INFO : Start total Epoch 152 (STEP: FineTune  in epoch [28 / 160] )
+2024-09-12 02:30:03,215 : INFO : lr=0.100
+2024-09-12 02:30:25,128 : INFO : Results Pruned: train_loss_pr=0.3311, train_acc_pr=88.64
+2024-09-12 02:30:26,906 : INFO : Results Testing: test_loss=0.4885, test_acc=83.96, best_test_acc:88.01
+2024-09-12 02:30:26,906 : INFO : 
+
+2024-09-12 02:30:26,906 : INFO : Start total Epoch 153 (STEP: FineTune  in epoch [29 / 160] )
+2024-09-12 02:30:26,906 : INFO : lr=0.100
+2024-09-12 02:30:49,694 : INFO : Results Pruned: train_loss_pr=0.3383, train_acc_pr=88.35
+2024-09-12 02:30:51,317 : INFO : Results Testing: test_loss=0.3793, test_acc=87.46, best_test_acc:88.01
+2024-09-12 02:30:51,317 : INFO : 
+
+2024-09-12 02:30:51,318 : INFO : Start total Epoch 154 (STEP: FineTune  in epoch [30 / 160] )
+2024-09-12 02:30:51,318 : INFO : lr=0.100
+2024-09-12 02:31:13,300 : INFO : Results Pruned: train_loss_pr=0.3367, train_acc_pr=88.40
+2024-09-12 02:31:14,952 : INFO : Results Testing: test_loss=0.4197, test_acc=86.09, best_test_acc:88.01
+2024-09-12 02:31:14,953 : INFO : 
+
+2024-09-12 02:31:14,953 : INFO : Start total Epoch 155 (STEP: FineTune  in epoch [31 / 160] )
+2024-09-12 02:31:14,953 : INFO : lr=0.100
+2024-09-12 02:31:37,106 : INFO : Results Pruned: train_loss_pr=0.3369, train_acc_pr=88.31
+2024-09-12 02:31:38,871 : INFO : Results Testing: test_loss=0.4800, test_acc=84.17, best_test_acc:88.01
+2024-09-12 02:31:38,872 : INFO : 
+
+2024-09-12 02:31:38,872 : INFO : Start total Epoch 156 (STEP: FineTune  in epoch [32 / 160] )
+2024-09-12 02:31:38,872 : INFO : lr=0.100
+2024-09-12 02:32:01,544 : INFO : Results Pruned: train_loss_pr=0.3404, train_acc_pr=88.32
+2024-09-12 02:32:03,344 : INFO : Results Testing: test_loss=0.4662, test_acc=84.74, best_test_acc:88.01
+2024-09-12 02:32:03,344 : INFO : 
+
+2024-09-12 02:32:03,344 : INFO : Start total Epoch 157 (STEP: FineTune  in epoch [33 / 160] )
+2024-09-12 02:32:03,344 : INFO : lr=0.100
+2024-09-12 02:32:24,667 : INFO : Results Pruned: train_loss_pr=0.3368, train_acc_pr=88.45
+2024-09-12 02:32:26,584 : INFO : Results Testing: test_loss=0.3997, test_acc=86.18, best_test_acc:88.01
+2024-09-12 02:32:26,584 : INFO : 
+
+2024-09-12 02:32:26,585 : INFO : Start total Epoch 158 (STEP: FineTune  in epoch [34 / 160] )
+2024-09-12 02:32:26,585 : INFO : lr=0.100
+2024-09-12 02:32:49,107 : INFO : Results Pruned: train_loss_pr=0.3356, train_acc_pr=88.37
+2024-09-12 02:32:50,816 : INFO : Results Testing: test_loss=0.4764, test_acc=84.20, best_test_acc:88.01
+2024-09-12 02:32:50,817 : INFO : 
+
+2024-09-12 02:32:50,817 : INFO : Start total Epoch 159 (STEP: FineTune  in epoch [35 / 160] )
+2024-09-12 02:32:50,817 : INFO : lr=0.100
+2024-09-12 02:33:12,496 : INFO : Results Pruned: train_loss_pr=0.3320, train_acc_pr=88.67
+2024-09-12 02:33:14,307 : INFO : Results Testing: test_loss=0.3890, test_acc=86.80, best_test_acc:88.01
+2024-09-12 02:33:14,307 : INFO : 
+
+2024-09-12 02:33:14,307 : INFO : Start total Epoch 160 (STEP: FineTune  in epoch [36 / 160] )
+2024-09-12 02:33:14,307 : INFO : lr=0.100
+2024-09-12 02:33:35,849 : INFO : Results Pruned: train_loss_pr=0.3375, train_acc_pr=88.45
+2024-09-12 02:33:37,626 : INFO : Results Testing: test_loss=0.3901, test_acc=87.07, best_test_acc:88.01
+2024-09-12 02:33:37,626 : INFO : 
+
+2024-09-12 02:33:37,626 : INFO : Start total Epoch 161 (STEP: FineTune  in epoch [37 / 160] )
+2024-09-12 02:33:37,626 : INFO : lr=0.100
+2024-09-12 02:33:59,103 : INFO : Results Pruned: train_loss_pr=0.3399, train_acc_pr=88.21
+2024-09-12 02:34:00,791 : INFO : Results Testing: test_loss=0.4858, test_acc=83.92, best_test_acc:88.01
+2024-09-12 02:34:00,791 : INFO : 
+
+2024-09-12 02:34:00,791 : INFO : Start total Epoch 162 (STEP: FineTune  in epoch [38 / 160] )
+2024-09-12 02:34:00,791 : INFO : lr=0.100
+2024-09-12 02:34:22,768 : INFO : Results Pruned: train_loss_pr=0.3363, train_acc_pr=88.47
+2024-09-12 02:34:24,512 : INFO : Results Testing: test_loss=0.4295, test_acc=85.89, best_test_acc:88.01
+2024-09-12 02:34:24,513 : INFO : 
+
+2024-09-12 02:34:24,513 : INFO : Start total Epoch 163 (STEP: FineTune  in epoch [39 / 160] )
+2024-09-12 02:34:24,513 : INFO : lr=0.100
+2024-09-12 02:34:46,666 : INFO : Results Pruned: train_loss_pr=0.3360, train_acc_pr=88.50
+2024-09-12 02:34:48,452 : INFO : Results Testing: test_loss=0.5115, test_acc=83.60, best_test_acc:88.01
+2024-09-12 02:34:48,453 : INFO : 
+
+2024-09-12 02:34:48,453 : INFO : Start total Epoch 164 (STEP: FineTune  in epoch [40 / 160] )
+2024-09-12 02:34:48,453 : INFO : lr=0.100
+2024-09-12 02:35:11,005 : INFO : Results Pruned: train_loss_pr=0.3396, train_acc_pr=88.32
+2024-09-12 02:35:12,702 : INFO : Results Testing: test_loss=0.4749, test_acc=84.48, best_test_acc:88.01
+2024-09-12 02:35:12,702 : INFO : 
+
+2024-09-12 02:35:12,703 : INFO : Start total Epoch 165 (STEP: FineTune  in epoch [41 / 160] )
+2024-09-12 02:35:12,703 : INFO : lr=0.100
+2024-09-12 02:35:35,034 : INFO : Results Pruned: train_loss_pr=0.3381, train_acc_pr=88.31
+2024-09-12 02:35:36,839 : INFO : Results Testing: test_loss=0.4619, test_acc=84.67, best_test_acc:88.01
+2024-09-12 02:35:36,839 : INFO : 
+
+2024-09-12 02:35:36,840 : INFO : Start total Epoch 166 (STEP: FineTune  in epoch [42 / 160] )
+2024-09-12 02:35:36,840 : INFO : lr=0.100
+2024-09-12 02:35:59,610 : INFO : Results Pruned: train_loss_pr=0.3361, train_acc_pr=88.34
+2024-09-12 02:36:01,272 : INFO : Results Testing: test_loss=0.3820, test_acc=87.08, best_test_acc:88.01
+2024-09-12 02:36:01,272 : INFO : 
+
+2024-09-12 02:36:01,272 : INFO : Start total Epoch 167 (STEP: FineTune  in epoch [43 / 160] )
+2024-09-12 02:36:01,273 : INFO : lr=0.100
+2024-09-12 02:36:23,004 : INFO : Results Pruned: train_loss_pr=0.3345, train_acc_pr=88.46
+2024-09-12 02:36:24,826 : INFO : Results Testing: test_loss=0.3749, test_acc=87.31, best_test_acc:88.01
+2024-09-12 02:36:24,826 : INFO : 
+
+2024-09-12 02:36:24,827 : INFO : Start total Epoch 168 (STEP: FineTune  in epoch [44 / 160] )
+2024-09-12 02:36:24,827 : INFO : lr=0.100
+2024-09-12 02:36:47,119 : INFO : Results Pruned: train_loss_pr=0.3398, train_acc_pr=88.31
+2024-09-12 02:36:48,847 : INFO : Results Testing: test_loss=0.4211, test_acc=86.32, best_test_acc:88.01
+2024-09-12 02:36:48,848 : INFO : 
+
+2024-09-12 02:36:48,848 : INFO : Start total Epoch 169 (STEP: FineTune  in epoch [45 / 160] )
+2024-09-12 02:36:48,848 : INFO : lr=0.100
+2024-09-12 02:37:10,838 : INFO : Results Pruned: train_loss_pr=0.3365, train_acc_pr=88.37
+2024-09-12 02:37:12,390 : INFO : Results Testing: test_loss=0.4860, test_acc=84.11, best_test_acc:88.01
+2024-09-12 02:37:12,391 : INFO : 
+
+2024-09-12 02:37:12,391 : INFO : Start total Epoch 170 (STEP: FineTune  in epoch [46 / 160] )
+2024-09-12 02:37:12,391 : INFO : lr=0.100
+2024-09-12 02:37:34,041 : INFO : Results Pruned: train_loss_pr=0.3374, train_acc_pr=88.41
+2024-09-12 02:37:35,733 : INFO : Results Testing: test_loss=0.3826, test_acc=87.00, best_test_acc:88.01
+2024-09-12 02:37:35,734 : INFO : 
+
+2024-09-12 02:37:35,734 : INFO : Start total Epoch 171 (STEP: FineTune  in epoch [47 / 160] )
+2024-09-12 02:37:35,734 : INFO : lr=0.100
+2024-09-12 02:37:57,684 : INFO : Results Pruned: train_loss_pr=0.3377, train_acc_pr=88.26
+2024-09-12 02:37:59,500 : INFO : Results Testing: test_loss=0.3873, test_acc=87.57, best_test_acc:88.01
+2024-09-12 02:37:59,501 : INFO : 
+
+2024-09-12 02:37:59,501 : INFO : Start total Epoch 172 (STEP: FineTune  in epoch [48 / 160] )
+2024-09-12 02:37:59,501 : INFO : lr=0.100
+2024-09-12 02:38:21,672 : INFO : Results Pruned: train_loss_pr=0.3344, train_acc_pr=88.51
+2024-09-12 02:38:23,366 : INFO : Results Testing: test_loss=0.5157, test_acc=84.02, best_test_acc:88.01
+2024-09-12 02:38:23,366 : INFO : 
+
+2024-09-12 02:38:23,366 : INFO : Start total Epoch 173 (STEP: FineTune  in epoch [49 / 160] )
+2024-09-12 02:38:23,366 : INFO : lr=0.100
+2024-09-12 02:38:44,915 : INFO : Results Pruned: train_loss_pr=0.3408, train_acc_pr=88.32
+2024-09-12 02:38:46,529 : INFO : Results Testing: test_loss=0.4703, test_acc=85.30, best_test_acc:88.01
+2024-09-12 02:38:46,529 : INFO : 
+
+2024-09-12 02:38:46,529 : INFO : Start total Epoch 174 (STEP: FineTune  in epoch [50 / 160] )
+2024-09-12 02:38:46,529 : INFO : lr=0.100
+2024-09-12 02:39:07,171 : INFO : Results Pruned: train_loss_pr=0.3392, train_acc_pr=88.30
+2024-09-12 02:39:08,776 : INFO : Results Testing: test_loss=0.4200, test_acc=86.15, best_test_acc:88.01
+2024-09-12 02:39:08,777 : INFO : 
+
+2024-09-12 02:39:08,777 : INFO : Start total Epoch 175 (STEP: FineTune  in epoch [51 / 160] )
+2024-09-12 02:39:08,777 : INFO : lr=0.100
+2024-09-12 02:39:31,040 : INFO : Results Pruned: train_loss_pr=0.3371, train_acc_pr=88.36
+2024-09-12 02:39:32,834 : INFO : Results Testing: test_loss=0.4107, test_acc=86.07, best_test_acc:88.01
+2024-09-12 02:39:32,835 : INFO : 
+
+2024-09-12 02:39:32,835 : INFO : Start total Epoch 176 (STEP: FineTune  in epoch [52 / 160] )
+2024-09-12 02:39:32,835 : INFO : lr=0.100
+2024-09-12 02:39:55,276 : INFO : Results Pruned: train_loss_pr=0.3406, train_acc_pr=88.13
+2024-09-12 02:39:56,998 : INFO : Results Testing: test_loss=0.4413, test_acc=85.72, best_test_acc:88.01
+2024-09-12 02:39:56,998 : INFO : 
+
+2024-09-12 02:39:56,998 : INFO : Start total Epoch 177 (STEP: FineTune  in epoch [53 / 160] )
+2024-09-12 02:39:56,999 : INFO : lr=0.100
+2024-09-12 02:40:19,233 : INFO : Results Pruned: train_loss_pr=0.3405, train_acc_pr=88.29
+2024-09-12 02:40:20,977 : INFO : Results Testing: test_loss=0.4410, test_acc=85.56, best_test_acc:88.01
+2024-09-12 02:40:20,977 : INFO : 
+
+2024-09-12 02:40:20,977 : INFO : Start total Epoch 178 (STEP: FineTune  in epoch [54 / 160] )
+2024-09-12 02:40:20,977 : INFO : lr=0.100
+2024-09-12 02:40:42,747 : INFO : Results Pruned: train_loss_pr=0.3394, train_acc_pr=88.27
+2024-09-12 02:40:44,548 : INFO : Results Testing: test_loss=0.4162, test_acc=85.83, best_test_acc:88.01
+2024-09-12 02:40:44,549 : INFO : 
+
+2024-09-12 02:40:44,549 : INFO : Start total Epoch 179 (STEP: FineTune  in epoch [55 / 160] )
+2024-09-12 02:40:44,549 : INFO : lr=0.100
+2024-09-12 02:41:05,942 : INFO : Results Pruned: train_loss_pr=0.3379, train_acc_pr=88.33
+2024-09-12 02:41:07,671 : INFO : Results Testing: test_loss=0.4684, test_acc=84.76, best_test_acc:88.01
+2024-09-12 02:41:07,672 : INFO : 
+
+2024-09-12 02:41:07,672 : INFO : Start total Epoch 180 (STEP: FineTune  in epoch [56 / 160] )
+2024-09-12 02:41:07,672 : INFO : lr=0.100
+2024-09-12 02:41:29,294 : INFO : Results Pruned: train_loss_pr=0.3360, train_acc_pr=88.40
+2024-09-12 02:41:30,972 : INFO : Results Testing: test_loss=0.4536, test_acc=85.47, best_test_acc:88.01
+2024-09-12 02:41:30,973 : INFO : 
+
+2024-09-12 02:41:30,973 : INFO : Start total Epoch 181 (STEP: FineTune  in epoch [57 / 160] )
+2024-09-12 02:41:30,973 : INFO : lr=0.100
+2024-09-12 02:41:52,471 : INFO : Results Pruned: train_loss_pr=0.3403, train_acc_pr=88.36
+2024-09-12 02:41:54,110 : INFO : Results Testing: test_loss=0.4114, test_acc=86.77, best_test_acc:88.01
+2024-09-12 02:41:54,111 : INFO : 
+
+2024-09-12 02:41:54,111 : INFO : Start total Epoch 182 (STEP: FineTune  in epoch [58 / 160] )
+2024-09-12 02:41:54,111 : INFO : lr=0.100
+2024-09-12 02:42:16,779 : INFO : Results Pruned: train_loss_pr=0.3384, train_acc_pr=88.41
+2024-09-12 02:42:18,622 : INFO : Results Testing: test_loss=0.3866, test_acc=87.17, best_test_acc:88.01
+2024-09-12 02:42:18,622 : INFO : 
+
+2024-09-12 02:42:18,622 : INFO : Start total Epoch 183 (STEP: FineTune  in epoch [59 / 160] )
+2024-09-12 02:42:18,622 : INFO : lr=0.100
+2024-09-12 02:42:40,927 : INFO : Results Pruned: train_loss_pr=0.3340, train_acc_pr=88.49
+2024-09-12 02:42:42,648 : INFO : Results Testing: test_loss=0.4475, test_acc=85.48, best_test_acc:88.01
+2024-09-12 02:42:42,648 : INFO : 
+
+2024-09-12 02:42:42,648 : INFO : Start total Epoch 184 (STEP: FineTune  in epoch [60 / 160] )
+2024-09-12 02:42:42,649 : INFO : lr=0.100
+2024-09-12 02:43:05,703 : INFO : Results Pruned: train_loss_pr=0.3416, train_acc_pr=88.30
+2024-09-12 02:43:07,427 : INFO : Results Testing: test_loss=0.4461, test_acc=85.67, best_test_acc:88.01
+2024-09-12 02:43:07,427 : INFO : 
+
+2024-09-12 02:43:07,427 : INFO : Start total Epoch 185 (STEP: FineTune  in epoch [61 / 160] )
+2024-09-12 02:43:07,428 : INFO : lr=0.100
+2024-09-12 02:43:29,052 : INFO : Results Pruned: train_loss_pr=0.3367, train_acc_pr=88.42
+2024-09-12 02:43:30,826 : INFO : Results Testing: test_loss=0.3927, test_acc=87.01, best_test_acc:88.01
+2024-09-12 02:43:30,827 : INFO : 
+
+2024-09-12 02:43:30,827 : INFO : Start total Epoch 186 (STEP: FineTune  in epoch [62 / 160] )
+2024-09-12 02:43:30,827 : INFO : lr=0.100
+2024-09-12 02:43:53,476 : INFO : Results Pruned: train_loss_pr=0.3391, train_acc_pr=88.36
+2024-09-12 02:43:55,197 : INFO : Results Testing: test_loss=0.4680, test_acc=85.01, best_test_acc:88.01
+2024-09-12 02:43:55,197 : INFO : 
+
+2024-09-12 02:43:55,197 : INFO : Start total Epoch 187 (STEP: FineTune  in epoch [63 / 160] )
+2024-09-12 02:43:55,197 : INFO : lr=0.100
+2024-09-12 02:44:16,754 : INFO : Results Pruned: train_loss_pr=0.3414, train_acc_pr=88.25
+2024-09-12 02:44:18,582 : INFO : Results Testing: test_loss=0.4251, test_acc=86.54, best_test_acc:88.01
+2024-09-12 02:44:18,583 : INFO : 
+
+2024-09-12 02:44:18,583 : INFO : Start total Epoch 188 (STEP: FineTune  in epoch [64 / 160] )
+2024-09-12 02:44:18,583 : INFO : lr=0.100
+2024-09-12 02:44:40,647 : INFO : Results Pruned: train_loss_pr=0.3339, train_acc_pr=88.48
+2024-09-12 02:44:42,460 : INFO : Results Testing: test_loss=0.4006, test_acc=86.49, best_test_acc:88.01
+2024-09-12 02:44:42,460 : INFO : 
+
+2024-09-12 02:44:42,460 : INFO : Start total Epoch 189 (STEP: FineTune  in epoch [65 / 160] )
+2024-09-12 02:44:42,460 : INFO : lr=0.100
+2024-09-12 02:45:03,389 : INFO : Results Pruned: train_loss_pr=0.3361, train_acc_pr=88.49
+2024-09-12 02:45:05,234 : INFO : Results Testing: test_loss=0.4093, test_acc=86.30, best_test_acc:88.01
+2024-09-12 02:45:05,235 : INFO : 
+
+2024-09-12 02:45:05,235 : INFO : Start total Epoch 190 (STEP: FineTune  in epoch [66 / 160] )
+2024-09-12 02:45:05,235 : INFO : lr=0.100
+2024-09-12 02:45:27,543 : INFO : Results Pruned: train_loss_pr=0.3382, train_acc_pr=88.31
+2024-09-12 02:45:29,281 : INFO : Results Testing: test_loss=0.4250, test_acc=85.64, best_test_acc:88.01
+2024-09-12 02:45:29,281 : INFO : 
+
+2024-09-12 02:45:29,281 : INFO : Start total Epoch 191 (STEP: FineTune  in epoch [67 / 160] )
+2024-09-12 02:45:29,281 : INFO : lr=0.100
+2024-09-12 02:45:51,799 : INFO : Results Pruned: train_loss_pr=0.3371, train_acc_pr=88.40
+2024-09-12 02:45:53,511 : INFO : Results Testing: test_loss=0.3817, test_acc=87.16, best_test_acc:88.01
+2024-09-12 02:45:53,512 : INFO : 
+
+2024-09-12 02:45:53,512 : INFO : Start total Epoch 192 (STEP: FineTune  in epoch [68 / 160] )
+2024-09-12 02:45:53,512 : INFO : lr=0.100
+2024-09-12 02:46:15,892 : INFO : Results Pruned: train_loss_pr=0.3387, train_acc_pr=88.40
+2024-09-12 02:46:17,504 : INFO : Results Testing: test_loss=0.4282, test_acc=85.81, best_test_acc:88.01
+2024-09-12 02:46:17,505 : INFO : 
+
+2024-09-12 02:46:17,505 : INFO : Start total Epoch 193 (STEP: FineTune  in epoch [69 / 160] )
+2024-09-12 02:46:17,505 : INFO : lr=0.100
+2024-09-12 02:46:39,676 : INFO : Results Pruned: train_loss_pr=0.3328, train_acc_pr=88.46
+2024-09-12 02:46:41,564 : INFO : Results Testing: test_loss=0.3999, test_acc=86.59, best_test_acc:88.01
+2024-09-12 02:46:41,564 : INFO : 
+
+2024-09-12 02:46:41,564 : INFO : Start total Epoch 194 (STEP: FineTune  in epoch [70 / 160] )
+2024-09-12 02:46:41,564 : INFO : lr=0.100
+2024-09-12 02:47:04,299 : INFO : Results Pruned: train_loss_pr=0.3376, train_acc_pr=88.33
+2024-09-12 02:47:06,132 : INFO : Results Testing: test_loss=0.4007, test_acc=86.68, best_test_acc:88.01
+2024-09-12 02:47:06,132 : INFO : 
+
+2024-09-12 02:47:06,132 : INFO : Start total Epoch 195 (STEP: FineTune  in epoch [71 / 160] )
+2024-09-12 02:47:06,132 : INFO : lr=0.100
+2024-09-12 02:47:28,481 : INFO : Results Pruned: train_loss_pr=0.3417, train_acc_pr=88.25
+2024-09-12 02:47:30,221 : INFO : Results Testing: test_loss=0.4174, test_acc=86.02, best_test_acc:88.01
+2024-09-12 02:47:30,221 : INFO : 
+
+2024-09-12 02:47:30,221 : INFO : Start total Epoch 196 (STEP: FineTune  in epoch [72 / 160] )
+2024-09-12 02:47:30,221 : INFO : lr=0.100
+2024-09-12 02:47:51,596 : INFO : Results Pruned: train_loss_pr=0.3368, train_acc_pr=88.44
+2024-09-12 02:47:53,366 : INFO : Results Testing: test_loss=0.4174, test_acc=85.83, best_test_acc:88.01
+2024-09-12 02:47:53,366 : INFO : 
+
+2024-09-12 02:47:53,366 : INFO : Start total Epoch 197 (STEP: FineTune  in epoch [73 / 160] )
+2024-09-12 02:47:53,367 : INFO : lr=0.100
+2024-09-12 02:48:16,397 : INFO : Results Pruned: train_loss_pr=0.3422, train_acc_pr=88.15
+2024-09-12 02:48:18,246 : INFO : Results Testing: test_loss=0.4503, test_acc=86.21, best_test_acc:88.01
+2024-09-12 02:48:18,246 : INFO : 
+
+2024-09-12 02:48:18,246 : INFO : Start total Epoch 198 (STEP: FineTune  in epoch [74 / 160] )
+2024-09-12 02:48:18,246 : INFO : lr=0.100
+2024-09-12 02:48:39,975 : INFO : Results Pruned: train_loss_pr=0.3386, train_acc_pr=88.35
+2024-09-12 02:48:41,746 : INFO : Results Testing: test_loss=0.4332, test_acc=85.69, best_test_acc:88.01
+2024-09-12 02:48:41,746 : INFO : 
+
+2024-09-12 02:48:41,747 : INFO : Start total Epoch 199 (STEP: FineTune  in epoch [75 / 160] )
+2024-09-12 02:48:41,747 : INFO : lr=0.100
+2024-09-12 02:49:03,375 : INFO : Results Pruned: train_loss_pr=0.3401, train_acc_pr=88.22
+2024-09-12 02:49:05,041 : INFO : Results Testing: test_loss=0.4711, test_acc=84.80, best_test_acc:88.01
+2024-09-12 02:49:05,041 : INFO : 
+
+2024-09-12 02:49:05,041 : INFO : Start total Epoch 200 (STEP: FineTune  in epoch [76 / 160] )
+2024-09-12 02:49:05,041 : INFO : lr=0.100
+2024-09-12 02:49:27,184 : INFO : Results Pruned: train_loss_pr=0.3344, train_acc_pr=88.50
+2024-09-12 02:49:28,932 : INFO : Results Testing: test_loss=0.3861, test_acc=86.96, best_test_acc:88.01
+2024-09-12 02:49:28,933 : INFO : 
+
+2024-09-12 02:49:28,933 : INFO : Start total Epoch 201 (STEP: FineTune  in epoch [77 / 160] )
+2024-09-12 02:49:28,933 : INFO : lr=0.100
+2024-09-12 02:49:50,622 : INFO : Results Pruned: train_loss_pr=0.3361, train_acc_pr=88.41
+2024-09-12 02:49:52,500 : INFO : Results Testing: test_loss=0.4058, test_acc=86.49, best_test_acc:88.01
+2024-09-12 02:49:52,500 : INFO : 
+
+2024-09-12 02:49:52,500 : INFO : Start total Epoch 202 (STEP: FineTune  in epoch [78 / 160] )
+2024-09-12 02:49:52,500 : INFO : lr=0.100
+2024-09-12 02:50:14,215 : INFO : Results Pruned: train_loss_pr=0.3423, train_acc_pr=88.24
+2024-09-12 02:50:16,221 : INFO : Results Testing: test_loss=0.5160, test_acc=83.52, best_test_acc:88.01
+2024-09-12 02:50:16,221 : INFO : 
+
+2024-09-12 02:50:16,221 : INFO : Start total Epoch 203 (STEP: FineTune  in epoch [79 / 160] )
+2024-09-12 02:50:16,222 : INFO : lr=0.100
+2024-09-12 02:50:38,870 : INFO : Results Pruned: train_loss_pr=0.3374, train_acc_pr=88.32
+2024-09-12 02:50:40,540 : INFO : Results Testing: test_loss=0.4810, test_acc=84.16, best_test_acc:88.01
+2024-09-12 02:50:40,541 : INFO : 
+
+2024-09-12 02:50:40,541 : INFO : Start total Epoch 204 (STEP: FineTune  in epoch [80 / 160] )
+2024-09-12 02:50:40,541 : INFO : lr=0.100
+2024-09-12 02:51:03,548 : INFO : Results Pruned: train_loss_pr=0.3379, train_acc_pr=88.40
+2024-09-12 02:51:05,148 : INFO : Results Testing: test_loss=0.3617, test_acc=87.66, best_test_acc:88.01
+2024-09-12 02:51:05,149 : INFO : 
+
+2024-09-12 02:51:05,149 : INFO : Start total Epoch 205 (STEP: FineTune  in epoch [81 / 160] )
+2024-09-12 02:51:05,149 : INFO : lr=0.010
+2024-09-12 02:51:27,531 : INFO : Results Pruned: train_loss_pr=0.2649, train_acc_pr=90.90
+2024-09-12 02:51:29,432 : INFO : best_test_acc_pr=90.29
+2024-09-12 02:51:29,433 : INFO : Results Testing: test_loss=0.2905, test_acc=90.29, best_test_acc:90.29
+2024-09-12 02:51:29,433 : INFO : 
+
+2024-09-12 02:51:29,433 : INFO : Start total Epoch 206 (STEP: FineTune  in epoch [82 / 160] )
+2024-09-12 02:51:29,433 : INFO : lr=0.010
+2024-09-12 02:51:51,225 : INFO : Results Pruned: train_loss_pr=0.2418, train_acc_pr=91.76
+2024-09-12 02:51:53,083 : INFO : best_test_acc_pr=90.34
+2024-09-12 02:51:53,083 : INFO : Results Testing: test_loss=0.2861, test_acc=90.34, best_test_acc:90.34
+2024-09-12 02:51:53,083 : INFO : 
+
+2024-09-12 02:51:53,083 : INFO : Start total Epoch 207 (STEP: FineTune  in epoch [83 / 160] )
+2024-09-12 02:51:53,083 : INFO : lr=0.010
+2024-09-12 02:52:14,731 : INFO : Results Pruned: train_loss_pr=0.2318, train_acc_pr=92.09
+2024-09-12 02:52:16,497 : INFO : Results Testing: test_loss=0.2848, test_acc=90.30, best_test_acc:90.34
+2024-09-12 02:52:16,498 : INFO : 
+
+2024-09-12 02:52:16,498 : INFO : Start total Epoch 208 (STEP: FineTune  in epoch [84 / 160] )
+2024-09-12 02:52:16,498 : INFO : lr=0.010
+2024-09-12 02:52:38,584 : INFO : Results Pruned: train_loss_pr=0.2282, train_acc_pr=92.23
+2024-09-12 02:52:40,646 : INFO : best_test_acc_pr=90.59
+2024-09-12 02:52:40,647 : INFO : Results Testing: test_loss=0.2846, test_acc=90.59, best_test_acc:90.59
+2024-09-12 02:52:40,647 : INFO : 
+
+2024-09-12 02:52:40,647 : INFO : Start total Epoch 209 (STEP: FineTune  in epoch [85 / 160] )
+2024-09-12 02:52:40,647 : INFO : lr=0.010
+2024-09-12 02:53:02,208 : INFO : Results Pruned: train_loss_pr=0.2237, train_acc_pr=92.25
+2024-09-12 02:53:03,996 : INFO : Results Testing: test_loss=0.2767, test_acc=90.54, best_test_acc:90.59
+2024-09-12 02:53:03,996 : INFO : 
+
+2024-09-12 02:53:03,996 : INFO : Start total Epoch 210 (STEP: FineTune  in epoch [86 / 160] )
+2024-09-12 02:53:03,996 : INFO : lr=0.010
+2024-09-12 02:53:25,689 : INFO : Results Pruned: train_loss_pr=0.2237, train_acc_pr=92.27
+2024-09-12 02:53:27,774 : INFO : best_test_acc_pr=90.88
+2024-09-12 02:53:27,775 : INFO : Results Testing: test_loss=0.2801, test_acc=90.88, best_test_acc:90.88
+2024-09-12 02:53:27,775 : INFO : 
+
+2024-09-12 02:53:27,775 : INFO : Start total Epoch 211 (STEP: FineTune  in epoch [87 / 160] )
+2024-09-12 02:53:27,775 : INFO : lr=0.010
+2024-09-12 02:53:50,156 : INFO : Results Pruned: train_loss_pr=0.2199, train_acc_pr=92.42
+2024-09-12 02:53:51,645 : INFO : Results Testing: test_loss=0.2838, test_acc=90.59, best_test_acc:90.88
+2024-09-12 02:53:51,645 : INFO : 
+
+2024-09-12 02:53:51,645 : INFO : Start total Epoch 212 (STEP: FineTune  in epoch [88 / 160] )
+2024-09-12 02:53:51,646 : INFO : lr=0.010
+2024-09-12 02:54:15,213 : INFO : Results Pruned: train_loss_pr=0.2171, train_acc_pr=92.58
+2024-09-12 02:54:16,898 : INFO : Results Testing: test_loss=0.2789, test_acc=90.84, best_test_acc:90.88
+2024-09-12 02:54:16,899 : INFO : 
+
+2024-09-12 02:54:16,899 : INFO : Start total Epoch 213 (STEP: FineTune  in epoch [89 / 160] )
+2024-09-12 02:54:16,899 : INFO : lr=0.010
+2024-09-12 02:54:38,279 : INFO : Results Pruned: train_loss_pr=0.2161, train_acc_pr=92.54
+2024-09-12 02:54:40,228 : INFO : best_test_acc_pr=90.93
+2024-09-12 02:54:40,228 : INFO : Results Testing: test_loss=0.2773, test_acc=90.93, best_test_acc:90.93
+2024-09-12 02:54:40,228 : INFO : 
+
+2024-09-12 02:54:40,228 : INFO : Start total Epoch 214 (STEP: FineTune  in epoch [90 / 160] )
+2024-09-12 02:54:40,228 : INFO : lr=0.010
+2024-09-12 02:55:02,675 : INFO : Results Pruned: train_loss_pr=0.2189, train_acc_pr=92.48
+2024-09-12 02:55:04,449 : INFO : Results Testing: test_loss=0.2837, test_acc=90.32, best_test_acc:90.93
+2024-09-12 02:55:04,449 : INFO : 
+
+2024-09-12 02:55:04,449 : INFO : Start total Epoch 215 (STEP: FineTune  in epoch [91 / 160] )
+2024-09-12 02:55:04,449 : INFO : lr=0.010
+2024-09-12 02:55:26,846 : INFO : Results Pruned: train_loss_pr=0.2149, train_acc_pr=92.62
+2024-09-12 02:55:28,611 : INFO : Results Testing: test_loss=0.2783, test_acc=90.81, best_test_acc:90.93
+2024-09-12 02:55:28,611 : INFO : 
+
+2024-09-12 02:55:28,611 : INFO : Start total Epoch 216 (STEP: FineTune  in epoch [92 / 160] )
+2024-09-12 02:55:28,612 : INFO : lr=0.010
+2024-09-12 02:55:49,863 : INFO : Results Pruned: train_loss_pr=0.2123, train_acc_pr=92.76
+2024-09-12 02:55:51,714 : INFO : Results Testing: test_loss=0.2851, test_acc=90.59, best_test_acc:90.93
+2024-09-12 02:55:51,714 : INFO : 
+
+2024-09-12 02:55:51,714 : INFO : Start total Epoch 217 (STEP: FineTune  in epoch [93 / 160] )
+2024-09-12 02:55:51,714 : INFO : lr=0.010
+2024-09-12 02:56:12,770 : INFO : Results Pruned: train_loss_pr=0.2103, train_acc_pr=92.72
+2024-09-12 02:56:14,501 : INFO : Results Testing: test_loss=0.2734, test_acc=90.78, best_test_acc:90.93
+2024-09-12 02:56:14,501 : INFO : 
+
+2024-09-12 02:56:14,502 : INFO : Start total Epoch 218 (STEP: FineTune  in epoch [94 / 160] )
+2024-09-12 02:56:14,502 : INFO : lr=0.010
+2024-09-12 02:56:36,754 : INFO : Results Pruned: train_loss_pr=0.2088, train_acc_pr=92.81
+2024-09-12 02:56:38,532 : INFO : Results Testing: test_loss=0.2804, test_acc=90.69, best_test_acc:90.93
+2024-09-12 02:56:38,532 : INFO : 
+
+2024-09-12 02:56:38,532 : INFO : Start total Epoch 219 (STEP: FineTune  in epoch [95 / 160] )
+2024-09-12 02:56:38,532 : INFO : lr=0.010
+2024-09-12 02:57:00,241 : INFO : Results Pruned: train_loss_pr=0.2077, train_acc_pr=92.96
+2024-09-12 02:57:01,907 : INFO : Results Testing: test_loss=0.2852, test_acc=90.60, best_test_acc:90.93
+2024-09-12 02:57:01,908 : INFO : 
+
+2024-09-12 02:57:01,908 : INFO : Start total Epoch 220 (STEP: FineTune  in epoch [96 / 160] )
+2024-09-12 02:57:01,908 : INFO : lr=0.010
+2024-09-12 02:57:24,324 : INFO : Results Pruned: train_loss_pr=0.2095, train_acc_pr=92.61
+2024-09-12 02:57:26,158 : INFO : Results Testing: test_loss=0.2836, test_acc=90.90, best_test_acc:90.93
+2024-09-12 02:57:26,158 : INFO : 
+
+2024-09-12 02:57:26,158 : INFO : Start total Epoch 221 (STEP: FineTune  in epoch [97 / 160] )
+2024-09-12 02:57:26,159 : INFO : lr=0.010
+2024-09-12 02:57:48,217 : INFO : Results Pruned: train_loss_pr=0.2090, train_acc_pr=92.79
+2024-09-12 02:57:49,846 : INFO : Results Testing: test_loss=0.2788, test_acc=90.80, best_test_acc:90.93
+2024-09-12 02:57:49,846 : INFO : 
+
+2024-09-12 02:57:49,846 : INFO : Start total Epoch 222 (STEP: FineTune  in epoch [98 / 160] )
+2024-09-12 02:57:49,846 : INFO : lr=0.010
+2024-09-12 02:58:10,271 : INFO : Results Pruned: train_loss_pr=0.2094, train_acc_pr=92.77
+2024-09-12 02:58:12,036 : INFO : Results Testing: test_loss=0.2799, test_acc=90.55, best_test_acc:90.93
+2024-09-12 02:58:12,037 : INFO : 
+
+2024-09-12 02:58:12,037 : INFO : Start total Epoch 223 (STEP: FineTune  in epoch [99 / 160] )
+2024-09-12 02:58:12,037 : INFO : lr=0.010
+2024-09-12 02:58:33,830 : INFO : Results Pruned: train_loss_pr=0.2062, train_acc_pr=92.94
+2024-09-12 02:58:35,656 : INFO : Results Testing: test_loss=0.2789, test_acc=90.81, best_test_acc:90.93
+2024-09-12 02:58:35,657 : INFO : 
+
+2024-09-12 02:58:35,657 : INFO : Start total Epoch 224 (STEP: FineTune  in epoch [100 / 160] )
+2024-09-12 02:58:35,657 : INFO : lr=0.010
+2024-09-12 02:58:58,345 : INFO : Results Pruned: train_loss_pr=0.2067, train_acc_pr=92.88
+2024-09-12 02:59:00,291 : INFO : best_test_acc_pr=91.08
+2024-09-12 02:59:00,291 : INFO : Results Testing: test_loss=0.2731, test_acc=91.08, best_test_acc:91.08
+2024-09-12 02:59:00,291 : INFO : 
+
+2024-09-12 02:59:00,292 : INFO : Start total Epoch 225 (STEP: FineTune  in epoch [101 / 160] )
+2024-09-12 02:59:00,292 : INFO : lr=0.010
+2024-09-12 02:59:21,332 : INFO : Results Pruned: train_loss_pr=0.2060, train_acc_pr=92.92
+2024-09-12 02:59:23,240 : INFO : Results Testing: test_loss=0.2785, test_acc=90.76, best_test_acc:91.08
+2024-09-12 02:59:23,240 : INFO : 
+
+2024-09-12 02:59:23,240 : INFO : Start total Epoch 226 (STEP: FineTune  in epoch [102 / 160] )
+2024-09-12 02:59:23,240 : INFO : lr=0.010
+2024-09-12 02:59:45,081 : INFO : Results Pruned: train_loss_pr=0.2055, train_acc_pr=92.88
+2024-09-12 02:59:46,717 : INFO : Results Testing: test_loss=0.2789, test_acc=90.63, best_test_acc:91.08
+2024-09-12 02:59:46,717 : INFO : 
+
+2024-09-12 02:59:46,718 : INFO : Start total Epoch 227 (STEP: FineTune  in epoch [103 / 160] )
+2024-09-12 02:59:46,718 : INFO : lr=0.010
+2024-09-12 03:00:08,821 : INFO : Results Pruned: train_loss_pr=0.2063, train_acc_pr=92.89
+2024-09-12 03:00:10,641 : INFO : Results Testing: test_loss=0.2813, test_acc=90.60, best_test_acc:91.08
+2024-09-12 03:00:10,641 : INFO : 
+
+2024-09-12 03:00:10,641 : INFO : Start total Epoch 228 (STEP: FineTune  in epoch [104 / 160] )
+2024-09-12 03:00:10,641 : INFO : lr=0.010
+2024-09-12 03:00:32,222 : INFO : Results Pruned: train_loss_pr=0.2026, train_acc_pr=92.91
+2024-09-12 03:00:33,879 : INFO : Results Testing: test_loss=0.2808, test_acc=90.72, best_test_acc:91.08
+2024-09-12 03:00:33,879 : INFO : 
+
+2024-09-12 03:00:33,879 : INFO : Start total Epoch 229 (STEP: FineTune  in epoch [105 / 160] )
+2024-09-12 03:00:33,879 : INFO : lr=0.010
+2024-09-12 03:00:55,875 : INFO : Results Pruned: train_loss_pr=0.2048, train_acc_pr=92.98
+2024-09-12 03:00:57,592 : INFO : Results Testing: test_loss=0.2768, test_acc=90.82, best_test_acc:91.08
+2024-09-12 03:00:57,592 : INFO : 
+
+2024-09-12 03:00:57,592 : INFO : Start total Epoch 230 (STEP: FineTune  in epoch [106 / 160] )
+2024-09-12 03:00:57,592 : INFO : lr=0.010
+2024-09-12 03:01:18,427 : INFO : Results Pruned: train_loss_pr=0.2030, train_acc_pr=93.01
+2024-09-12 03:01:20,075 : INFO : Results Testing: test_loss=0.2796, test_acc=90.71, best_test_acc:91.08
+2024-09-12 03:01:20,076 : INFO : 
+
+2024-09-12 03:01:20,076 : INFO : Start total Epoch 231 (STEP: FineTune  in epoch [107 / 160] )
+2024-09-12 03:01:20,076 : INFO : lr=0.010
+2024-09-12 03:01:42,120 : INFO : Results Pruned: train_loss_pr=0.2035, train_acc_pr=92.91
+2024-09-12 03:01:43,707 : INFO : Results Testing: test_loss=0.2809, test_acc=90.74, best_test_acc:91.08
+2024-09-12 03:01:43,707 : INFO : 
+
+2024-09-12 03:01:43,707 : INFO : Start total Epoch 232 (STEP: FineTune  in epoch [108 / 160] )
+2024-09-12 03:01:43,707 : INFO : lr=0.010
+2024-09-12 03:02:05,994 : INFO : Results Pruned: train_loss_pr=0.2058, train_acc_pr=92.85
+2024-09-12 03:02:07,670 : INFO : Results Testing: test_loss=0.2816, test_acc=90.68, best_test_acc:91.08
+2024-09-12 03:02:07,670 : INFO : 
+
+2024-09-12 03:02:07,671 : INFO : Start total Epoch 233 (STEP: FineTune  in epoch [109 / 160] )
+2024-09-12 03:02:07,671 : INFO : lr=0.010
+2024-09-12 03:02:28,117 : INFO : Results Pruned: train_loss_pr=0.2037, train_acc_pr=92.94
+2024-09-12 03:02:29,938 : INFO : Results Testing: test_loss=0.2841, test_acc=90.57, best_test_acc:91.08
+2024-09-12 03:02:29,939 : INFO : 
+
+2024-09-12 03:02:29,939 : INFO : Start total Epoch 234 (STEP: FineTune  in epoch [110 / 160] )
+2024-09-12 03:02:29,939 : INFO : lr=0.010
+2024-09-12 03:02:51,448 : INFO : Results Pruned: train_loss_pr=0.2023, train_acc_pr=93.05
+2024-09-12 03:02:53,281 : INFO : Results Testing: test_loss=0.2912, test_acc=90.53, best_test_acc:91.08
+2024-09-12 03:02:53,281 : INFO : 
+
+2024-09-12 03:02:53,281 : INFO : Start total Epoch 235 (STEP: FineTune  in epoch [111 / 160] )
+2024-09-12 03:02:53,281 : INFO : lr=0.010
+2024-09-12 03:03:14,749 : INFO : Results Pruned: train_loss_pr=0.2061, train_acc_pr=92.88
+2024-09-12 03:03:16,439 : INFO : Results Testing: test_loss=0.2831, test_acc=90.58, best_test_acc:91.08
+2024-09-12 03:03:16,439 : INFO : 
+
+2024-09-12 03:03:16,439 : INFO : Start total Epoch 236 (STEP: FineTune  in epoch [112 / 160] )
+2024-09-12 03:03:16,440 : INFO : lr=0.010
+2024-09-12 03:03:38,933 : INFO : Results Pruned: train_loss_pr=0.2043, train_acc_pr=92.91
+2024-09-12 03:03:40,709 : INFO : Results Testing: test_loss=0.2798, test_acc=90.79, best_test_acc:91.08
+2024-09-12 03:03:40,710 : INFO : 
+
+2024-09-12 03:03:40,710 : INFO : Start total Epoch 237 (STEP: FineTune  in epoch [113 / 160] )
+2024-09-12 03:03:40,710 : INFO : lr=0.010
+2024-09-12 03:04:03,777 : INFO : Results Pruned: train_loss_pr=0.2059, train_acc_pr=92.90
+2024-09-12 03:04:05,626 : INFO : Results Testing: test_loss=0.2873, test_acc=90.59, best_test_acc:91.08
+2024-09-12 03:04:05,627 : INFO : 
+
+2024-09-12 03:04:05,627 : INFO : Start total Epoch 238 (STEP: FineTune  in epoch [114 / 160] )
+2024-09-12 03:04:05,627 : INFO : lr=0.010
+2024-09-12 03:04:27,179 : INFO : Results Pruned: train_loss_pr=0.2032, train_acc_pr=93.03
+2024-09-12 03:04:28,978 : INFO : Results Testing: test_loss=0.2967, test_acc=90.04, best_test_acc:91.08
+2024-09-12 03:04:28,979 : INFO : 
+
+2024-09-12 03:04:28,979 : INFO : Start total Epoch 239 (STEP: FineTune  in epoch [115 / 160] )
+2024-09-12 03:04:28,979 : INFO : lr=0.010
+2024-09-12 03:04:50,191 : INFO : Results Pruned: train_loss_pr=0.2039, train_acc_pr=93.02
+2024-09-12 03:04:51,897 : INFO : Results Testing: test_loss=0.2854, test_acc=91.00, best_test_acc:91.08
+2024-09-12 03:04:51,898 : INFO : 
+
+2024-09-12 03:04:51,898 : INFO : Start total Epoch 240 (STEP: FineTune  in epoch [116 / 160] )
+2024-09-12 03:04:51,898 : INFO : lr=0.010
+2024-09-12 03:05:14,175 : INFO : Results Pruned: train_loss_pr=0.2037, train_acc_pr=92.93
+2024-09-12 03:05:15,964 : INFO : Results Testing: test_loss=0.2770, test_acc=90.86, best_test_acc:91.08
+2024-09-12 03:05:15,964 : INFO : 
+
+2024-09-12 03:05:15,964 : INFO : Start total Epoch 241 (STEP: FineTune  in epoch [117 / 160] )
+2024-09-12 03:05:15,964 : INFO : lr=0.010
+2024-09-12 03:05:36,838 : INFO : Results Pruned: train_loss_pr=0.2048, train_acc_pr=92.86
+2024-09-12 03:05:38,680 : INFO : Results Testing: test_loss=0.2862, test_acc=90.64, best_test_acc:91.08
+2024-09-12 03:05:38,681 : INFO : 
+
+2024-09-12 03:05:38,681 : INFO : Start total Epoch 242 (STEP: FineTune  in epoch [118 / 160] )
+2024-09-12 03:05:38,681 : INFO : lr=0.010
+2024-09-12 03:06:01,050 : INFO : Results Pruned: train_loss_pr=0.2030, train_acc_pr=92.99
+2024-09-12 03:06:02,731 : INFO : Results Testing: test_loss=0.2850, test_acc=90.57, best_test_acc:91.08
+2024-09-12 03:06:02,731 : INFO : 
+
+2024-09-12 03:06:02,731 : INFO : Start total Epoch 243 (STEP: FineTune  in epoch [119 / 160] )
+2024-09-12 03:06:02,731 : INFO : lr=0.010
+2024-09-12 03:06:23,757 : INFO : Results Pruned: train_loss_pr=0.2058, train_acc_pr=92.84
+2024-09-12 03:06:25,598 : INFO : Results Testing: test_loss=0.2937, test_acc=90.21, best_test_acc:91.08
+2024-09-12 03:06:25,598 : INFO : 
+
+2024-09-12 03:06:25,598 : INFO : Start total Epoch 244 (STEP: FineTune  in epoch [120 / 160] )
+2024-09-12 03:06:25,599 : INFO : lr=0.010
+2024-09-12 03:06:47,927 : INFO : Results Pruned: train_loss_pr=0.2044, train_acc_pr=92.81
+2024-09-12 03:06:49,625 : INFO : Results Testing: test_loss=0.2896, test_acc=90.46, best_test_acc:91.08
+2024-09-12 03:06:49,625 : INFO : 
+
+2024-09-12 03:06:49,625 : INFO : Start total Epoch 245 (STEP: FineTune  in epoch [121 / 160] )
+2024-09-12 03:06:49,625 : INFO : lr=0.001
+2024-09-12 03:07:11,132 : INFO : Results Pruned: train_loss_pr=0.1923, train_acc_pr=93.27
+2024-09-12 03:07:12,846 : INFO : Results Testing: test_loss=0.2723, test_acc=90.95, best_test_acc:91.08
+2024-09-12 03:07:12,847 : INFO : 
+
+2024-09-12 03:07:12,847 : INFO : Start total Epoch 246 (STEP: FineTune  in epoch [122 / 160] )
+2024-09-12 03:07:12,847 : INFO : lr=0.001
+2024-09-12 03:07:35,780 : INFO : Results Pruned: train_loss_pr=0.1869, train_acc_pr=93.57
+2024-09-12 03:07:37,701 : INFO : Results Testing: test_loss=0.2719, test_acc=90.97, best_test_acc:91.08
+2024-09-12 03:07:37,701 : INFO : 
+
+2024-09-12 03:07:37,701 : INFO : Start total Epoch 247 (STEP: FineTune  in epoch [123 / 160] )
+2024-09-12 03:07:37,702 : INFO : lr=0.001
+2024-09-12 03:07:59,853 : INFO : Results Pruned: train_loss_pr=0.1856, train_acc_pr=93.68
+2024-09-12 03:08:01,733 : INFO : Results Testing: test_loss=0.2707, test_acc=91.02, best_test_acc:91.08
+2024-09-12 03:08:01,733 : INFO : 
+
+2024-09-12 03:08:01,733 : INFO : Start total Epoch 248 (STEP: FineTune  in epoch [124 / 160] )
+2024-09-12 03:08:01,734 : INFO : lr=0.001
+2024-09-12 03:08:23,809 : INFO : Results Pruned: train_loss_pr=0.1838, train_acc_pr=93.66
+2024-09-12 03:08:25,531 : INFO : Results Testing: test_loss=0.2707, test_acc=91.04, best_test_acc:91.08
+2024-09-12 03:08:25,531 : INFO : 
+
+2024-09-12 03:08:25,531 : INFO : Start total Epoch 249 (STEP: FineTune  in epoch [125 / 160] )
+2024-09-12 03:08:25,531 : INFO : lr=0.001
+2024-09-12 03:08:46,835 : INFO : Results Pruned: train_loss_pr=0.1838, train_acc_pr=93.56
+2024-09-12 03:08:48,821 : INFO : best_test_acc_pr=91.09
+2024-09-12 03:08:48,821 : INFO : Results Testing: test_loss=0.2687, test_acc=91.09, best_test_acc:91.09
+2024-09-12 03:08:48,821 : INFO : 
+
+2024-09-12 03:08:48,821 : INFO : Start total Epoch 250 (STEP: FineTune  in epoch [126 / 160] )
+2024-09-12 03:08:48,821 : INFO : lr=0.001
+2024-09-12 03:09:10,587 : INFO : Results Pruned: train_loss_pr=0.1847, train_acc_pr=93.71
+2024-09-12 03:09:12,296 : INFO : Results Testing: test_loss=0.2733, test_acc=90.95, best_test_acc:91.09
+2024-09-12 03:09:12,296 : INFO : 
+
+2024-09-12 03:09:12,296 : INFO : Start total Epoch 251 (STEP: FineTune  in epoch [127 / 160] )
+2024-09-12 03:09:12,296 : INFO : lr=0.001
+2024-09-12 03:09:34,470 : INFO : Results Pruned: train_loss_pr=0.1816, train_acc_pr=93.73
+2024-09-12 03:09:36,327 : INFO : best_test_acc_pr=91.17
+2024-09-12 03:09:36,327 : INFO : Results Testing: test_loss=0.2700, test_acc=91.17, best_test_acc:91.17
+2024-09-12 03:09:36,327 : INFO : 
+
+2024-09-12 03:09:36,327 : INFO : Start total Epoch 252 (STEP: FineTune  in epoch [128 / 160] )
+2024-09-12 03:09:36,327 : INFO : lr=0.001
+2024-09-12 03:09:57,940 : INFO : Results Pruned: train_loss_pr=0.1809, train_acc_pr=93.76
+2024-09-12 03:09:59,769 : INFO : Results Testing: test_loss=0.2689, test_acc=91.14, best_test_acc:91.17
+2024-09-12 03:09:59,769 : INFO : 
+
+2024-09-12 03:09:59,769 : INFO : Start total Epoch 253 (STEP: FineTune  in epoch [129 / 160] )
+2024-09-12 03:09:59,769 : INFO : lr=0.001
+2024-09-12 03:10:21,825 : INFO : Results Pruned: train_loss_pr=0.1812, train_acc_pr=93.71
+2024-09-12 03:10:23,823 : INFO : best_test_acc_pr=91.24
+2024-09-12 03:10:23,823 : INFO : Results Testing: test_loss=0.2682, test_acc=91.24, best_test_acc:91.24
+2024-09-12 03:10:23,823 : INFO : 
+
+2024-09-12 03:10:23,823 : INFO : Start total Epoch 254 (STEP: FineTune  in epoch [130 / 160] )
+2024-09-12 03:10:23,823 : INFO : lr=0.001
+2024-09-12 03:10:46,314 : INFO : Results Pruned: train_loss_pr=0.1800, train_acc_pr=93.68
+2024-09-12 03:10:48,067 : INFO : Results Testing: test_loss=0.2722, test_acc=91.08, best_test_acc:91.24
+2024-09-12 03:10:48,068 : INFO : 
+
+2024-09-12 03:10:48,068 : INFO : Start total Epoch 255 (STEP: FineTune  in epoch [131 / 160] )
+2024-09-12 03:10:48,068 : INFO : lr=0.001
+2024-09-12 03:11:10,494 : INFO : Results Pruned: train_loss_pr=0.1832, train_acc_pr=93.63
+2024-09-12 03:11:12,088 : INFO : Results Testing: test_loss=0.2705, test_acc=91.13, best_test_acc:91.24
+2024-09-12 03:11:12,089 : INFO : 
+
+2024-09-12 03:11:12,089 : INFO : Start total Epoch 256 (STEP: FineTune  in epoch [132 / 160] )
+2024-09-12 03:11:12,089 : INFO : lr=0.001
+2024-09-12 03:11:34,903 : INFO : Results Pruned: train_loss_pr=0.1811, train_acc_pr=93.75
+2024-09-12 03:11:36,701 : INFO : Results Testing: test_loss=0.2723, test_acc=91.16, best_test_acc:91.24
+2024-09-12 03:11:36,701 : INFO : 
+
+2024-09-12 03:11:36,701 : INFO : Start total Epoch 257 (STEP: FineTune  in epoch [133 / 160] )
+2024-09-12 03:11:36,701 : INFO : lr=0.001
+2024-09-12 03:11:58,607 : INFO : Results Pruned: train_loss_pr=0.1814, train_acc_pr=93.81
+2024-09-12 03:12:00,295 : INFO : Results Testing: test_loss=0.2720, test_acc=91.08, best_test_acc:91.24
+2024-09-12 03:12:00,295 : INFO : 
+
+2024-09-12 03:12:00,295 : INFO : Start total Epoch 258 (STEP: FineTune  in epoch [134 / 160] )
+2024-09-12 03:12:00,295 : INFO : lr=0.001
+2024-09-12 03:12:21,962 : INFO : Results Pruned: train_loss_pr=0.1838, train_acc_pr=93.64
+2024-09-12 03:12:23,833 : INFO : Results Testing: test_loss=0.2685, test_acc=91.15, best_test_acc:91.24
+2024-09-12 03:12:23,833 : INFO : 
+
+2024-09-12 03:12:23,833 : INFO : Start total Epoch 259 (STEP: FineTune  in epoch [135 / 160] )
+2024-09-12 03:12:23,833 : INFO : lr=0.001
+2024-09-12 03:12:46,014 : INFO : Results Pruned: train_loss_pr=0.1815, train_acc_pr=93.67
+2024-09-12 03:12:47,697 : INFO : Results Testing: test_loss=0.2751, test_acc=91.10, best_test_acc:91.24
+2024-09-12 03:12:47,697 : INFO : 
+
+2024-09-12 03:12:47,698 : INFO : Start total Epoch 260 (STEP: FineTune  in epoch [136 / 160] )
+2024-09-12 03:12:47,698 : INFO : lr=0.001
+2024-09-12 03:13:09,403 : INFO : Results Pruned: train_loss_pr=0.1795, train_acc_pr=93.75
+2024-09-12 03:13:11,186 : INFO : best_test_acc_pr=91.26
+2024-09-12 03:13:11,186 : INFO : Results Testing: test_loss=0.2721, test_acc=91.26, best_test_acc:91.26
+2024-09-12 03:13:11,186 : INFO : 
+
+2024-09-12 03:13:11,186 : INFO : Start total Epoch 261 (STEP: FineTune  in epoch [137 / 160] )
+2024-09-12 03:13:11,186 : INFO : lr=0.001
+2024-09-12 03:13:32,245 : INFO : Results Pruned: train_loss_pr=0.1829, train_acc_pr=93.69
+2024-09-12 03:13:33,880 : INFO : Results Testing: test_loss=0.2743, test_acc=91.15, best_test_acc:91.26
+2024-09-12 03:13:33,880 : INFO : 
+
+2024-09-12 03:13:33,880 : INFO : Start total Epoch 262 (STEP: FineTune  in epoch [138 / 160] )
+2024-09-12 03:13:33,880 : INFO : lr=0.001
+2024-09-12 03:13:55,664 : INFO : Results Pruned: train_loss_pr=0.1780, train_acc_pr=93.86
+2024-09-12 03:13:57,340 : INFO : Results Testing: test_loss=0.2719, test_acc=91.09, best_test_acc:91.26
+2024-09-12 03:13:57,341 : INFO : 
+
+2024-09-12 03:13:57,341 : INFO : Start total Epoch 263 (STEP: FineTune  in epoch [139 / 160] )
+2024-09-12 03:13:57,341 : INFO : lr=0.001
+2024-09-12 03:14:18,748 : INFO : Results Pruned: train_loss_pr=0.1782, train_acc_pr=93.85
+2024-09-12 03:14:20,264 : INFO : Results Testing: test_loss=0.2683, test_acc=91.24, best_test_acc:91.26
+2024-09-12 03:14:20,264 : INFO : 
+
+2024-09-12 03:14:20,264 : INFO : Start total Epoch 264 (STEP: FineTune  in epoch [140 / 160] )
+2024-09-12 03:14:20,264 : INFO : lr=0.001
+2024-09-12 03:14:42,614 : INFO : Results Pruned: train_loss_pr=0.1796, train_acc_pr=93.86
+2024-09-12 03:14:44,116 : INFO : Results Testing: test_loss=0.2721, test_acc=91.06, best_test_acc:91.26
+2024-09-12 03:14:44,117 : INFO : 
+
+2024-09-12 03:14:44,117 : INFO : Start total Epoch 265 (STEP: FineTune  in epoch [141 / 160] )
+2024-09-12 03:14:44,117 : INFO : lr=0.001
+2024-09-12 03:15:05,017 : INFO : Results Pruned: train_loss_pr=0.1795, train_acc_pr=93.86
+2024-09-12 03:15:06,842 : INFO : Results Testing: test_loss=0.2688, test_acc=91.23, best_test_acc:91.26
+2024-09-12 03:15:06,842 : INFO : 
+
+2024-09-12 03:15:06,842 : INFO : Start total Epoch 266 (STEP: FineTune  in epoch [142 / 160] )
+2024-09-12 03:15:06,842 : INFO : lr=0.001
+2024-09-12 03:15:28,249 : INFO : Results Pruned: train_loss_pr=0.1811, train_acc_pr=93.67
+2024-09-12 03:15:29,910 : INFO : Results Testing: test_loss=0.2676, test_acc=91.06, best_test_acc:91.26
+2024-09-12 03:15:29,910 : INFO : 
+
+2024-09-12 03:15:29,910 : INFO : Start total Epoch 267 (STEP: FineTune  in epoch [143 / 160] )
+2024-09-12 03:15:29,910 : INFO : lr=0.001
+2024-09-12 03:15:51,811 : INFO : Results Pruned: train_loss_pr=0.1799, train_acc_pr=93.76
+2024-09-12 03:15:53,636 : INFO : Results Testing: test_loss=0.2679, test_acc=91.11, best_test_acc:91.26
+2024-09-12 03:15:53,637 : INFO : 
+
+2024-09-12 03:15:53,637 : INFO : Start total Epoch 268 (STEP: FineTune  in epoch [144 / 160] )
+2024-09-12 03:15:53,637 : INFO : lr=0.001
+2024-09-12 03:16:15,362 : INFO : Results Pruned: train_loss_pr=0.1804, train_acc_pr=93.82
+2024-09-12 03:16:17,322 : INFO : best_test_acc_pr=91.28
+2024-09-12 03:16:17,322 : INFO : Results Testing: test_loss=0.2685, test_acc=91.28, best_test_acc:91.28
+2024-09-12 03:16:17,322 : INFO : 
+
+2024-09-12 03:16:17,322 : INFO : Start total Epoch 269 (STEP: FineTune  in epoch [145 / 160] )
+2024-09-12 03:16:17,322 : INFO : lr=0.001
+2024-09-12 03:16:39,528 : INFO : Results Pruned: train_loss_pr=0.1796, train_acc_pr=93.82
+2024-09-12 03:16:41,380 : INFO : best_test_acc_pr=91.37
+2024-09-12 03:16:41,380 : INFO : Results Testing: test_loss=0.2661, test_acc=91.37, best_test_acc:91.37
+2024-09-12 03:16:41,380 : INFO : 
+
+2024-09-12 03:16:41,380 : INFO : Start total Epoch 270 (STEP: FineTune  in epoch [146 / 160] )
+2024-09-12 03:16:41,380 : INFO : lr=0.001
+2024-09-12 03:17:02,696 : INFO : Results Pruned: train_loss_pr=0.1796, train_acc_pr=93.75
+2024-09-12 03:17:04,489 : INFO : Results Testing: test_loss=0.2717, test_acc=91.17, best_test_acc:91.37
+2024-09-12 03:17:04,490 : INFO : 
+
+2024-09-12 03:17:04,490 : INFO : Start total Epoch 271 (STEP: FineTune  in epoch [147 / 160] )
+2024-09-12 03:17:04,490 : INFO : lr=0.001
+2024-09-12 03:17:25,341 : INFO : Results Pruned: train_loss_pr=0.1778, train_acc_pr=93.90
+2024-09-12 03:17:26,996 : INFO : Results Testing: test_loss=0.2716, test_acc=91.12, best_test_acc:91.37
+2024-09-12 03:17:26,997 : INFO : 
+
+2024-09-12 03:17:26,997 : INFO : Start total Epoch 272 (STEP: FineTune  in epoch [148 / 160] )
+2024-09-12 03:17:26,997 : INFO : lr=0.001
+2024-09-12 03:17:48,439 : INFO : Results Pruned: train_loss_pr=0.1787, train_acc_pr=93.90
+2024-09-12 03:17:50,236 : INFO : Results Testing: test_loss=0.2670, test_acc=91.22, best_test_acc:91.37
+2024-09-12 03:17:50,236 : INFO : 
+
+2024-09-12 03:17:50,236 : INFO : Start total Epoch 273 (STEP: FineTune  in epoch [149 / 160] )
+2024-09-12 03:17:50,236 : INFO : lr=0.001
+2024-09-12 03:18:12,244 : INFO : Results Pruned: train_loss_pr=0.1781, train_acc_pr=93.80
+2024-09-12 03:18:13,944 : INFO : Results Testing: test_loss=0.2689, test_acc=91.34, best_test_acc:91.37
+2024-09-12 03:18:13,944 : INFO : 
+
+2024-09-12 03:18:13,944 : INFO : Start total Epoch 274 (STEP: FineTune  in epoch [150 / 160] )
+2024-09-12 03:18:13,944 : INFO : lr=0.001
+2024-09-12 03:18:36,927 : INFO : Results Pruned: train_loss_pr=0.1789, train_acc_pr=93.74
+2024-09-12 03:18:38,691 : INFO : Results Testing: test_loss=0.2690, test_acc=91.33, best_test_acc:91.37
+2024-09-12 03:18:38,691 : INFO : 
+
+2024-09-12 03:18:38,691 : INFO : Start total Epoch 275 (STEP: FineTune  in epoch [151 / 160] )
+2024-09-12 03:18:38,691 : INFO : lr=0.001
+2024-09-12 03:19:02,064 : INFO : Results Pruned: train_loss_pr=0.1795, train_acc_pr=93.90
+2024-09-12 03:19:03,771 : INFO : Results Testing: test_loss=0.2727, test_acc=91.11, best_test_acc:91.37
+2024-09-12 03:19:03,772 : INFO : 
+
+2024-09-12 03:19:03,772 : INFO : Start total Epoch 276 (STEP: FineTune  in epoch [152 / 160] )
+2024-09-12 03:19:03,772 : INFO : lr=0.001
+2024-09-12 03:19:25,269 : INFO : Results Pruned: train_loss_pr=0.1788, train_acc_pr=93.85
+2024-09-12 03:19:26,892 : INFO : Results Testing: test_loss=0.2713, test_acc=91.01, best_test_acc:91.37
+2024-09-12 03:19:26,892 : INFO : 
+
+2024-09-12 03:19:26,892 : INFO : Start total Epoch 277 (STEP: FineTune  in epoch [153 / 160] )
+2024-09-12 03:19:26,893 : INFO : lr=0.001
+2024-09-12 03:19:48,233 : INFO : Results Pruned: train_loss_pr=0.1792, train_acc_pr=93.76
+2024-09-12 03:19:49,858 : INFO : Results Testing: test_loss=0.2706, test_acc=91.15, best_test_acc:91.37
+2024-09-12 03:19:49,859 : INFO : 
+
+2024-09-12 03:19:49,859 : INFO : Start total Epoch 278 (STEP: FineTune  in epoch [154 / 160] )
+2024-09-12 03:19:49,859 : INFO : lr=0.001
+2024-09-12 03:20:10,767 : INFO : Results Pruned: train_loss_pr=0.1795, train_acc_pr=93.82
+2024-09-12 03:20:12,543 : INFO : Results Testing: test_loss=0.2701, test_acc=91.09, best_test_acc:91.37
+2024-09-12 03:20:12,543 : INFO : 
+
+2024-09-12 03:20:12,543 : INFO : Start total Epoch 279 (STEP: FineTune  in epoch [155 / 160] )
+2024-09-12 03:20:12,543 : INFO : lr=0.001
+2024-09-12 03:20:33,903 : INFO : Results Pruned: train_loss_pr=0.1756, train_acc_pr=93.91
+2024-09-12 03:20:35,753 : INFO : Results Testing: test_loss=0.2751, test_acc=91.12, best_test_acc:91.37
+2024-09-12 03:20:35,753 : INFO : 
+
+2024-09-12 03:20:35,753 : INFO : Start total Epoch 280 (STEP: FineTune  in epoch [156 / 160] )
+2024-09-12 03:20:35,753 : INFO : lr=0.001
+2024-09-12 03:20:57,138 : INFO : Results Pruned: train_loss_pr=0.1758, train_acc_pr=94.01
+2024-09-12 03:20:58,871 : INFO : Results Testing: test_loss=0.2704, test_acc=91.15, best_test_acc:91.37
+2024-09-12 03:20:58,871 : INFO : 
+
+2024-09-12 03:20:58,871 : INFO : Start total Epoch 281 (STEP: FineTune  in epoch [157 / 160] )
+2024-09-12 03:20:58,871 : INFO : lr=0.001
+2024-09-12 03:21:20,605 : INFO : Results Pruned: train_loss_pr=0.1794, train_acc_pr=93.80
+2024-09-12 03:21:22,312 : INFO : Results Testing: test_loss=0.2718, test_acc=91.05, best_test_acc:91.37
+2024-09-12 03:21:22,313 : INFO : 
+
+2024-09-12 03:21:22,313 : INFO : Start total Epoch 282 (STEP: FineTune  in epoch [158 / 160] )
+2024-09-12 03:21:22,313 : INFO : lr=0.001
+2024-09-12 03:21:45,019 : INFO : Results Pruned: train_loss_pr=0.1772, train_acc_pr=93.98
+2024-09-12 03:21:46,730 : INFO : Results Testing: test_loss=0.2697, test_acc=91.10, best_test_acc:91.37
+2024-09-12 03:21:46,730 : INFO : 
+
+2024-09-12 03:21:46,730 : INFO : Start total Epoch 283 (STEP: FineTune  in epoch [159 / 160] )
+2024-09-12 03:21:46,730 : INFO : lr=0.001
+2024-09-12 03:22:07,674 : INFO : Results Pruned: train_loss_pr=0.1784, train_acc_pr=93.71
+2024-09-12 03:22:09,458 : INFO : Results Testing: test_loss=0.2698, test_acc=91.07, best_test_acc:91.37
+2024-09-12 03:22:09,458 : INFO : 
+
+2024-09-12 03:22:09,458 : INFO : Start total Epoch 284 (STEP: FineTune  in epoch [160 / 160] )
+2024-09-12 03:22:09,458 : INFO : lr=0.001
+2024-09-12 03:22:32,094 : INFO : Results Pruned: train_loss_pr=0.1770, train_acc_pr=93.84
+2024-09-12 03:22:33,914 : INFO : Results Testing: test_loss=0.2701, test_acc=91.18, best_test_acc:91.37
+2024-09-12 03:22:33,915 : INFO : Best test acc pruned:
+2024-09-12 03:22:33,915 : INFO : 91.37

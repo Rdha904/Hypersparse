@@ -1,0 +1,25 @@
+INFO:logger:Namespace(batch_size=64, dataset='cifar10', epochs=20, eta=1.05, lambda_init=5e-06, lr=0.1, lr_decay=0.1, lr_step=[80, 120], manual_seed=None, model_arch='resnet', model_depth=32, momentum=0.9, outdir='./Output_19', override_dir=False, path_data='./data', path_load_model=None, prune_rate=0.0, regularization_func='HS', size_model_buffer=1, warmup_epochs=1, weight_decay=0.0001, workers=4)
+INFO:logger:output Dir: ./Output_19
+INFO:logger:==> Preparing dataset cifar10
+INFO:logger:    Total Conv and Linear Params: 1.86M
+Files already downloaded and verified
+Traceback (most recent call last):
+  File "train.py", line 330, in <module>
+    trainModel(args)
+  File "train.py", line 223, in trainModel
+    model._fuse_model()  # Module fusionieren
+  File "/home/elounita/HyperSparse/models/resnet.py", line 194, in _fuse_model
+    fuse_modules(self, ["conv1", "bn1", "relu"], inplace=True)
+  File "/home/elounita/miniconda3/envs/hypersparse/lib/python3.8/site-packages/torch/ao/quantization/fuse_modules.py", line 160, in fuse_modules
+    return _fuse_modules(
+  File "/home/elounita/miniconda3/envs/hypersparse/lib/python3.8/site-packages/torch/ao/quantization/fuse_modules.py", line 98, in _fuse_modules
+    _fuse_modules_helper(model, modules_to_fuse, is_qat, fuser_func, fuse_custom_config_dict)
+  File "/home/elounita/miniconda3/envs/hypersparse/lib/python3.8/site-packages/torch/ao/quantization/fuse_modules.py", line 86, in _fuse_modules_helper
+    new_mod_list = fuser_func(mod_list, is_qat, additional_fuser_method_mapping)
+  File "/home/elounita/miniconda3/envs/hypersparse/lib/python3.8/site-packages/torch/ao/quantization/fuse_modules.py", line 58, in fuse_known_modules
+    fused = fuser_method(is_qat, *mod_list)
+  File "/home/elounita/miniconda3/envs/hypersparse/lib/python3.8/site-packages/torch/ao/quantization/fuser_method_mappings.py", line 100, in fuse_conv_bn_relu
+    fused_conv = nn.utils.fusion.fuse_conv_bn_eval(conv, bn)
+  File "/home/elounita/miniconda3/envs/hypersparse/lib/python3.8/site-packages/torch/nn/utils/fusion.py", line 27, in fuse_conv_bn_eval
+    assert not (conv.training or bn.training), "Fusion only for eval!"
+AssertionError: Fusion only for eval!

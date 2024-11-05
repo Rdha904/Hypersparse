@@ -1,0 +1,213 @@
+convert_to_onnx.py:51: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(model_path, map_location='cpu')
+/home/elounita/HyperSparse/models/resnet.py:151: TracerWarning: Converting a tensor to a Python integer might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  x = F.avg_pool2d(x,int(x.size()[3]))
+/home/elounita/miniconda3/envs/hypersparse/lib/python3.8/site-packages/apex/contrib/sparsity/sparse_masklib.py:42: UserWarning: The torch.cuda.*DtypeTensor constructors are no longer recommended. It's best to use methods such as torch.tensor(data, dtype=*, device='cuda') to create tensors. (Triggered internally at ../torch/csrc/tensor/python_tensor.cpp:78.)
+  mask = torch.cuda.IntTensor(matrix.shape).fill_(1).view(-1,m)
+Could not find permutation search CUDA kernels, falling back to CPU path
+[ASP][Info] permutation_search_kernels can be imported.
+model: /home/elounita/HyperSparse/run/models/init.pth.tar
+output: /home/elounita/HyperSparse/Onnx
+prune_rate: 0.0
+model_arch: resnet
+model_depth: 32
+model_num_classes: 10
+torch.Size([1, 128, 8, 8])
+Keep ratio: 0.9999994610861055
+torch.Size([1, 128, 8, 8])
+[ASP] torchvision is imported, can work with the MaskRCNN/KeypointRCNN from torchvision.
+[ASP] Auto skipping pruning conv1::weight of size=torch.Size([32, 3, 3, 3]) and type=torch.float32 for sparsity
+[ASP] Auto skipping pruning fc::weight of size=torch.Size([10, 128]) and type=torch.float32 for sparsity
+[set_permutation_params_from_asp] Set permutation needed parameters
+	Sparse parameter names: ['layer1.0.conv1:weight', 'layer1.0.conv2:weight', 'layer1.1.conv1:weight', 'layer1.1.conv2:weight', 'layer1.2.conv1:weight', 'layer1.2.conv2:weight', 'layer1.3.conv1:weight', 'layer1.3.conv2:weight', 'layer1.4.conv1:weight', 'layer1.4.conv2:weight', 'layer2.0.conv1:weight', 'layer2.0.conv2:weight', 'layer2.0.downsample.0:weight', 'layer2.1.conv1:weight', 'layer2.1.conv2:weight', 'layer2.2.conv1:weight', 'layer2.2.conv2:weight', 'layer2.3.conv1:weight', 'layer2.3.conv2:weight', 'layer2.4.conv1:weight', 'layer2.4.conv2:weight', 'layer3.0.conv1:weight', 'layer3.0.conv2:weight', 'layer3.0.downsample.0:weight', 'layer3.1.conv1:weight', 'layer3.1.conv2:weight', 'layer3.2.conv1:weight', 'layer3.2.conv2:weight', 'layer3.3.conv1:weight', 'layer3.3.conv2:weight', 'layer3.4.conv1:weight', 'layer3.4.conv2:weight']
+	All parameter names: [':conv1.weight', ':bn1.weight', ':bn1.bias', ':layer1.0.conv1.weight', ':layer1.0.bn1.weight', ':layer1.0.bn1.bias', ':layer1.0.conv2.weight', ':layer1.0.bn2.weight', ':layer1.0.bn2.bias', ':layer1.1.conv1.weight', ':layer1.1.bn1.weight', ':layer1.1.bn1.bias', ':layer1.1.conv2.weight', ':layer1.1.bn2.weight', ':layer1.1.bn2.bias', ':layer1.2.conv1.weight', ':layer1.2.bn1.weight', ':layer1.2.bn1.bias', ':layer1.2.conv2.weight', ':layer1.2.bn2.weight', ':layer1.2.bn2.bias', ':layer1.3.conv1.weight', ':layer1.3.bn1.weight', ':layer1.3.bn1.bias', ':layer1.3.conv2.weight', ':layer1.3.bn2.weight', ':layer1.3.bn2.bias', ':layer1.4.conv1.weight', ':layer1.4.bn1.weight', ':layer1.4.bn1.bias', ':layer1.4.conv2.weight', ':layer1.4.bn2.weight', ':layer1.4.bn2.bias', ':layer2.0.conv1.weight', ':layer2.0.bn1.weight', ':layer2.0.bn1.bias', ':layer2.0.conv2.weight', ':layer2.0.bn2.weight', ':layer2.0.bn2.bias', ':layer2.0.downsample.0.weight', ':layer2.0.downsample.1.weight', ':layer2.0.downsample.1.bias', ':layer2.1.conv1.weight', ':layer2.1.bn1.weight', ':layer2.1.bn1.bias', ':layer2.1.conv2.weight', ':layer2.1.bn2.weight', ':layer2.1.bn2.bias', ':layer2.2.conv1.weight', ':layer2.2.bn1.weight', ':layer2.2.bn1.bias', ':layer2.2.conv2.weight', ':layer2.2.bn2.weight', ':layer2.2.bn2.bias', ':layer2.3.conv1.weight', ':layer2.3.bn1.weight', ':layer2.3.bn1.bias', ':layer2.3.conv2.weight', ':layer2.3.bn2.weight', ':layer2.3.bn2.bias', ':layer2.4.conv1.weight', ':layer2.4.bn1.weight', ':layer2.4.bn1.bias', ':layer2.4.conv2.weight', ':layer2.4.bn2.weight', ':layer2.4.bn2.bias', ':layer3.0.conv1.weight', ':layer3.0.bn1.weight', ':layer3.0.bn1.bias', ':layer3.0.conv2.weight', ':layer3.0.bn2.weight', ':layer3.0.bn2.bias', ':layer3.0.downsample.0.weight', ':layer3.0.downsample.1.weight', ':layer3.0.downsample.1.bias', ':layer3.1.conv1.weight', ':layer3.1.bn1.weight', ':layer3.1.bn1.bias', ':layer3.1.conv2.weight', ':layer3.1.bn2.weight', ':layer3.1.bn2.bias', ':layer3.2.conv1.weight', ':layer3.2.bn1.weight', ':layer3.2.bn1.bias', ':layer3.2.conv2.weight', ':layer3.2.bn2.weight', ':layer3.2.bn2.bias', ':layer3.3.conv1.weight', ':layer3.3.bn1.weight', ':layer3.3.bn1.bias', ':layer3.3.conv2.weight', ':layer3.3.bn2.weight', ':layer3.3.bn2.bias', ':layer3.4.conv1.weight', ':layer3.4.bn1.weight', ':layer3.4.bn1.bias', ':layer3.4.conv2.weight', ':layer3.4.bn2.weight', ':layer3.4.bn2.bias', ':fc.weight', ':fc.bias', 'conv1:weight', 'bn1:weight', 'bn1:bias', 'bn1:running_mean', 'bn1:running_var', 'layer1.0:conv1.weight', 'layer1.0:bn1.weight', 'layer1.0:bn1.bias', 'layer1.0:conv2.weight', 'layer1.0:bn2.weight', 'layer1.0:bn2.bias', 'layer1.0.conv1:weight', 'layer1.0.bn1:weight', 'layer1.0.bn1:bias', 'layer1.0.bn1:running_mean', 'layer1.0.bn1:running_var', 'layer1.0.conv2:weight', 'layer1.0.bn2:weight', 'layer1.0.bn2:bias', 'layer1.0.bn2:running_mean', 'layer1.0.bn2:running_var', 'layer1.1:conv1.weight', 'layer1.1:bn1.weight', 'layer1.1:bn1.bias', 'layer1.1:conv2.weight', 'layer1.1:bn2.weight', 'layer1.1:bn2.bias', 'layer1.1.conv1:weight', 'layer1.1.bn1:weight', 'layer1.1.bn1:bias', 'layer1.1.bn1:running_mean', 'layer1.1.bn1:running_var', 'layer1.1.conv2:weight', 'layer1.1.bn2:weight', 'layer1.1.bn2:bias', 'layer1.1.bn2:running_mean', 'layer1.1.bn2:running_var', 'layer1.2:conv1.weight', 'layer1.2:bn1.weight', 'layer1.2:bn1.bias', 'layer1.2:conv2.weight', 'layer1.2:bn2.weight', 'layer1.2:bn2.bias', 'layer1.2.conv1:weight', 'layer1.2.bn1:weight', 'layer1.2.bn1:bias', 'layer1.2.bn1:running_mean', 'layer1.2.bn1:running_var', 'layer1.2.conv2:weight', 'layer1.2.bn2:weight', 'layer1.2.bn2:bias', 'layer1.2.bn2:running_mean', 'layer1.2.bn2:running_var', 'layer1.3:conv1.weight', 'layer1.3:bn1.weight', 'layer1.3:bn1.bias', 'layer1.3:conv2.weight', 'layer1.3:bn2.weight', 'layer1.3:bn2.bias', 'layer1.3.conv1:weight', 'layer1.3.bn1:weight', 'layer1.3.bn1:bias', 'layer1.3.bn1:running_mean', 'layer1.3.bn1:running_var', 'layer1.3.conv2:weight', 'layer1.3.bn2:weight', 'layer1.3.bn2:bias', 'layer1.3.bn2:running_mean', 'layer1.3.bn2:running_var', 'layer1.4:conv1.weight', 'layer1.4:bn1.weight', 'layer1.4:bn1.bias', 'layer1.4:conv2.weight', 'layer1.4:bn2.weight', 'layer1.4:bn2.bias', 'layer1.4.conv1:weight', 'layer1.4.bn1:weight', 'layer1.4.bn1:bias', 'layer1.4.bn1:running_mean', 'layer1.4.bn1:running_var', 'layer1.4.conv2:weight', 'layer1.4.bn2:weight', 'layer1.4.bn2:bias', 'layer1.4.bn2:running_mean', 'layer1.4.bn2:running_var', 'layer2.0:conv1.weight', 'layer2.0:bn1.weight', 'layer2.0:bn1.bias', 'layer2.0:conv2.weight', 'layer2.0:bn2.weight', 'layer2.0:bn2.bias', 'layer2.0:downsample.0.weight', 'layer2.0:downsample.1.weight', 'layer2.0:downsample.1.bias', 'layer2.0.conv1:weight', 'layer2.0.bn1:weight', 'layer2.0.bn1:bias', 'layer2.0.bn1:running_mean', 'layer2.0.bn1:running_var', 'layer2.0.conv2:weight', 'layer2.0.bn2:weight', 'layer2.0.bn2:bias', 'layer2.0.bn2:running_mean', 'layer2.0.bn2:running_var', 'layer2.0.downsample.0:weight', 'layer2.0.downsample.1:weight', 'layer2.0.downsample.1:bias', 'layer2.0.downsample.1:running_mean', 'layer2.0.downsample.1:running_var', 'layer2.1:conv1.weight', 'layer2.1:bn1.weight', 'layer2.1:bn1.bias', 'layer2.1:conv2.weight', 'layer2.1:bn2.weight', 'layer2.1:bn2.bias', 'layer2.1.conv1:weight', 'layer2.1.bn1:weight', 'layer2.1.bn1:bias', 'layer2.1.bn1:running_mean', 'layer2.1.bn1:running_var', 'layer2.1.conv2:weight', 'layer2.1.bn2:weight', 'layer2.1.bn2:bias', 'layer2.1.bn2:running_mean', 'layer2.1.bn2:running_var', 'layer2.2:conv1.weight', 'layer2.2:bn1.weight', 'layer2.2:bn1.bias', 'layer2.2:conv2.weight', 'layer2.2:bn2.weight', 'layer2.2:bn2.bias', 'layer2.2.conv1:weight', 'layer2.2.bn1:weight', 'layer2.2.bn1:bias', 'layer2.2.bn1:running_mean', 'layer2.2.bn1:running_var', 'layer2.2.conv2:weight', 'layer2.2.bn2:weight', 'layer2.2.bn2:bias', 'layer2.2.bn2:running_mean', 'layer2.2.bn2:running_var', 'layer2.3:conv1.weight', 'layer2.3:bn1.weight', 'layer2.3:bn1.bias', 'layer2.3:conv2.weight', 'layer2.3:bn2.weight', 'layer2.3:bn2.bias', 'layer2.3.conv1:weight', 'layer2.3.bn1:weight', 'layer2.3.bn1:bias', 'layer2.3.bn1:running_mean', 'layer2.3.bn1:running_var', 'layer2.3.conv2:weight', 'layer2.3.bn2:weight', 'layer2.3.bn2:bias', 'layer2.3.bn2:running_mean', 'layer2.3.bn2:running_var', 'layer2.4:conv1.weight', 'layer2.4:bn1.weight', 'layer2.4:bn1.bias', 'layer2.4:conv2.weight', 'layer2.4:bn2.weight', 'layer2.4:bn2.bias', 'layer2.4.conv1:weight', 'layer2.4.bn1:weight', 'layer2.4.bn1:bias', 'layer2.4.bn1:running_mean', 'layer2.4.bn1:running_var', 'layer2.4.conv2:weight', 'layer2.4.bn2:weight', 'layer2.4.bn2:bias', 'layer2.4.bn2:running_mean', 'layer2.4.bn2:running_var', 'layer3.0:conv1.weight', 'layer3.0:bn1.weight', 'layer3.0:bn1.bias', 'layer3.0:conv2.weight', 'layer3.0:bn2.weight', 'layer3.0:bn2.bias', 'layer3.0:downsample.0.weight', 'layer3.0:downsample.1.weight', 'layer3.0:downsample.1.bias', 'layer3.0.conv1:weight', 'layer3.0.bn1:weight', 'layer3.0.bn1:bias', 'layer3.0.bn1:running_mean', 'layer3.0.bn1:running_var', 'layer3.0.conv2:weight', 'layer3.0.bn2:weight', 'layer3.0.bn2:bias', 'layer3.0.bn2:running_mean', 'layer3.0.bn2:running_var', 'layer3.0.downsample.0:weight', 'layer3.0.downsample.1:weight', 'layer3.0.downsample.1:bias', 'layer3.0.downsample.1:running_mean', 'layer3.0.downsample.1:running_var', 'layer3.1:conv1.weight', 'layer3.1:bn1.weight', 'layer3.1:bn1.bias', 'layer3.1:conv2.weight', 'layer3.1:bn2.weight', 'layer3.1:bn2.bias', 'layer3.1.conv1:weight', 'layer3.1.bn1:weight', 'layer3.1.bn1:bias', 'layer3.1.bn1:running_mean', 'layer3.1.bn1:running_var', 'layer3.1.conv2:weight', 'layer3.1.bn2:weight', 'layer3.1.bn2:bias', 'layer3.1.bn2:running_mean', 'layer3.1.bn2:running_var', 'layer3.2:conv1.weight', 'layer3.2:bn1.weight', 'layer3.2:bn1.bias', 'layer3.2:conv2.weight', 'layer3.2:bn2.weight', 'layer3.2:bn2.bias', 'layer3.2.conv1:weight', 'layer3.2.bn1:weight', 'layer3.2.bn1:bias', 'layer3.2.bn1:running_mean', 'layer3.2.bn1:running_var', 'layer3.2.conv2:weight', 'layer3.2.bn2:weight', 'layer3.2.bn2:bias', 'layer3.2.bn2:running_mean', 'layer3.2.bn2:running_var', 'layer3.3:conv1.weight', 'layer3.3:bn1.weight', 'layer3.3:bn1.bias', 'layer3.3:conv2.weight', 'layer3.3:bn2.weight', 'layer3.3:bn2.bias', 'layer3.3.conv1:weight', 'layer3.3.bn1:weight', 'layer3.3.bn1:bias', 'layer3.3.bn1:running_mean', 'layer3.3.bn1:running_var', 'layer3.3.conv2:weight', 'layer3.3.bn2:weight', 'layer3.3.bn2:bias', 'layer3.3.bn2:running_mean', 'layer3.3.bn2:running_var', 'layer3.4:conv1.weight', 'layer3.4:bn1.weight', 'layer3.4:bn1.bias', 'layer3.4:conv2.weight', 'layer3.4:bn2.weight', 'layer3.4:bn2.bias', 'layer3.4.conv1:weight', 'layer3.4.bn1:weight', 'layer3.4.bn1:bias', 'layer3.4.bn1:running_mean', 'layer3.4.bn1:running_var', 'layer3.4.conv2:weight', 'layer3.4.bn2:weight', 'layer3.4.bn2:bias', 'layer3.4.bn2:running_mean', 'layer3.4.bn2:running_var', 'fc:weight', 'fc:bias']
+[set_identical_seed] Set the identical seed: 1 for all GPUs to make sure the same results generated in permutation search
+
+[permute_model] Permuting the model
+[build_fx_graph] The torch version is: 2.4.0+cu118, version major is: 2, version minor is: 4, version minimum is: 0+cu118
+[build_fx_graph] The Torch.FX is supported.
+
+[build_fx_graph] Print the model structure with pure PyTorch function
+ResNet(
+  (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+  (layer1): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (2): BasicBlock(
+      (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (3): BasicBlock(
+      (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (4): BasicBlock(
+      (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (layer2): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(32, 64, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (downsample): Sequential(
+        (0): Conv2d(32, 64, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (2): BasicBlock(
+      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (3): BasicBlock(
+      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (4): BasicBlock(
+      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (layer3): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (downsample): Sequential(
+        (0): Conv2d(64, 128, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (2): BasicBlock(
+      (conv1): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (3): BasicBlock(
+      (conv1): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (4): BasicBlock(
+      (conv1): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (avgpool): AvgPool2d(kernel_size=8, stride=8, padding=0)
+  (fc): Linear(in_features=128, out_features=10, bias=True)
+)
+Proxy(size)
+int() argument must be a string, a bytes-like object or a number, not 'Proxy'
+Traceback (most recent call last):
+  File "/home/elounita/miniconda3/envs/hypersparse/lib/python3.8/site-packages/apex/contrib/sparsity/asp.py", line 227, in compute_sparse_masks
+    successful_permutation = Permutation.permute_model(cls.__model.module, dump_fx_graph=cls.__save_permutation_graph, save_dumped_fx_graph=os.path.join(cls.__permutation_output_dir, 'model_offline_permutation_graph.json'))
+  File "/home/elounita/miniconda3/envs/hypersparse/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1729, in __getattr__
+    raise AttributeError(f"'{type(self).__name__}' object has no attribute '{name}'")
+AttributeError: 'ResNet' object has no attribute 'module'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/elounita/miniconda3/envs/hypersparse/lib/python3.8/site-packages/apex/contrib/sparsity/permutation_lib.py", line 1643, in trace_and_print_raw_fx_graph
+    symbolic_traced : torch.fx.GraphModule = symbolic_trace(model)
+  File "/home/elounita/miniconda3/envs/hypersparse/lib/python3.8/site-packages/torch/fx/_symbolic_trace.py", line 1222, in symbolic_trace
+    graph = tracer.trace(root, concrete_args)
+  File "/home/elounita/miniconda3/envs/hypersparse/lib/python3.8/site-packages/torch/fx/_symbolic_trace.py", line 822, in trace
+    (self.create_arg(fn(*args)),),
+  File "/home/elounita/HyperSparse/models/resnet.py", line 151, in forward
+    x = F.avg_pool2d(x,int(x.size()[3]))
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'Proxy'
+
+
+[print_raw_fx_graph] Meet the fatal fault when trying to symbolic trace the model with Torch.FX
+[ASP] Enabled 50.00% sparsity for layer1.0.conv1::weight of size=torch.Size([32, 32, 3, 3]) and type=torch.float32 with magnitude tensor(445.1725, device='cuda:0')
+[ASP] Enabled 50.00% sparsity for layer1.0.conv2::weight of size=torch.Size([32, 32, 3, 3]) and type=torch.float32 with magnitude tensor(453.7052, device='cuda:0')
+[ASP] Enabled 50.00% sparsity for layer1.1.conv1::weight of size=torch.Size([32, 32, 3, 3]) and type=torch.float32 with magnitude tensor(456.8515, device='cuda:0')
+[ASP] Enabled 50.00% sparsity for layer1.1.conv2::weight of size=torch.Size([32, 32, 3, 3]) and type=torch.float32 with magnitude tensor(454.8191, device='cuda:0')
+[ASP] Enabled 50.00% sparsity for layer1.2.conv1::weight of size=torch.Size([32, 32, 3, 3]) and type=torch.float32 with magnitude tensor(449.9659, device='cuda:0')
+[ASP] Enabled 50.00% sparsity for layer1.2.conv2::weight of size=torch.Size([32, 32, 3, 3]) and type=torch.float32 with magnitude tensor(457.9398, device='cuda:0')
+[ASP] Enabled 50.00% sparsity for layer1.3.conv1::weight of size=torch.Size([32, 32, 3, 3]) and type=torch.float32 with magnitude tensor(450.3776, device='cuda:0')
+[ASP] Enabled 50.00% sparsity for layer1.3.conv2::weight of size=torch.Size([32, 32, 3, 3]) and type=torch.float32 with magnitude tensor(462.0973, device='cuda:0')
+[ASP] Enabled 50.00% sparsity for layer1.4.conv1::weight of size=torch.Size([32, 32, 3, 3]) and type=torch.float32 with magnitude tensor(459.0392, device='cuda:0')
+[ASP] Enabled 50.00% sparsity for layer1.4.conv2::weight of size=torch.Size([32, 32, 3, 3]) and type=torch.float32 with magnitude tensor(456.3168, device='cuda:0')
+[ASP] Enabled 50.00% sparsity for layer2.0.conv1::weight of size=torch.Size([64, 32, 3, 3]) and type=torch.float32 with magnitude tensor(649.0145, device='cuda:0')
+[ASP] Enabled 50.00% sparsity for layer2.0.conv2::weight of size=torch.Size([64, 64, 3, 3]) and type=torch.float32 with magnitude tensor(1284.3148, device='cuda:0')
+[ASP] Enabled 50.00% sparsity for layer2.0.downsample.0::weight of size=torch.Size([64, 32, 1, 1]) and type=torch.float32 with magnitude tensor(213.6737, device='cuda:0')
+[ASP] Enabled 50.00% sparsity for layer2.1.conv1::weight of size=torch.Size([64, 64, 3, 3]) and type=torch.float32 with magnitude tensor(1300.0957, device='cuda:0')
+[ASP] Enabled 50.00% sparsity for layer2.1.conv2::weight of size=torch.Size([64, 64, 3, 3]) and type=torch.float32 with magnitude tensor(1282.6296, device='cuda:0')
+[ASP] Enabled 50.00% sparsity for layer2.2.conv1::weight of size=torch.Size([64, 64, 3, 3]) and type=torch.float32 with magnitude tensor(1296.5923, device='cuda:0')
+[ASP] Enabled 50.00% sparsity for layer2.2.conv2::weight of size=torch.Size([64, 64, 3, 3]) and type=torch.float32 with magnitude tensor(1291.5933, device='cuda:0')
+[ASP] Enabled 50.00% sparsity for layer2.3.conv1::weight of size=torch.Size([64, 64, 3, 3]) and type=torch.float32 with magnitude tensor(1295.0228, device='cuda:0')
+[ASP] Enabled 50.00% sparsity for layer2.3.conv2::weight of size=torch.Size([64, 64, 3, 3]) and type=torch.float32 with magnitude tensor(1291.3831, device='cuda:0')
+[ASP] Enabled 50.00% sparsity for layer2.4.conv1::weight of size=torch.Size([64, 64, 3, 3]) and type=torch.float32 with magnitude tensor(1303.1609, device='cuda:0')
+[ASP] Enabled 50.00% sparsity for layer2.4.conv2::weight of size=torch.Size([64, 64, 3, 3]) and type=torch.float32 with magnitude tensor(1295.8636, device='cuda:0')
+[ASP] Enabled 50.00% sparsity for layer3.0.conv1::weight of size=torch.Size([128, 64, 3, 3]) and type=torch.float32 with magnitude tensor(1825.8945, device='cuda:0')
+[ASP] Enabled 50.00% sparsity for layer3.0.conv2::weight of size=torch.Size([128, 128, 3, 3]) and type=torch.float32 with magnitude tensor(3648.3337, device='cuda:0')
+[ASP] Enabled 50.00% sparsity for layer3.0.downsample.0::weight of size=torch.Size([128, 64, 1, 1]) and type=torch.float32 with magnitude tensor(616.9102, device='cuda:0')
+[ASP] Enabled 50.00% sparsity for layer3.1.conv1::weight of size=torch.Size([128, 128, 3, 3]) and type=torch.float32 with magnitude tensor(3652.2283, device='cuda:0')
+[ASP] Enabled 50.00% sparsity for layer3.1.conv2::weight of size=torch.Size([128, 128, 3, 3]) and type=torch.float32 with magnitude tensor(3647.6353, device='cuda:0')
+[ASP] Enabled 50.00% sparsity for layer3.2.conv1::weight of size=torch.Size([128, 128, 3, 3]) and type=torch.float32 with magnitude tensor(3657.0229, device='cuda:0')
+[ASP] Enabled 50.00% sparsity for layer3.2.conv2::weight of size=torch.Size([128, 128, 3, 3]) and type=torch.float32 with magnitude tensor(3658.2883, device='cuda:0')
+[ASP] Enabled 50.00% sparsity for layer3.3.conv1::weight of size=torch.Size([128, 128, 3, 3]) and type=torch.float32 with magnitude tensor(3649.2856, device='cuda:0')
+[ASP] Enabled 50.00% sparsity for layer3.3.conv2::weight of size=torch.Size([128, 128, 3, 3]) and type=torch.float32 with magnitude tensor(3646.9700, device='cuda:0')
+[ASP] Enabled 50.00% sparsity for layer3.4.conv1::weight of size=torch.Size([128, 128, 3, 3]) and type=torch.float32 with magnitude tensor(3647.0327, device='cuda:0')
+[ASP] Enabled 50.00% sparsity for layer3.4.conv2::weight of size=torch.Size([128, 128, 3, 3]) and type=torch.float32 with magnitude tensor(3655.3579, device='cuda:0')
+torch.Size([1, 128, 8, 8])

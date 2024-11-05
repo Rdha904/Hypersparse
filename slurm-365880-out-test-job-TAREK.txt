@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "train.py", line 330, in <module>
+    trainModel(args)
+  File "train.py", line 169, in trainModel
+    assert False, "path already exists"
+AssertionError: path already exists

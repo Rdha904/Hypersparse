@@ -1,0 +1,3 @@
+2024-10-24 00:41:58,134 : INFO : Namespace(batch_size=64, dataset='cifar10', epochs=160, eta=1.05, lambda_init=5e-06, lr=0.1, lr_decay=0.1, lr_step=[80, 120], manual_seed=None, model_arch='resnet', model_depth=32, momentum=0.9, outdir='./output__', override_dir=False, path_data='./data', path_load_model=None, prune_rate=0.0, regularization_func='HS', size_model_buffer=1, warmup_epochs=60, weight_decay=0.0001, workers=4)
+2024-10-24 00:41:58,134 : INFO : output Dir: ./output__
+2024-10-24 00:41:58,565 : INFO : ==> Preparing dataset cifar10

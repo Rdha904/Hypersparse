@@ -13,6 +13,7 @@ from utils import *
 from models import *
 from loss.HyperSparse import hyperSparse, grad_HS_loss
 from loss.lx_loss import lx_loss
+from torch.ao.quantization import get_default_qat_qconfig, prepare_qat, convert
 
 
 def save_checkpoint(state, name, args):
@@ -218,6 +219,14 @@ def trainModel(args):
         model.load_state_dict(checkpoint['state_dict'])
 
     save_checkpoint({'epoch': 0, 'state_dict': model.state_dict()}, "init", args)
+    # QAT vorbereiten
+    # Modell vor der Modulfusion in den Evaluationsmodus setzen
+    model.eval()
+    model._fuse_model()  # Module fusionieren
+    model.train()  # Modell wieder in den Trainingsmodus setzen
+    model.qconfig = torch.ao.quantization.get_default_qat_qconfig('qnnpack')
+    prepare_qat(model, inplace=True)  # Modell für QAT vorbereiten
+
     model.cuda()
 
     '''
@@ -307,6 +316,10 @@ def trainModel(args):
 
 
         epoch += 1
+    # Endgültige Quantisierung nach dem Training
+    model.eval()
+    convert(model, inplace=True)  # Konvertiere das Modell für die Inferenz in das quantisierte Format
+
 
     logger.info('Best test acc pruned:')
     logger.info(best_test_acc)
@@ -318,5 +331,4 @@ def trainModel(args):
 if __name__ == "__main__":
     args = get_args()
     trainModel(args)
-
 
